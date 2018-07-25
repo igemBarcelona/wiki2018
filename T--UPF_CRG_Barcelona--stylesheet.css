@@ -1,76 +1,58 @@
 /* iGEM Barcelona UPF CRG Stylesheet */
-body{
-    margin: 20;
-    padding: 5;
-    font-family: "roboto_monomedium";
-    color: #525252;
-    background: transparent;
-    line-height: 0%;
+
+/*Color variables*/
+:root {
+    --main-color:#f2f3f4;
+    --var1-color: #99CFB2;
+    --var2-color: #495F7F; 
+    --hovered-color: #589EFF;
+    --menu-clicked-color: #AFAFB0;
 }
 
-.header { grid-area: header; }
-.menu { grid-area: menu; }
-.main { grid-area: main; }
-.twitter {grid-area: twitter; }
-.instagram {grid-area: instagram; }
-.footer { grid-area: footer; }
 
+/*Defaults*/
+* {
+    font-family: "roboto_monoregular";
+}
+
+/*Body Style*/
+body {
+    margin: 1em;
+    background-color: var(--main-color);
+}
+
+/*Page Template*/
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(1fr, 6);
-  grid-template-areas:
-    'header header header header header header'
-    'menu menu menu menu menu menu'
-    'main main main main main main'
-    'footer footer footer footer instagram twitter';
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-gap: 1em;
 }
-.header{
-    width: 100%;
+
+/*Main Areas*/
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { 
+    grid-area: footer; 
+    grid-template-areas:
+    'contact_media copyright sponsors';
+    display: inline;
 }
-.header>img,.header>h1{
+
+/*Social Media*/
+.twitter { grid-area: twitter; }
+.instagram { grid-area: instagram; }
+
+
+/*General Styling*/
+.header>img,.header>div{
     display: inline-block;
     vertical-align: middle;
 }
 
-.menu {
-    width: 100%;
-    display: inline-block;
-}
-
-.dropdownbtn { 
-
-}
-.dropdown { 
-
-}
-.dropdown-content {
-
-}
-
-.footer{
-    display: inline;
-}
 .footer>img{
     vertical-align: middle;
 }
-.title {
-    font-family: "roboto_monobold";
-}
 
-.navlist{
-    
-}
-
-h1{
-    font-family: "roboto_monobold";
-    color: #000000;
-}
-h2{
-
-}
-h3{
-
-}
-h4{
-    
-} 

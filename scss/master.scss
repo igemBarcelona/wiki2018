@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+// Variables
+$default-font: 'PT Sans', sans-serif;
+
+html {
+    font-family: $default-font;
+}
+
+@import "./normalize";
+@import "./border-box-normalize";
+@import "./style";
+@import "./navbar.scss"

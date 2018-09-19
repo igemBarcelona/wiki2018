@@ -1,0 +1,17 @@
+.footer {
+    background-color: #36393d;
+    color: #ffffff;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        div {
+            h3 {
+                font-weight: 800;
+            }
+            a {
+                padding: 0 .5rem;
+            }
+        }
+     }
+}

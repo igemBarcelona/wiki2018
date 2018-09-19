@@ -20,15 +20,15 @@ $nbc-item-active: $nbc !default;
 $nbc-item-hover: $nbc !default;  
 
 $nbc-dropdown: #36393d !default;
-$nc-dropdown-carrot: #46aef7 !default;
-$nc-dropdown-item-active: #46aef7 !default;
+$nc-dropdown-carrot: #36393d !default;
+$nc-dropdown-item-active: #36393d !default;
 
 $nbc-menu: #36393d !default;
 $nbc-burger-hover: rgba(0, 0, 0, 0.05) !default; 
 $nbc-divider: #dbdbdb !default;                  
 
 // NUMBER OF PAGES =============================================
-$num: 4;
+$num: 7;
 
 
 // UNIVERSAL STYLES ============================================
@@ -37,7 +37,6 @@ $num: 4;
   color: $nc;
   font-family: $navbar-font-family;
   min-height: $navbar-min-height;
-  position: relative;
 
   > .container {
     align-items: stretch;
@@ -140,7 +139,7 @@ a.navbar-item {
 .navbar-link {
   color: $nc-item;
   line-height: 2;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem .5rem;
   font-size: 1.25em;
 }
 

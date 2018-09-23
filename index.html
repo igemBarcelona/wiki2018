@@ -68,7 +68,7 @@
   <header id="header">
     <div id="blur"></div>
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container" id="sw-container">
       <div class="swiper-wrapper">
           <a class="swiper-slide" href="#">
             <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--description.svg" alt="">
@@ -144,99 +144,8 @@
     </div>
   </footer>
   
-  <!-- Swiper JS -->
-  <script src="js/swiper.js"></script>
-  
-  <!-- Navbar JS -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      // Get all "navbar-burger" elements
-      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(function ($el) {
-          $el.addEventListener('click', function () {
-
-            // Get the target from the "data-target" attribute
-            var target = $el.dataset.target;
-            var $target = document.getElementById(target);
-
-            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-            $el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-          });
-        });
-      }
-
-    });
-
-    // Initialize Swiper
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 6,
-      slidesPerGroup: 1,
-      loop: true,
-      freeMode: true,
-      observer: true,
-      watchOverflow: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      keyboard: {
-        enabled: true,
-      },
-      preventClicks: true,
-      slidesOffsetAfter: 15,
-      slidesOffsetBefore: 15
-    });
-
-
-    // Media queries
-    ssm.addState({
-        id: 'mobile',
-        query: '(max-width: 767px)',
-        onEnter: function(){
-            console.log('enter mobile');
-        }
-    });
-
-    ssm.addState({
-        id: 'tablet',
-        query: '(min-width: 768px) and (max-width: 1023px)',
-        onEnter: function(){
-            console.log('enter tablet');
-        }
-    });
-
-    ssm.addState({
-        id: 'desktop',
-        query: '(min-width: 1024px)',
-        onEnter: function(){
-            console.log('enter desktop');
-        }
-    });
-
-    var h = document.getElementById('navbar').clientHeight;
-
-    window.onscroll = function() {Fix_on_scroll()};
-
-    function Fix_on_scroll() {
-        if (document.body.scrollTop > h || document.documentElement.scrollTop > h) {
-            document.getElementById("header").classList.add("header-fixed");
-            document.getElementById("blur").classList.add("header-blur");
-            // console.log("fixed")
-        } else {
-            document.getElementById("header").classList.remove("header-fixed");
-            document.getElementById("blur").classList.remove("header-blur");
-        }
-    }
-  </script>
-
+  <!-- JS code -->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

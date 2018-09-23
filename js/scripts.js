@@ -3640,26 +3640,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// Initialize Swiper
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 6,
-    slidesPerGroup: 1,
-    loop: true,
-    freeMode: true,
-    observer: true,
-    watchOverflow: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    keyboard: {
-        enabled: true,
-    },
-    preventClicks: true,
-    slidesOffsetAfter: 15,
-    slidesOffsetBefore: 15
-});
-
 var h = document.getElementById('navbar').clientHeight;
 
 window.onscroll = function () {
@@ -3675,7 +3655,8 @@ function Fix_on_scroll() {
         for (i = 0; i < slides.length; i++) {
             slides[i].childNodes[1].style.display = "none";
         }
-    } else {
+    } 
+    else {
         document.getElementById("header").classList.remove("header-fixed");
         document.getElementById("blur").classList.remove("header-blur");
         document.getElementById("sw-container").classList.add("swiper-margin");

@@ -146,6 +146,26 @@
   
   <!-- JS code -->
   <script src="js/scripts.js"></script>
+  <script src="js/devel.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      loop: true,
+      freeMode: true,
+      observer: true,
+      watchOverflow: true,
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+          enabled: true,
+      },
+      preventClicks: true,
+  });
+  </script>
 </body>
 
 </html>

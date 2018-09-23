@@ -24,5 +24,6 @@ TODO list:
 - [ ] Write HP Education and Public Engagement.
 - [ ] Change SVG for Embed SVG.
 - [ ] Human Practices gallery.
+- [ ] Take over the world.
 
 Available at: [https://igembarcelona.github.io/wiki2018](https://igembarcelona.github.io/wiki2018)

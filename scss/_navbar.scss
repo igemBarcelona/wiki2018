@@ -1,11 +1,11 @@
 // HEIGHT, WIDTH, BREAKPOINTS, FONT ============================
-$navbar-breakpoint-max: 1023px !default;
-$navbar-breakpoint-min: 1023px !default;
-$navbar-min-height: 3.25rem !default;             
-$navbar-burger-height-width: 3.25rem !default;    
+$navbar-breakpoint-max: 1250px !default;
+$navbar-breakpoint-min: 1250px !default;
+$navbar-min-height: 2.5em !default;             
+$navbar-burger-height-width: 3.75rem !default;    
 $navbar-img-max-height: 2.25rem !default;         
-$navbar-font-size: 1.5rem !default;               
-$navbar-large-screen-font-size: 1.5rem !default;
+$navbar-font-size: 1rem !default;               
+$navbar-large-screen-font-size: 1rem !default;
 $navbar-font-family: $default-font !default;
 // COLORS ======================================================
 $nc: #ffffff !default;
@@ -20,8 +20,8 @@ $nbc-item-active: $nbc !default;
 $nbc-item-hover: $nbc !default;  
 
 $nbc-dropdown: #36393d !default;
-$nc-dropdown-carrot: #36393d !default;
-$nc-dropdown-item-active: #36393d !default;
+$nc-dropdown-carrot: #46aef7 !default;
+$nc-dropdown-item-active: #46aef7 !default;
 
 $nbc-menu: #36393d !default;
 $nbc-burger-hover: rgba(0, 0, 0, 0.05) !default; 
@@ -37,6 +37,7 @@ $num: 7;
   color: $nc;
   font-family: $navbar-font-family;
   min-height: $navbar-min-height;
+  position: relative;
 
   > .container {
     align-items: stretch;
@@ -121,7 +122,6 @@ $num: 7;
     width: 100%;
     display: grid;
     grid-template-columns: repeat($num, 1fr);
-    grid-auto-rows: auto;
     grid-gap: 1rem;
   }
 }
@@ -133,18 +133,23 @@ a.navbar-item {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .navbar-item,
 .navbar-link {
   color: $nc-item;
   line-height: 2;
-  padding: 0.5rem .5rem;
-  font-size: 1.25em;
+  padding: 0.1rem .1rem;
+  font-size: 1rem;
 }
 
 .navbar-logo {
-  padding: 0.1rem 1.5rem;
+  padding: 0.75rem 1rem;
+  img {
+    height: $navbar-min-height;
+  }
 }
 
 a.navbar-item,

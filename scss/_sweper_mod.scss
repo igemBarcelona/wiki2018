@@ -21,8 +21,11 @@
   -webkit-align-items: center;
   vertical-align: top;
   display: inline-block;
-
+  cursor: pointer;
+  text-decoration: none;
+  
   p {
     text-align: center;
+    color: #000000;
   }
 }

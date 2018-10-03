@@ -22,7 +22,7 @@ TODO list:
 - [ ] Write HP Silver.
 - [ ] Write HP Integrated.
 - [ ] Write HP Education and Public Engagement.
-- [ ] Change SVG for Embed SVG.
+- [x] Change SVG for Embed SVG.
 - [ ] Human Practices gallery.
 - [ ] Take over the world.
 

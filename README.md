@@ -4,7 +4,7 @@ TODO list:
 
 - [ ] Mobile UI.
 - [ ] Write Description.
-- [ ] Write Background and Design.
+- [x] Write Background and Design.
 - [ ] Write Overexpression.
 - [ ] Write Biosensor.
 - [ ] Write MAGE.

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=2.5" />
+  <!-- Title, Description -->
+  <title>Wiki</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis cupiditate ducimus modi culpa. Et ducimus excepturi molestiae alias.">
+  <!-- Open Graph Metadata -->
+  <meta property="og:url" content="" /> <!-- PAGE URL -->
+  <meta property="og:type" content="website" /> <!-- TYPE -->
+  <meta property="og:title" content="" /> <!-- TITLE -->
+  <meta property="og:description" content="" /> <!-- DESCRIPTION-->
+  <meta property="og:image" content="" /> <!-- IMAGE URL -->
+  <!-- Stylesheets, Fonts, Neccessary Scripts -->
+  <link rel="stylesheet" href="css/master.min.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+    <div class="container">
+
+      <div class="navbar-brand">
+        <a class="navbar-logo" href="#">
+          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+        </a>
+
+        <div class="navbar-burger" data-target="navbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+      <div class="navbar-menu" id="navbar-menu">
+        <!-- navbar items -->
+        <div class="navbar-grid">
+          <a class="navbar-item is-active" href="Description.html">
+            <!--class is-active for showing active menu-->
+            Project
+          </a>
+          <a class="navbar-item" href="#">
+            Model
+          </a>
+          <a class="navbar-item" href="#">
+            Parts
+          </a>
+          <a class="navbar-item" href="Deliverables.html">
+            Deliverables
+          </a>
+          <a class="navbar-item" href="#">
+            Notebook
+          </a>
+          <a class="navbar-item" href="#">
+            Human Practices
+          </a>
+          <a class="navbar-item" href="#">
+            Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div id="blur"></div>
+    <!-- Swiper -->
+    <div class="swiper-container" id="sw-container">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide" href="Background.html">
+          <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--background_2.svg" alt="">
+          <p>Background <br> and design</p>
+        </a>
+        <a class="swiper-slide" href="Overexpression.html">
+          <img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--fads_2.svg" alt="">
+          <p>Overexpression</p>
+        </a>
+        <a class="swiper-slide" href="Biosensor.html">
+          <img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--biosensor_3.svg" alt="">
+          <p>Biosensor</p>
+        </a>
+        <a class="swiper-slide" href="Integration.html">
+          <img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--mage_2.svg" alt="">
+          <p>Integration</p>
+        </a>
+        <a class="swiper-slide" href="Results.html">
+          <img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--results_2.svg" alt="">
+          <p>Results</p>
+        </a>
+        <a class="swiper-slide" href="Demonstration.html">
+          <img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--demonstration_3.svg" alt="">
+          <p>Demonstration</p>
+        </a>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="">
+
+      <div>
+        <h1 class="heading">BACKGROUND AND DESIGN</h1>
+
+        <h2>Background </h2>
+        <p>Control of metastasis remains a challenge to modern medicine. In fact, it is responsible for the 90% of
+          deaths related to the presence of a tumor.</p>
+
+        <p>Lifestyle factors, such as diet, have been recently proved to have an strong influence on cancer
+          development. The contribution of lipid metabolism in tumor development and cancer progression has been long
+          known, however recent evidences suggest that diet-derived lipids can also contribute to the global lipid
+          composition of cancer cells and thus to its development. In fact, novel findings suggest that the acquisition
+          of metastatic potential relies on dietary long chain fatty acids (LCFA) intake, such as palmitic acid (PA).
+          Internalization of these LCFA has been proved to be the main feature promoting metastasis and cell
+          dissemination [1]. </p>
+
+        <p>The exact role of this FAs in cancer development is not fully understood, however it has been hypothesized
+          that this aberrant increase of FAs might provide cancer cells with structural substrates for new membranes,
+          signalling metabolites and substrates for FA oxidation in order to fulfill the increased energy demand.</p>
+
+        <p>Long chain fatty acids are one of the main components of our food intake. It has been reported that in
+          Western diet, dietary lipids account for 42% of total ingested calories, 95% of which are triacylglycerols,
+          mainly composed of long-chain fatty acids. Considering these evidences and the infeasibility of FAs avoidance
+          by dietary restriction, we hypothesized that targeting fatty acid availability in the intestine would stop
+          cancer cells from spreading.</p>
+
+        <h2>What is GARGANTUA?</h2>
+        <p>In an attempt to propose a safe, effective and affordable solution to metastasis prevention we had the
+          following idea:</p>
+
+        <p>What if we could develop a system capable of uptaking palmitic acid acting as a fatty acid sponge?
+          What if we could engineer commensal bacteria that already live in our gut flora to integrate this system in
+          our body?</p>
+
+        <p> In this project we aim to design a probiotic with an enhanced metabolism able to increase its LCFA uptake
+          and therefore reducing palmitic acid availability in the gut and the bloodstream. By doing so we could halt
+          tumor cells from becoming metastatic.</p>
+
+        <p>In order to achieve this goal, we have addressed the following experimental lines.</p>
+
+        <h2>Design</h2>
+        <h3>Enhancing E. Coli beta oxidation</h3>
+        <p>In order to enhance the own fatty acid degradation machinery we have modulated the expression of the genes
+          implicated (…) under the control of an inducible promoter. In this way, we have designed a three-plasmid
+          compatible system targeting all the beta-oxidation LCFA family genes.</p>
+          <a href="Overexpression.html"><button class="button">Read more...</button></a>
+
+
+        <h3>Biosensor</h3> (Biosensor, dynamic agreement, bacterial intelligence…)
+        <p>Our team has developed the first LCFA biosensor that does not interfere with its metabolism. Therefore, we
+          have created the first genetic tool able to analyze LCFA degradation. This represents a very powerful and
+          robust system that will enable the selection of bacteria with increased absorption of LCFA.</p>
+          <a href="Biosensor.html"><button class="button">Read more...</button></a>
+
+        <h3>A live biotherapeutic</h3>
+        <p>We asked ourselves what would be the best way to integrate our uptake system into a probiotic strain,
+          addressing challenges that may arise when implementing Gargantua as a therapeutic tool. We considered the
+          genomic integration of our design, in order to have stable and robust expression and reducing biosafety
+          concerns that can arise from plasmid exchange in to other species. Thus complying with FDA standards for
+          probiotic strain characteristics.</p>
+          <a href="Integration.html"><button class="button">Read more...</button></a>
+        <h5 style="font-weight: 800;">References</h5>
+        <h5>[1] Pascual G, et al. <i>Targeting metastasis-initiating cells through the fatty acid receptor CD36.</i> Nature
+          541.7635 (2017): 41.</h5>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h3>Follow us at:</h3>
+        <a href="https://www.instagram.com/igembarcelona/"><img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--instagram.svg"
+            alt=""></a>
+        <a href="https://twitter.com/igemBarcelona"><img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
+            alt=""></a>
+        <a href="https://www.facebook.com/igembarcelona/""><img style=" width: 50px" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+          alt=""></a>
+      </div>
+
+      <div>
+        <h3>Contact us:</h3>
+        <p>igem [at] upf [dot] edu</p>
+        <p> PRBB Building</p>
+        <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS code -->
+  <script src="js/scripts.js"></script>
+  <script src="js/devel.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      loop: true,
+      freeMode: true,
+      observer: true,
+      watchOverflow: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+      },
+      preventClicks: true,
+    });
+  </script>
+</body>
+
+</html>

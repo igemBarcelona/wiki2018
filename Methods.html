@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=2.5" />
+  <!-- Title, Description -->
+  <title>Wiki</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis cupiditate ducimus modi culpa. Et ducimus excepturi molestiae alias.">
+  <!-- Open Graph Metadata -->
+  <meta property="og:url" content="" /> <!-- PAGE URL -->
+  <meta property="og:type" content="website" /> <!-- TYPE -->
+  <meta property="og:title" content="" /> <!-- TITLE -->
+  <meta property="og:description" content="" /> <!-- DESCRIPTION-->
+  <meta property="og:image" content="" /> <!-- IMAGE URL -->
+  <!-- Stylesheets, Fonts, Neccessary Scripts -->
+  <link rel="stylesheet" href="css/master.min.css">
+  <!--PLOT.LY JavaScript-->
+  <script src="js/plotly.js"></script>
+</head>
+
+<body>
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+    <div class="container">
+
+      <div class="navbar-brand">
+        <a class="navbar-logo" href="#">
+          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+        </a>
+        <div class="navbar-burger" data-target="navbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+      <div class="navbar-menu" id="navbar-menu">
+        <!-- navbar items -->
+        <div class="navbar-grid">
+          <!--class is-active for showing active menu-->
+          <a class="navbar-item is-active" href="Description.html">Project</a>
+          <a class="navbar-item" href="DryLab.html">DryLab</a>
+          <a class="navbar-item" href="Parts.html">Parts</a>
+          <a class="navbar-item" href="Deliverables.html">Deliverables</a>
+          <a class="navbar-item" href="WetLab.html">WetLab</a>
+          <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
+          <a class="navbar-item" href="Aboutteam.html">Team</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div id="blur"></div>
+    <!-- Swiper -->
+    <div class="swiper-container" id="sw-container">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide" href="LabBook.html">
+          <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="Notebook doodle">
+          <p>LabBook</p>
+        </a>
+        <a class="swiper-slide" href="Methods.html">
+          <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="Protocol Doodle">
+          <p>Methods and <br> Protocols</p>
+        </a>
+
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="container-centered">
+      <div>
+        <h1>METHODS AND PROTOCOLS</h1>
+        <h2>Methods</h2>
+        <h3>Multiplex Automated Genomic Engineering (MAGE)</h3>
+        <h3>Cupric Acetate Fatty Acid Quantification</h3>
+        <img src="assets/T--UPF_CRG_Barcelona--cupricmethods.png" alt="Cupric Acetate Doodle" style="height: 300px; float: left; margin: 10px;">
+        <p>Quantifying fatty acids in the medium is a key part for our project. In order to prove the functionality of
+          our genetic constructs, we needed a way to demonstrate that our system had an increased fatty acid uptake
+          over time. To assess this, indirectly measured the fatty acid concentration that remained in the medium after
+          during the assay.</p>
+
+        <p>Different systems have been previously used to quantify long chain fatty acid in the medium. Including
+          chemical or thermodynamic titration as well as other enzymatic methods, such as the introduction of Acyl-CoA
+          synthetase that leads to NADH consumption and it can be detected by fluorimetry. Other options such as HPLC
+          or GC/MS are also widely used in the scientific community. However due to funding limitations, it was not
+          doable to use them in our project.</p>
+
+        <p>Taking into account a variety of possibilities, we finally chose a method based in the measurement of
+          metal-fatty acid complexes: <b>the cupric acetate-pyridine method</b>. It is a colorimetric technique based
+          in a two-phase system and the following binding of free fatty acids to cooper forming cooper soaps. These
+          cooper soaps can be detected and quantified with spectrophotometric techniques (OD 715 nm). This method
+          constitutes a simple and rapid method for determination of free fatty acids and it has proof good sensitivity
+          and reproducibility for caproic, caprylic, capric, lauric, myristic, palmitic, stearic and oleic acids [1].
+          Hence, measuring the OD 715nm for a standard curve and for the different concentrations of the fatty acid
+          have been developed, the OD can be directly correlated to  the concentration of free fatty acid.</p>
+
+        <p>In order to obtain the optimal medium to work with, an assay was performed to determine a standard curve
+          with different palmitic acid and oleic acid concentrations and working with mediums with an emulsion of the
+          corresponding fatty acid achieved by two methods: (a) diluting by bovine serum albumin (BSA) method or (b)
+          diluting by Tergitol NP-40, a detergent. The following were the used mediums for the assay:</p>
+
+        <ul>
+          <li>PA diluted with BSA.</li>
+          <li>PA diluted with tergitol NP-40.</li>
+          <li>Oleic acid diluted with BSA.</li>
+          <li>Oleic acid diluted with tergitol NP-40.</li>
+        </ul>
+
+        <div id="standard_curve_cupric" style="width: 90%;" class="plotly_plot"></div>
+        <script>
+          var panp40 = {
+            x: [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+            y: [0.079, 0.078, 0.082, 0.101, 0.091, 0.097, 0.119, 0.109, 0.106],
+            name: "PA + NP40",
+            error_y: {
+              type: 'data',
+              array: [0.005, 0.004, 0.005, 0.024, 0.001, 0.002, 0.003, 0.009, 0.002],
+              color: "#0079bf",
+              width: 1,
+
+            },
+            line: {
+              color: "#0079bf",
+              width: 1.5,
+            },
+            type: "scatter",
+          };
+          var oanp40 = {
+            x: [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+            y: [0.083, 0.082, 0.088, 0.091, 0.091, 0.103, 0.103, 0.12, 0.13],
+            name: "OA + NP40",
+            error_y: {
+              type: 'data',
+              array: [0.0006, 0.0001, 0.0071, 0.0083, 0.017, 0.0276, 0.0032, 0.0243, 0.0394],
+              color: "#c6e1d5",
+              width: 1,
+            },
+            line: {
+              color: "#c6e1d5",
+              width: 1.5,
+            },
+            type: "scatter"
+          };
+          var pabsa = {
+            x: [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+            y: [0.083, 0.084, 0.094, 0.093, 0.103, 0.111, 0.105, 0.143, 0.162],
+            name: "PA + BSA",
+            error_y: {
+              type: 'data',
+              array: [0.0008, 0.0017, 0.0006, 0.0054, 0, 0.0161, 0, 0.0078, 0.005],
+              color: "#577d95",
+              width: 1,
+            },
+            line: {
+              color: "#577d95",
+              width: 1.5,
+            },
+            type: "scatter"
+          };
+          var oabsa = {
+            x: [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+            y: [0.082, 0.086, 0.084, 0.087, 0.096, 0.107, 0.125, 0.151],
+            name: "OA + BSA",
+            error_y: {
+              type: 'data',
+              array: [0.004, 0.001, 0.001, 0.001, 0.007, 0.003, 0.002, 0.001],
+              color: "#225a7f",
+              width: 1,
+            },
+            line: {
+              color: "#225a7f",
+              width: 1.5,
+            },
+            type: "scatter"
+          };
+
+          var data = [panp40, oanp40, pabsa, oabsa];
+          var layout = {
+            title: "Standard Curve for Cupric Acetate - Pyridine assay",
+            titlefont: {
+              family: "PT Sans",
+              size: 15,
+            },
+            xaxis: {
+              title: "[FFA] mM",
+              titlefont: {
+                family: "PT Sans",
+                size: 12,
+                color: "#36393d",
+              },
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+            yaxis: {
+              title: "OD 715 nm",
+              titlefont: {
+                family: "PT Sans",
+                size: 12,
+                color: "#36393d",
+              },
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+          };
+
+          Plotly.newPlot("standard_curve_cupric", data, layout, {displayModeBar: false});
+        </script>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed odio praesentium doloribus voluptas tempore,
+          asperiores tempora nostrum. Corrupti nesciunt atque, quia totam fugit impedit quam, sunt unde aspernatur,
+          error necessitatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore illum
+          voluptate sed vel perspiciatis quaerat possimus. Fugit amet voluptas cupiditate? Accusamus recusandae dolorem
+          soluta corporis praesentium tempore itaque totam.</p>
+
+        <h3>Plate Reader Experiments</h3>
+        <h2>Protocols</h2>
+        <div class="centered">
+          <a class="protocols" href="http://2018.igem.org/wiki/images/8/83/T--UPF_CRG_Barcelona--protocol_collectionparts.pdf"
+            target="_blank">
+            <p>Protocol for Extracting parts from iGEM collection</p>
+          </a>
+
+          <a class="protocols" href="http://2018.igem.org/wiki/images/b/bc/T--UPF_CRG_Barcelona--protocol_enzymespromega.pdf"
+            target="_blank">
+            <p>Protocol for Promega Restriction Enzymes kit</p>
+          </a>
+
+          <a class="protocols" href="http://2018.igem.org/wiki/images/1/13/T--UPF_CRG_Barcelona--protocol_transformation.pdf"
+            target="_blank">
+            <p>Protocol for Transformation</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/0/0a/T--UPF_CRG_Barcelona--protocol_clonning.pdf"
+            target="_blank">
+            <p>Procotol for Clonning</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/8/8b/T--UPF_CRG_Barcelona--protocol_minipreps.pdf"
+            target="_blank">
+            <p>Protocol for DNA extraction</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/e/e3/T--UPF_CRG_Barcelona--protocol_verifyingdigestion.pdf"
+            target="_blank">
+            <p>Protocol for Verifying Digestion</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/1/13/T--UPF_CRG_Barcelona--protocol_PCR.pdf"
+            target="_blank">
+            <p>Procotol for PCR</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/c/ce/T--UPF_CRG_Barcelona--protocol_SDSPAGEgel.pdf"
+            target="_blank">
+            <p>Protocol for SDS-PAGE</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/8/8a/T--UPF_CRG_Barcelona--protocol_proteinquantification.pdf"
+            target="_blank">
+            <p>Protocol for Protein Quantification</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/9/90/T--UPF_CRG_Barcelona--protocol_colonyPCR.pdf"
+            target="_blank">
+            <p>Protocol for Colony PCR</p>
+          </a>
+          <a class="protocols" href="http://2018.igem.org/wiki/images/7/74/T--UPF_CRG_Barcelona--protocol_cupricacetate.pdf"
+            target="_blank">
+            <p>Protocol for Cupric Acetate Fatty Acid Quantification </p>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h3>Follow us at:</h3>
+        <a href="https://www.instagram.com/igembarcelona/"><img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--instagram.svg"
+            alt=""></a>
+        <a href="https://twitter.com/igemBarcelona"><img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
+            alt=""></a>
+        <a href="https://www.facebook.com/igembarcelona/""><img style=" width: 50px" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+          alt=""></a>
+      </div>
+      <div>
+        <center>
+          <h3>For Judges</h3>
+        </center>
+        <div id="judges">
+          <a href="Attributions.html">Attributions</a>
+          <a href="Collaborations.html">Collaborations</a>
+          <a href="Demonstrate.html">Demonstration</a>
+          <a href="Human_Practices.html">Human Practices</a>
+          <a href="InterLab.html">InterLab</a>
+          <a href="Improve.html">Improved part</a>
+          <a href="http://igem.org/2018_Judging_Form?id=2581">Judging Form</a>
+          <a href="Model.html">Model</a>
+          <a href="Parts">Parts</a>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact us:</h3>
+        <p>igem [at] upf [dot] edu</p>
+        <p> PRBB Building</p>
+        <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS code -->
+  <script src="js/scripts.js"></script>
+  <script src="js/devel.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      loop: true,
+      freeMode: true,
+      observer: true,
+      watchOverflow: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+      },
+      preventClicks: true,
+    });
+  </script>
+</body>
+
+</html>

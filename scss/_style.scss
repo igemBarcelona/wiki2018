@@ -1,6 +1,6 @@
-$container-pad-horizontal: 2rem !default; // left & right padding on .container
-$button-bg-color: #00d1b2;
-$button-color: #fff;
+$container-pad-horizontal: 4rem !default; // left & right padding on .container
+$button-bg-color: #c6e1d5;
+$button-color: #36393d;
 
 // MIXINS ==================================================
 @mixin container {
@@ -14,7 +14,7 @@ $button-color: #fff;
   font-weight: 700;
 }
 
-@mixin content-font{
+@mixin content-font {
   font-family: $default-font;
   font-weight: 400;
 }
@@ -34,6 +34,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  z-index: 9999;
 }
 
 article,
@@ -71,19 +72,20 @@ header {
   }
 }
 
-.header-fixed {    
-  position: -webkit-sticky; /* Safari */
+.header-fixed {
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   top: 0;
 }
 
 .header-blur {
-  position:absolute; 
-  top: 0px; 
-  right: 0px; 
-  bottom: 0px; 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
   left: 0px;
-  
+
   background-color: rgba(255, 255, 255, .9);
   backdrop-filter: blur(2.5px);
 }
@@ -108,18 +110,18 @@ header {
   align-items: center;
   box-shadow: none;
   display: inline-flex;
-  height: 3rem;
+  height: 2rem;
   line-height: 1.5;
-  padding-bottom: calc(0.375rem - 1px);
-  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.1rem - 1px);
+  padding-top: calc(0.1rem - 1px);
   position: relative;
   vertical-align: top;
   user-select: none;
   color: $button-color;
   cursor: auto;
   justify-content: center;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
@@ -127,13 +129,14 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-.button,
-.button--ghost,
-.button--sharp,
-.button--ghost--sharp{
-  margin-bottom: .15rem;
-  margin-top: .15rem;
-}
+
+  .button,
+  .button--ghost,
+  .button--sharp,
+  .button--ghost--sharp {
+    margin-bottom: .05rem;
+    margin-top: .05rem;
+  }
 }
 
 .button {
@@ -141,12 +144,186 @@ header {
   border: none;
   border-radius: 12px;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
-    background-color: darken($button-bg-color, 5);
+    background-color: #36393d;
+    color: #fff;
   }
 }
 
 p {
-  text-align : justify;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #36393d;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400px;
+  color: #f26d6d;
+}
+
+h3 {
+  font-style: italic;
+}
+
+h4 {
+  font-weight: 800;
+}
+
+// References -------------------------
+h5 {
+  font-weight: 100;
+  font-size: 15px;
+
+}
+
+// Figures footer = h6-----------------
+h6 {
+  font-size: 10pt;
+}
+
+.protocols {
+  text-decoration: none;
+
+  p,
+  a {
+    text-align: center;
+    background-color: #fff;
+    color: #36393d;
+    padding: 5px;
+  }
+}
+
+.protocols:hover {
+
+  p,
+  a {
+    background-color: #f26d6b;
+    padding: 5px;
+    border-radius: 15px;
+  }
+}
+
+// TODO: Change
+.column {
+  float: left;
+  width: 33, 33%;
+  margin: 20px;
+}
+
+.row::after {
+  clear: both;
+  display: table;
+}
+
+
+.grid-deliverables {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+
+  p {
+    text-align: center;
+  }
+}
+
+.svg-deliverables {
+  width: 400px;
+}
+
+.svg-deliverables:hover {
+  background-color: #c6e1d5;
+  padding: 15px;
+}
+
+table {
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+th {
+  font-weight: 800;
+  background-color: #36393d;
+  color: #ffffff;
+  height: 10px;
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+tr:hover {
+  background-color: #c6e1d5;
+}
+
+#description {
+  max-width: 1000px;
+}
+
+.white-background-link {
+  color: #36393d;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.container-centered {
+  @include container;
+
+  div {
+    width: 100%;
+  }
+}
+
+.plotly_plot {
+  z-index: 1;
+}
+
+.main_parts {
+  background-color: #36393d;
+}
+
+#parts {
+  background-color: #36393d;
+  background-image: url("/assets/DNA_fons_parts.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+.boxes-table {
+  display: table;
+  margin-top: 10px;
+  border-spacing: 15px;
+  margin-bottom: -30px;
+  width: 60%;
+  float: right;
+}
+
+.cell {
+  display: table-cell;
+}
+
+.box {
+  background-color:#fff;
+  text-decoration: none;
+  color: #36393d;
+  border-radius: 15px;
+  h3 {
+    color: #0079bf;
+    text-align: center;
+    font-style: normal;
+  }
+  p{
+    padding: 10px;
+  }
 }

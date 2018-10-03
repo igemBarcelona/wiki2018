@@ -17,7 +17,7 @@ $grey-bar: #36393D;
 // Variables
 $default-font: 'PT Sans', sans-serif;
 
-html {
+html, body, p, h1, h2 {
     font-family: $default-font;
 }
 

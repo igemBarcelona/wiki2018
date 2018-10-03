@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=2.5" />
+  <!-- Title, Description -->
+  <title>Wiki</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis cupiditate ducimus modi culpa. Et ducimus excepturi molestiae alias.">
+  <!-- Open Graph Metadata -->
+  <meta property="og:url" content="" /> <!-- PAGE URL -->
+  <meta property="og:type" content="website" /> <!-- TYPE -->
+  <meta property="og:title" content="" /> <!-- TITLE -->
+  <meta property="og:description" content="" /> <!-- DESCRIPTION-->
+  <meta property="og:image" content="" /> <!-- IMAGE URL -->
+  <!-- Stylesheets, Fonts, Neccessary Scripts -->
+  <link rel="stylesheet" href="css/master.min.css">
+  <script src="js/plotly.js"></script>
+</head>
+
+<body>
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+    <div class="container">
+
+      <div class="navbar-brand">
+        <a class="navbar-logo" href="#">
+          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+        </a>
+        <div class="navbar-burger" data-target="navbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+      <div class="navbar-menu" id="navbar-menu">
+        <!-- navbar items -->
+        <div class="navbar-grid">
+            <!--class is-active for showing active menu-->
+            <a class="navbar-item is-active" href="Description.html">Project</a>
+            <a class="navbar-item" href="DryLab.html">DryLab</a>
+            <a class="navbar-item" href="Parts.html">Parts</a>
+            <a class="navbar-item" href="Deliverables.html">Deliverables</a>
+            <a class="navbar-item" href="WetLab.html">WetLab</a>
+            <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
+            <a class="navbar-item" href="Aboutteam.html">Team</a>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div id="blur"></div>
+    <!-- Swiper -->
+    <div class="swiper-container" id="sw-container">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide" href="Basic.html">
+          <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--basicpart_3.svg" alt="">
+          <p>Basic Parts</p>
+        </a>
+        <a class="swiper-slide" href="Composite.html">
+          <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
+          <p>Composite Parts</p>
+        </a>
+        <a class="swiper-slide" href="Improve.html">
+          <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--improvedpart_1.svg" alt="">
+          <p>Improved Parts</p>
+        </a>
+        <a class="swiper-slide" href="Registry.html">
+          <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--registryparts_2.svg" alt="">
+          <p>Parts Registry</p>
+        </a>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="">
+
+      <div>
+        <h1 class="heading">Jump off balcony, onto stranger's head ignore the squirrels, you'll never catch them anyway</h1>
+       
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+        <div>
+          <h3>Follow us at:</h3>
+          <a href="https://www.instagram.com/igembarcelona/"><img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--instagram.svg"
+              alt=""></a>
+          <a href="https://twitter.com/igemBarcelona"><img style="width: 50px" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
+              alt=""></a>
+          <a href="https://www.facebook.com/igembarcelona/""><img style=" width: 50px" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+            alt=""></a>
+        </div>
+        <div>
+          <center><h3>For Judges</h3></center> 
+          <div id="judges">
+            <a href="Attributions.html">Attributions</a>
+            <a href="Collaborations.html">Collaborations</a>
+            <a href="Demonstrate.html">Demonstration</a>
+            <a href="Human_Practices.html">Human Practices</a>
+            <a href="InterLab.html">InterLab</a>
+            <a href="Improve.html">Improved part</a>
+            <a href="http://igem.org/2018_Judging_Form?id=2581">Judging Form</a>
+            <a href="Model.html">Model</a>
+            <a href="Parts">Parts</a>
+          </div>
+        </div>
+  
+        <div class="footer-contact">
+          <h3>Contact us:</h3>
+            <p>igem [at] upf [dot] edu</p>
+            <p> PRBB Building</p>
+            <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
+        </div>
+  
+      </div>
+    </footer>
+
+  <!-- JS code -->
+  <script src="js/scripts.js"></script>
+  <script src="js/devel.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      loop: true,
+      freeMode: true,
+      observer: true,
+      watchOverflow: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+      },
+      preventClicks: true,
+    });
+  </script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ $grey-bar: #36393D;
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 // Variables
-$default-font: 'PT Sans', sans-serif;
+$default-font: 'PT Sans', sans-serif !important;
 
 html, body, p, h1, h2 {
     font-family: $default-font;

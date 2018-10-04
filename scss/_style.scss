@@ -34,7 +34,6 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  z-index: 9999;
 }
 
 article,
@@ -48,8 +47,9 @@ aside {
 }
 
 header {
-  @include container;
   margin: 1rem 0;
+  z-index: 9999;
+  text-align: center;
 }
 
 .header {

@@ -123,19 +123,22 @@
           and it was set as room temperature (around 24-25ºC). The excitation filter was 485/20 nm and
           the emission filter 528/20 nm and bottom optics were used. Moreover, the plates were black and flat-bottomed.</p>
         <p>Eight plasmids needed to be characterized in DH5-alpha E.coli strain in order to follow the protocol. The
-          strain was obtained by collaboration with <a class="white-background-link" href="collaborations.html">BIO-IQS iGEM team</a>. The
-          plasmids are the following: 
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_R0040">BBa_R0040</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_R0040">BBa_R0040</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_I20270">BBa_I20270</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J3604000">BBa_J3604000</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBA_J364001">BBA_J364001</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364002">BBa_J364002</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364007">BBa_J364007</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364008">BBa_J364008</a>,
-            <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364009">BBa_J364009</a>. </p>
-        <p>The materials used over the protocol are the same ones specified in the <a class="white-background-link" href="http://2018.igem.org/wiki/images/0/09/2018_InterLab_Plate_Reader_Protocol.pdf"><b>iGEM 2018 Interlab Study
-            Protocol.</a></b>
+          strain was obtained by collaboration with <a class="white-background-link" href="collaborations.html">BIO-IQS
+            iGEM team</a>. The
+          plasmids are the following:
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_R0040">BBa_R0040</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_R0040">BBa_R0040</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_I20270">BBa_I20270</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J3604000">BBa_J3604000</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBA_J364001">BBA_J364001</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364002">BBa_J364002</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364007">BBa_J364007</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364008">BBa_J364008</a>,
+          <a class="white-background-link" href="http://parts.igem.org/Part:BBa_J364009">BBa_J364009</a>. </p>
+        <p>The materials used over the protocol are the same ones specified in the <a class="white-background-link"
+            href="http://2018.igem.org/wiki/images/0/09/2018_InterLab_Plate_Reader_Protocol.pdf"><b>iGEM 2018 Interlab
+              Study
+              Protocol.</a></b>
         </p>
         <h2>Results</h2>
         <h3>Calibration</h3>
@@ -207,8 +210,8 @@
                 x: x,
                 y: y,
                 error_y: {
-                  color: '#f26d6b',
-                  thickness: 1.5,
+                  color: '#0079bf',
+                  thickness: 1,
                   type: 'data',
                   array: [0.0284605, 0.038888726, 0.04305423, 0.046768937, 0.02935274, 0.023963515, 0.013889446,
                     0.008041559, 0.0065, 0.0053541264, 0.004358899, 0.0009574255
@@ -216,9 +219,50 @@
                   visible: true
                 },
                 type: 'scatter',
+                line: {
+                  color: "#0079bf",
+                  width: 1,
+                },
               };
               var data = [trace1];
-              Plotly.newPlot('interlab_standardcurve_1', data);
+              var layout = {
+                title: "Particle Standard Curve",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                },
+                xaxis: {
+                  title: "Concentration UNITS!!!",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+                yaxis: {
+                  title: "OD 600nm ",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+              };
+              Plotly.newPlot('interlab_standardcurve_1', data, layout, {
+                displayModeBar: false
+              });
             </script>
           </div>
           <h6>Figure X BLA BLA BLAAA</h6>
@@ -237,29 +281,64 @@
                 x: x,
                 y: y,
                 error_y: {
-                  color: '#f26d6b',
-                  thickness: 1.5,
+                  color: '#C6E1D5',
+                  thickness: 1,
                   type: 'data',
                   array: [0.0284605, 0.038888726, 0.04305423, 0.046768937, 0.02935274, 0.023963515, 0.013889446,
                     0.008041559, 0.0065, 0.0053541264, 0.004358899, 0.0009574255
                   ],
-                  visible: true
+                  visible: true,
+                },
+                line: {
+                  color: "#c6e1d5",
+                  width: 1,
                 },
                 type: 'scatter',
               };
               var data = [x, y, trace1];
               var layout = {
+                title: "Particle Standard Curve Logaritmic",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                },
                 xaxis: {
                   type: 'log',
-                  autorange: true
+                  autorange: true,
+                  title: "Concentration UNITS!!!",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
                 },
                 yaxis: {
                   type: 'log',
-                  autorange: true
-                }
+                  autorange: true,
+                  title: "OD 600nm ",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
               };
 
-              Plotly.newPlot('interlab_standardcurve_2', data, layout);
+              Plotly.newPlot('interlab_standardcurve_2', data, layout, {
+                displayModeBar: false
+              });
             </script>
           </div>
           <h6>Figure X BLA BLA BLA</h6>
@@ -325,18 +404,59 @@
                 x: x,
                 y: y,
                 error_y: {
-                  color: '#f26d6b',
-                  thickness: 1.5,
+                  color: '#577d95',
+                  thickness: 1,
                   type: 'data',
                   array: [1309.3918, 572.0748, 296.1805, 234.9048, 152.0318, 34.9714, 10.9962, 470.9904, 230.8973,
                     146.0160, 72.7324, 0.9574
                   ],
                   visible: true
                 },
+                line: {
+                  color: "#577d95",
+                  width: 1,
+                },
                 type: 'scatter',
               };
               var data = [trace1];
-              Plotly.newPlot('interlab_standardcurve_3', data);
+              var layout = {
+                title: "Fluorescein Standard Curve",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                },
+                xaxis: {
+                  title: "Concentration of beads????",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+                yaxis: {
+                  title: "???? Fluorescence a.u.",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+              };
+              Plotly.newPlot('interlab_standardcurve_3', data, layout, {
+                displayModeBar: false
+              });
             </script>
           </div>
           <h6>Figure X BLA BLA BLAAA</h6>
@@ -351,29 +471,64 @@
                 x: x,
                 y: y,
                 error_y: {
-                  color: '#f26d6b',
-                  thickness: 1.5,
+                  color: '225A7F',
+                  thickness: 1,
                   type: 'data',
                   array: [1309.3918, 572.0748, 296.1805, 234.9048, 152.0318, 34.9714, 10.9962, 470.9904, 230.8973,
                     146.0160, 72.7324, 0.9574
                   ],
-                  visible: true
+                  visible: true,
                 },
                 type: 'scatter',
+                line: {
+                  color: "#225A7F",
+                  width: 1,
+                },
               };
               var data = [x, y, trace1];
               var layout = {
+                title: "Fluorescein Standard Curve Logaritmic",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                },
                 xaxis: {
                   type: 'log',
-                  autorange: true
+                  autorange: true,
+                  title: "Concentration UNITS!!!",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
                 },
                 yaxis: {
                   type: 'log',
-                  autorange: true
-                }
+                  autorange: true,
+                  title: "Fluorescence OD ???? ",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
               };
 
-              Plotly.newPlot('interlab_standardcurve_4', data, layout);
+              Plotly.newPlot('interlab_standardcurve_4', data, layout, {
+                displayModeBar: false
+              });
             </script>
           </div>
           <h6>Figure X BLA BLA BLA</h6>
@@ -443,7 +598,7 @@
         <h3>Measurement</h3>
         <h4>Fluorescence per optical density</h4>
         <center>
-        <div id="interlab_measure1" style="width:90%;height:400px;"></div>
+          <div id="interlab_measure1" style="width:90%;height:400px;"></div>
           <script>
             var x = ['Negative Control', 'Negative Control', 'Negative Control', 'Negative Control', 'Negative Control',
               'Negative Control', 'Positive Control', 'Positive Control', 'Positive Control', 'Positive Control',
@@ -487,139 +642,251 @@
             };
 
             var data = [hour0, hour6];
-
             var layout = {
+              boxmode: 'group',
+              title: "uM Fluorescein per OD",
+              titlefont: {
+                family: "PT Sans",
+                size: 15,
+              },
+              xaxis: {
+                autorange: true,
+                title: "Devices",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
               yaxis: {
                 zeroline: false,
-                title: 'Fluorescein/OD',
+                autorange: true,
+                title: "Fluorescein/OD",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
               },
-              title: 'uM Fluorescein per OD',
-              boxmode: 'group'
             };
 
-            Plotly.newPlot('interlab_measure1', data, layout);
+            Plotly.newPlot('interlab_measure1', data, layout, {
+              displayModeBar: false
+            });
           </script>
-         
-        <h6>Figure X | BLAAAAA </h6>
-        <div id="interlab_measure2" style="width:90%;height:400px;">
-          <script>
-            var x = ['Negative Control', 'Negative Control', 'Negative Control', 'Negative Control', 'Negative Control',
-              'Negative Control', 'Positive Control', 'Positive Control', 'Positive Control', 'Positive Control',
-              'Positive Control', 'Positive Control', 'Device 1', 'Device 1', 'Device 1', 'Device 1', 'Device 1',
-              'Device 1', 'Device 2', 'Device 2', 'Device 2', 'Device 2', 'Device 2', 'Device 2', 'Device 3',
-              'Device 3', 'Device 3', 'Device 3', 'Device 3', 'Device 3', 'Device 4', 'Device 4', 'Device 4',
-              'Device 4', 'Device 4', 'Device 4', 'Device 5',
-              'Device 5', 'Device 5', 'Device 5', 'Device 5', 'Device 5', 'Device 6', 'Device 6', 'Device 6',
-              'Device 6', 'Device 6', 'Device 6',
-            ]
-            var hour0 = {
-              y: [5420.00, 7970.00, 9720.00, 9560.00, 7490.00, 13400.00, 11000.00, 15700.00, 12800.00, 15600.00,
-                6070.00, 14100.00, 12800.00, 24700.00, 11800.00, 20300.00, 25700.00, 29200.00, 28400.00, 26400.00,
-                28900.00, 35900.00, 26600.00, 35500.00, 20200.00, 19300.00, 22600.00, 21100.00, 21500.00, 26500.00,
-                18700.00, 23600.00, 9960.00, 12800.00, 9880.00, 9560.00, 11000.00, 23000.00, 12400.00, 15900.00,
-                43000.00, 36700.00, 48600.00, 41400.00, 42800.00, 49700.00, 37800.00, 55800.00, 23400.00, 32100.00,
-                33300.00, 28500.00, 31700.00, 34500.00, 24400.00, 42200.00, 11200.00, 10800.00, 8770.00, 7970.00,
-                16400.00, 23600.00, 14600.00, 15600.000
-              ],
-              x: x,
-              name: 'Hour 0',
-              marker: {
-                color: '#c6e1d5'
-              },
-              type: 'box',
-              boxmean: 'true'
-            };
 
-            var hour6 = {
-              y: [95.20, 127.00, 129.00, 132.00, 122.00, 213.00, 136.00, 126.00, 3550.00, 3620.00, 3610.00, 630.00,
-                3760.00, 3810.00, 3640.00, 3720.00, 2760.00, 2800.00, 2810.00, 2770.00, 2800.00, 3160.00, 2880.00,
-                2900.00, 5380.00, 5340.00, 5360.00, 5480.00, 5550.00, 5490.00, 5770.00, 5620.00, 195.00, 203.00,
-                205.00, 216.00, 207.00, 296.00, 228.00, 206.00, 3110.00, 3070.00, 3050.00, 3080.00, 3110.00,
-                3350.00, 3120.00, 3110.00, 2480.00, 2560.00, 2530.00, 520.00, 2510.00, 2680.00, 2530.00, 2650.00,
-                2330.00, 2360.00, 2330.00, 2430.00, 2420.00, 2520.00, 2450.00, 2430.00
-              ],
-              x: x,
-              name: 'Hour 6',
-              marker: {
-                color: '#c2ca6c'
-              },
-              type: 'box',
-              boxmean: 'true',
-            };
+          <h6>Figure X | BLAAAAA </h6>
+          <div id="interlab_measure2" style="width:90%;height:400px;">
+            <script>
+              var x = ['Negative Control', 'Negative Control', 'Negative Control', 'Negative Control',
+                'Negative Control',
+                'Negative Control', 'Positive Control', 'Positive Control', 'Positive Control', 'Positive Control',
+                'Positive Control', 'Positive Control', 'Device 1', 'Device 1', 'Device 1', 'Device 1', 'Device 1',
+                'Device 1', 'Device 2', 'Device 2', 'Device 2', 'Device 2', 'Device 2', 'Device 2', 'Device 3',
+                'Device 3', 'Device 3', 'Device 3', 'Device 3', 'Device 3', 'Device 4', 'Device 4', 'Device 4',
+                'Device 4', 'Device 4', 'Device 4', 'Device 5',
+                'Device 5', 'Device 5', 'Device 5', 'Device 5', 'Device 5', 'Device 6', 'Device 6', 'Device 6',
+                'Device 6', 'Device 6', 'Device 6',
+              ]
+              var hour0 = {
+                y: [5420.00, 7970.00, 9720.00, 9560.00, 7490.00, 13400.00, 11000.00, 15700.00, 12800.00, 15600.00,
+                  6070.00, 14100.00, 12800.00, 24700.00, 11800.00, 20300.00, 25700.00, 29200.00, 28400.00, 26400.00,
+                  28900.00, 35900.00, 26600.00, 35500.00, 20200.00, 19300.00, 22600.00, 21100.00, 21500.00,
+                  26500.00,
+                  18700.00, 23600.00, 9960.00, 12800.00, 9880.00, 9560.00, 11000.00, 23000.00, 12400.00, 15900.00,
+                  43000.00, 36700.00, 48600.00, 41400.00, 42800.00, 49700.00, 37800.00, 55800.00, 23400.00,
+                  32100.00,
+                  33300.00, 28500.00, 31700.00, 34500.00, 24400.00, 42200.00, 11200.00, 10800.00, 8770.00, 7970.00,
+                  16400.00, 23600.00, 14600.00, 15600.000
+                ],
+                x: x,
+                name: 'Hour 0',
+                marker: {
+                  color: '#c6e1d5'
+                },
+                type: 'box',
+                boxmean: 'true',
+              };
 
-            var data = [hour0, hour6];
+              var hour6 = {
+                y: [95.20, 127.00, 129.00, 132.00, 122.00, 213.00, 136.00, 126.00, 3550.00, 3620.00, 3610.00, 630.00,
+                  3760.00, 3810.00, 3640.00, 3720.00, 2760.00, 2800.00, 2810.00, 2770.00, 2800.00, 3160.00, 2880.00,
+                  2900.00, 5380.00, 5340.00, 5360.00, 5480.00, 5550.00, 5490.00, 5770.00, 5620.00, 195.00, 203.00,
+                  205.00, 216.00, 207.00, 296.00, 228.00, 206.00, 3110.00, 3070.00, 3050.00, 3080.00, 3110.00,
+                  3350.00, 3120.00, 3110.00, 2480.00, 2560.00, 2530.00, 520.00, 2510.00, 2680.00, 2530.00, 2650.00,
+                  2330.00, 2360.00, 2330.00, 2430.00, 2420.00, 2520.00, 2450.00, 2430.00
+                ],
+                x: x,
+                name: 'Hour 6',
+                marker: {
+                  color: '#c2ca6c'
+                },
+                type: 'box',
+                boxmean: 'true',
+              };
 
-            var layout = {
-              yaxis: {
-                zeroline: false,
-                title: 'MEFL/particle',
-              },
-              title: 'Fluorescence per particle',
-              boxmode: 'group'
-            };
+              var data = [hour0, hour6];
+              var layout = {
+                boxmode: 'group',
+                title: "Fluorescence per particle",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                },
+                xaxis: {
+                  autorange: true,
+                  title: "Devices",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+                yaxis: {
+                  zeroline: false,
+                  autorange: true,
+                  title: "MEFL/particle",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+              };
 
-            Plotly.newPlot('interlab_measure2', data, layout);
-          </script>
-        </div>
-        <h6>Figure X | BLAAAAA </h6>
-      </center>
+              Plotly.newPlot('interlab_measure2', data, layout, {
+                displayModeBar: false
+              });
+            </script>
+          </div>
+          <h6>Figure X | BLAAAAA </h6>
+        </center>
         <h4>Colony Forming Units per OD600</h4>
         <center>
-        <div id="interlab_measure3" style="width:90%;height:400px;">
-          <script>
-            var first = {
-              x: ['Negative Control', 'Positive Control',],
-              y: [300,286.333],
-              name: 'Dilution 10E+04',
-              error_y: {
-                type: 'data',
-                array: [0,21.407],
-                visible: true,
-                color: '#36393d',
-              },
-              type: 'bar',
-              marker: {
-                color: '#0079bf',
-              }
-            };
-            var second = {
-              x: ['Negative Control', 'Positive Control',],
-              y: [43.667, 53.167],
-              name: 'Dilution 10E+05',
-              error_y: {
-                type: 'data',
-                array: [14.39, 25.494],
-                visible: true
-              },
-              type: 'bar',
-              marker: {
-              color: '#c6e1d5',
-              }
-            };
-            var third = {
-              x: ['Negative Control', 'Positive Control',],
-              y: [5.167, 5.5],
-              name: 'Dilution 10E+06',
-              error_y: {
-                type: 'data',
-                array: [1.602, 1.975],
-                visible: true
-              },
-              type: 'bar',
-              marker: {
-              color: '#225A7F',
-              }
-            };
-            var data = [first, second, third];
-            var layout = {
-              barmode: 'group',
-              title: 'Colony Forming units per OD600 nm'
-            };
-            Plotly.newPlot('interlab_measure3', data, layout);
-          </script>
-        </div>
-        <h6>Figure X | BLAAAAA </h6>
-      </center>
+          <div id="interlab_measure3" style="width:90%;height:400px;">
+            <script>
+              var first = {
+                x: ['Negative Control', 'Positive Control', ],
+                y: [300, 286.333],
+                name: 'Dilution 10E+04',
+                error_y: {
+                  type: 'data',
+                  array: [0, 21.407],
+                  visible: true,
+                  thickness: 1,
+                  color: '#0079bf',
+                },
+                type: 'bar',
+                marker: {
+                  color: '#0079bf',
+                }
+              };
+              var second = {
+                x: ['Negative Control', 'Positive Control', ],
+                y: [43.667, 53.167],
+                name: 'Dilution 10E+05',
+                error_y: {
+                  type: 'data',
+                  array: [14.39, 25.494],
+                  visible: true,
+                  thickness: 1,
+                  color: "#c6e1d5",
+                },
+                type: 'bar',
+                marker: {
+                  color: '#c6e1d5',
+                }
+              };
+              var third = {
+                x: ['Negative Control', 'Positive Control', ],
+                y: [5.167, 5.5],
+                name: 'Dilution 10E+06',
+                error_y: {
+                  type: 'data',
+                  array: [1.602, 1.975],
+                  visible: true,
+                  thickness: 1,
+                  color: "#225a7f"
+                },
+                type: 'bar',
+                marker: {
+                  color: '#225A7F',
+                }
+              };
+              var data = [first, second, third];
+
+
+              var layout = {
+                barmode: 'group',
+                title: "Colony Forming units per OD600 nm",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                },
+                xaxis: {
+                  autorange: true,
+                  title: "Devices",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+                yaxis: {
+                  zeroline: false,
+                  autorange: true,
+                  title: "MEFL/particle",
+                  titlefont: {
+                    family: "PT Sans",
+                    size: 12,
+                    color: "#36393d",
+                  },
+                  showticklabels: true,
+                  tickfont: {
+                    family: "PT Sans",
+                    size: 11,
+                    color: "#36393d",
+                  },
+                },
+              };
+
+              Plotly.newPlot('interlab_measure3', data, layout, {
+                displayModeBar: false
+              });
+            </script>
+          </div>
+          <h6>Figure X | BLAAAAA </h6>
+        </center>
       </div>
 
     </section>

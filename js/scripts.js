@@ -3651,17 +3651,15 @@ function Fix_on_scroll() {
     if (document.body.scrollTop > h || document.documentElement.scrollTop > h) {
         document.getElementById("header").classList.add("header-fixed");
         document.getElementById("blur").classList.add("header-blur");
-        document.getElementById("sw-container").classList.remove("swiper-margin");
         for (i = 0; i < slides.length; i++) {
-            slides[i].childNodes[1].style.display = "none";
+            slides[i].childNodes[1].style.width = "0";
         }
     } 
     else {
         document.getElementById("header").classList.remove("header-fixed");
         document.getElementById("blur").classList.remove("header-blur");
-        document.getElementById("sw-container").classList.add("swiper-margin");
         for (i = 0; i < slides.length; i++) {
-            slides[i].childNodes[1].style.display = "inline-block";
+            slides[i].childNodes[1].style.width = "50px";
         }
     }
 }

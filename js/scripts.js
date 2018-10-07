@@ -3652,14 +3652,14 @@ function Fix_on_scroll() {
         document.getElementById("header").classList.add("header-fixed");
         document.getElementById("blur").classList.add("header-blur");
         for (i = 0; i < slides.length; i++) {
-            slides[i].childNodes[1].style.width = "0";
+            slides[i].childNodes[1].style.height = "0";
         }
     } 
     else {
         document.getElementById("header").classList.remove("header-fixed");
         document.getElementById("blur").classList.remove("header-blur");
         for (i = 0; i < slides.length; i++) {
-            slides[i].childNodes[1].style.width = "50px";
+            slides[i].childNodes[1].style.height = "50px";
         }
     }
 }

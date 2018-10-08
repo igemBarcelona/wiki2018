@@ -22,6 +22,10 @@
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
+  text-justify: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
   
   p {
     text-align: center;

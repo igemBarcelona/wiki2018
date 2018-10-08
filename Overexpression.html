@@ -60,26 +60,26 @@
       <div class="swiper-wrapper">
         <a class="swiper-slide" href="Background.html">
           <embed  src="assets/T--UPF_CRG_Barcelona--background_2.svg" alt="">
-          <p>Background<br>and design</p>
+          <p>Background<br>and design</p>\
         </a>
         <a class="swiper-slide" href="Overexpression.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--fads_2.svg" alt="">
+          <embed src="assets/T--UPF_CRG_Barcelona--fads_2.svg" alt="">
           <p>Overexpression</p>
         </a>
         <a class="swiper-slide" href="Biosensor.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--biosensor_3.svg" alt="">
+          <embed src="assets/T--UPF_CRG_Barcelona--biosensor_3.svg" alt="">
           <p>Biosensor</p>
         </a>
         <a class="swiper-slide" href="Integration.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--mage_2.svg" alt="">
+          <embed src="assets/T--UPF_CRG_Barcelona--mage_2.svg" alt="">
           <p>Integration</p>
         </a>
         <a class="swiper-slide" href="Results.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--results_2.svg" alt="">
+          <embed src="assets/T--UPF_CRG_Barcelona--results_2.svg" alt="">
           <p>Results</p>
         </a>
         <a class="swiper-slide" href="Demonstration.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--demonstration_3.svg" alt="">
+          <embed src="assets/T--UPF_CRG_Barcelona--demonstration_3.svg" alt="">
           <p>Demonstration</p>
         </a>
       </div>
@@ -94,10 +94,70 @@
     <section class="">
 
       <div>
-        <h1 class="heading">OVEREXPRESSION</h1>
-        <center>
+        <h1 class="heading">Enhancing <i>E. Coli</i> beta-oxidation</h1>
 
-        </center>
+        <p>The main goal of our project is to obtain a system with an increased fatty acid uptake. In order to asses
+          this different approaches were considered. The first one was to overexpress the own <i>E. coli</i> fatty
+          acids degradation family genes.</p>
+
+        <p>Fatty acids are essential membrane components and important sources of metabolic energy. Moreover, they
+          constitute important members of signalling pathways. Here we have been working with <i>E. coli</i>, one of
+          the best studied models of fatty acid metabolism. <i>E. coli</i> can use fatty acids with various chain
+          lengths as sole carbon and energy sources. After uptake, these fatty acids can either be degraded via the
+          beta-oxidation pathway or used as precursors for membrane phospholipid biosynthesis. The degradation pathway
+          is catalysed by the enzymes encoded by the fad regulon, which includes FadL, FadD, FadE, FadA and FadB.</p>
+
+        <img src=”assets/ <->”>
+        <!--Foto esquema beta oxidació-->
+
+        <p><b>FadL</b>and <b>FadD</b> are responsible for the fatty acid transport across the cell membrane. FadL is an
+          outer membrane protein involved in the transport of long-chain fatty acids via a transport/acyl-activation
+          mechanism. Transport from the periplasm to the cytosol is performed by FadD and is coupled to the acyl-CoA
+          ester formation, which is necessary to the previous fatty acid degradation steps.
+          To metabolize fatty acids, they must be activated to acyl- CoA esters, this step is performed through FadD,
+          an inner membrane-associated acyl-CoA synthase.</p>
+
+        <p>The first step in the beta-oxidation cycle consists in the conversion of acyl-CoA to enoyl-CoA. The enzyme
+          responsible for this step is <b>fadE</b>. It appears to be the only acyl-CoA dehydrogenase in <i>E. coli</i>.
+          The beta-oxidation pathway starts under catalysis of FadE (for saturated fatty acid) and FadH (for
+          unsaturated fatty acid) enzymes, followed by FadB and FadA enzymes. </p>
+
+        <p>The following steps in this cycle are: hydration, oxidation and thiolytic cleavage. They are performed by a
+          tetrameric complex consisting of two copies each of <b>fadB</b> and <b>fadA</b>.</p>
+
+        <p>It is important to consider that <b>fadH</b>, another enoyl-CoA reductase relevant in this pathway, has been
+          shown to have specificity for unsaturated fatty acids (such as oleic acid) [1]. This way, we can assume that
+          there is another enoyl-CoA showing specificity for saturated fatty acids in <i>E. coli</i>. The team WHU
+          China 2012, who worked with LCFA, didn’t observe changes in oleic acid uptake when fadE was overexpressed in
+          <i>E. coli</i>. Therefore, targeting fadE in our system and demonstrating an increase in palmitic acid uptake
+          could prove this gene’s specificity saturated fatty acids. Moreover, we could develop a system with a
+          preference for harmful saturated fatty acid instead of beneficial saturated ones.</p>
+
+        <p>Taking into account the key role of these enzymes in the fatty acid degradation metabolism we considered
+          overexpressing them in our system. In this way, we first designed a genetic construct with ptet
+          promoter (BBa_R0040) (inducible by atc) and a strong rbs (BBa_B0032) so as to express this genes in <i>E.coli</i> in a
+          tunable expression system. </p>
+
+        <img src=”assets/ <->”>
+        <!--foto constructes-->
+
+        <p>A system that could have all these genes being overexpressed at the same time would be the optimal one.
+          Taking this into account we designed a three compatible plasmid system using three different antibiotic
+          resistances. In this way, we could be acting and targeting all the steps in the metabolic pathway of LCFA
+          degradation simultaneously.</p>
+
+        <h2>foto plasmids</h2>
+
+        <p>We planned to overexpress fadL and fadD together due to its proximity in the metabolic pathway. On the other
+          hand, fadB and fadA were also planned to be overexpressed in the same plasmid, as they form a tetrameric
+          complex acting together.</p>
+
+          <h5>References: </h5>
+<h5>[*] Fujita, Yasutaro, Hiroshi Matsuoka, and Kazutake Hirooka. <i>Regulation of fatty acid metabolism in bacteria.</i> Molecular microbiology 66.4 (2007): 829-839.</h5>
+
+<h5>[1] Dommes, V., and W. H. Kunau. <i>2, 4-Dienoyl coenzyme A reductases from bovine liver and Escherichia coli. Comparison of properties.</i> Journal of Biological Chemistry 259.3 (1984): 1781-1788.</h5>
+
+
 
       </div>
 
@@ -114,7 +174,7 @@
             alt=""></a>
         <a href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
             alt=""></a>
-        <a href="https://www.facebook.com/igembarcelona/""><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+        <a href="https://www.facebook.com/igembarcelona/""><embed class=" social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
           alt=""></a>
       </div>
 

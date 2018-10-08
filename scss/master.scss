@@ -17,7 +17,22 @@ $grey-bar: #36393D;
 // Variables
 $default-font: 'PT Sans', sans-serif !important;
 
-html, body, p, h1, h2 {
+/* 
+
+Copyright (c) 2010, ParaType Ltd. (http://www.paratype.com/public),
+with Reserved Font Names "PT Sans" and "ParaType".
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+*/
+
+html,
+body,
+p,
+h1,
+h2 {
     font-family: $default-font;
 }
 

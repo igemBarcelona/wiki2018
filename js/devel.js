@@ -39,7 +39,6 @@ function Fix_on_scroll() {
             slides[i].childNodes[1].style.transition = "height 0s linear 0s";
             slides[i].childNodes[1].style.height = "0px";
         }
-        console.log(window.scrollY);
     } 
     if (window.scrollY < h) {
         document.getElementById("header").classList.remove("header-fixed");
@@ -48,6 +47,5 @@ function Fix_on_scroll() {
             slides[i].childNodes[1].style.transition = "height 0s linear 0s";
             slides[i].childNodes[1].style.height = "50px";
         }
-        console.log(window.scrollY);
     }
 }

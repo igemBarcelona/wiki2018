@@ -1,6 +1,14 @@
-.swiper-container {
+#sw-container {
   @include container;
   padding: 0 1rem;
+}
+
+#swiper-photos {
+  margin: 0;
+  overflow:hidden;
+  img {
+    max-height: 70%;
+  }
 }
 
 .swiper-slide {
@@ -21,4 +29,12 @@
     height: 50px;
     pointer-events: none;
   }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #c6e1d5;
+}
+
+.swiper-pagination-bullet {
+  background-color: #c6e1d5;
 }

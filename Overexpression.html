@@ -96,25 +96,27 @@
       <div>
         <h1 class="heading">Enhancing <i>E. Coli</i> beta-oxidation</h1>
         <p>The main goal of our project is to obtain a system with an increased fatty acid (FA) uptake. In order to
-          asses this different approaches were considered. The first one was to overexpress the own <i>E. coli</i>
+          asses this, different approaches were considered. The first one was to overexpress the own <i>E. coli</i>
           fatty acids degradation family genes.</p>
 
         <p>FAs are essential membrane components and important sources of metabolic energy. Moreover, they constitute
           important members of signalling pathways. Here we have been working with <i>E. coli</i>, one of the best
-          studied models of FA metabolism. <i>E. coli</i> can use fatty acids with various chain lengths as sole carbon
-          and energy sources. After uptake, these FAs can either be degraded via the beta-oxidation pathway or used as
+          studied models of FA metabolism. <i>E. coli</i> can use FAs with various chain lengths as sole carbon and
+          energy sources. After uptake, these FAs can either be degraded via the beta-oxidation pathway or used as
           precursors for membrane phospholipid biosynthesis. The degradation pathway is catalysed by the enzymes
-          encoded by the fad regulon, which includes FadL, FadD, FadE, FadA and FadB.</p>
+          encoded by the fad regulon, which includes FadL, FadD, FadE, FadA and FadB [1].</p>
+
         <!--Foto esquema beta oxidació-->
         <center><img src="assets/T--UPF_CRG_Barcelona--overexpression_scheme.svg" style="width: 450px;">
           <h6>Figure X | BLABLALBLABLA</h6>
         </center>
 
-        <p><b>FadL</b>and <b>FadD</b> are responsible for the FA transport across the cell membrane. FadL is an outer
-          membrane protein involved in the transport of long-chain fatty acids (LCFA) to de periplasm. From the
-          periplasm to the cytosol, the transport is performed by FadD and is coupled to the acyl-CoA ester formation,
-          which is necessary to the previous FA degradation steps. To metabolize FAs, they must be activated to acyl-
-          CoA esters, this step is performed through FadD, an inner membrane-associated acyl-CoA synthase.</p>
+
+        <p><b>FadL</b> and <b>FadD</b> are responsible for the FA transport across the cell membrane. FadL is an outer
+          membrane homodimeric channel involved in the transport of long-chain fatty acids (LCFA) to de periplasm. From
+          the periplasm to the cytosol, the transport is performed by FadD and is coupled to the acyl-CoA ester
+          formation. To metabolize FAs, they must be activated to acyl- CoA esters, this step is performed through
+          FadD, an inner membrane-associated acyl-CoA synthase.</p>
 
         <p>The first step in the beta-oxidation cycle consists in the conversion of acyl-CoA to enoyl-CoA. The enzyme
           responsible for this step is <b>fadE</b>. It appears to be the only acyl-CoA dehydrogenase in <i>E. coli</i>.
@@ -122,38 +124,50 @@
           unsaturated fatty acid) enzymes, followed by FadB and FadA enzymes. </p>
 
         <p>The following steps in this cycle are: hydration, oxidation and thiolytic cleavage. They are performed by a
-          tetrameric complex consisting of two copies each of <b>fadB</b> and <b>fadA</b>.</p>
+          tetrameric complex consisting of homodimers of <b>fadB</b> and <b>fadA</b>.</p>
 
         <p>It is important to consider that <b>fadH</b>, another enoyl-CoA reductase relevant in this pathway, has been
-          shown to have specificity for unsaturated fatty acids (UFAs), such as oleic acid [1]. This way, we can assume
+          shown to have specificity for unsaturated fatty acids (UFAs), such as oleic acid [2]. This way, we can assume
           that there is another enoyl-CoA showing specificity for saturated fatty acids (SFAs) in <i>E. coli</i>. The
           team WHU China 2012, who worked with LCFA, didn’t observe changes in oleic acid uptake when fadE was
           overexpressed in <i>E. coli</i>. Therefore, targeting fadE in our system and demonstrating an increase in
           palmitic acid uptake could prove this gene’s specificity SFAs. Moreover, we could develop a system with a
           preference for harmful SFAs instead of beneficial UFA ones.</p>
 
-        <p>Taking into account the key role of these enzymes in the fatty acid degradation metabolism we considered
+        <p>Taking into account the key role of these enzymes in the FA degradation metabolism we considered
           overexpressing them in our system. In this way, we first designed a genetic construct with pTet promoter
-          (BBa_R0040) (inducible by ATC) and a strong rbs (BBa_B0032) so as to express this genes in <i>E.coli</i> in a
+          (BBa_R0040), inducible by ATC, and a strong rbs (BBa_B0032) so as to express this genes in <i>E.coli</i> in a
           tunable expression system. </p>
+
         <!--foto constructes-->
         <center><img src="assets/T--UPF_CRG_Barcelona--fads_scheme.svg" style="width: 225px;">
           <h6>Figure X | BLA BLA BLA BLA</h6>
         </center>
+
+
         <p>A system that could have all these genes being overexpressed at the same time would be the optimal one.
           Taking this into account we designed a three compatible plasmid system using three different antibiotic
           resistances. In this way, we could be acting and targeting all the steps in the metabolic pathway of LCFA
           degradation simultaneously.</p>
+
         <center><img src="assets/T--UPF_CRG_Barcelona--fads_3plasmics.svg" style="width: 650px;">
           <h6>Figure X | BLA BLA BLA BLA </h6>
         </center>
-        <p>We planned to overexpress fadL and fadD together due to its proximity in the metabolic pathway. On the other
-          hand, fadB and fadA were also planned to be overexpressed in the same plasmid, as they form a tetrameric
+
+
+        <p>We planned to overexpress FadL and FadD together due to its proximity in the metabolic pathway. On the other
+          hand, FadB and FadA were also planned to be overexpressed in the same plasmid, as they form a tetrameric
           complex acting together.</p>
+
+        <p>This system will constitute a proof of concept for our probiotic. In this way antibiotic resistance is used
+          as the selective agent. However, biocontainment remains a key issue for our team. Hence, we are planning to
+          remove antibiotic resistance for the final design of the probiotic considering the harmful consequences of
+          spreading antibiotic resistance. </p>
+
 
 
         <h5 style="font-weight: 800;">References:</h5>
-        <h5>[1] Fujita Y, Hiroshi M, Kazutake H. <i>Regulation of fatty acid metabolism in
+        <h5 id=”Fujita”>[1] Fujita Y, Hiroshi M, Kazutake H. <i>Regulation of fatty acid metabolism in
             bacteria.</i> Molecular microbiology 66.4 (2007): 829-839.</h5>
 
         <h5>[2] Dommes V, Kunau WH. <i>2, 4-Dienoyl coenzyme A reductases from bovine liver and Escherichia

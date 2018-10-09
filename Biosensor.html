@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=2.5" />
+  <!-- Title, Description -->
+  <title>Wiki</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis cupiditate ducimus modi culpa. Et ducimus excepturi molestiae alias.">
+  <!-- Open Graph Metadata -->
+  <meta property="og:url" content="" /> <!-- PAGE URL -->
+  <meta property="og:type" content="website" /> <!-- TYPE -->
+  <meta property="og:title" content="" /> <!-- TITLE -->
+  <meta property="og:description" content="" /> <!-- DESCRIPTION-->
+  <meta property="og:image" content="" /> <!-- IMAGE URL -->
+  <!-- Stylesheets, Fonts, Neccessary Scripts -->
+  <link rel="stylesheet" href="css/master.min.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+    <div class="container">
+
+      <div class="navbar-brand">
+        <a class="navbar-logo" href="#">
+          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+        </a>
+
+        <div class="navbar-burger" data-target="navbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+      <div class="navbar-menu" id="navbar-menu">
+        <!-- navbar items -->
+        <div class="navbar-grid">
+          <!--class is-active for showing active menu-->
+          <a class="navbar-item is-active" href="Description.html">Project</a>
+          <a class="navbar-item" href="DryLab.html">DryLab</a>
+          <a class="navbar-item" href="Parts.html">Parts</a>
+          <a class="navbar-item" href="Deliverables.html">Deliverables</a>
+          <a class="navbar-item" href="WetLab.html">WetLab</a>
+          <a class="navbar-item" href="intro_HP.html">Human Practices</a>
+          <a class="navbar-item" href="Aboutteam.html">Team</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div id="blur"></div>
+    <!-- Swiper -->
+    <div class="swiper-container" id="sw-container">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide" href="Background.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--background_2.svg" alt="">
+          <p>Background<br>and design</p>
+        </a>
+        <a class="swiper-slide" href="Overexpression.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--fads_2.svg" alt="">
+          <p>Overexpression</p>
+        </a>
+        <a class="swiper-slide" href="Biosensor.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--biosensor_3.svg" alt="">
+          <p>Biosensor</p>
+        </a>
+        <a class="swiper-slide" href="Integration.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--mage_2.svg" alt="">
+          <p>Integration</p>
+        </a>
+        <a class="swiper-slide" href="Results.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--results_2.svg" alt="">
+          <p>Results</p>
+        </a>
+        <a class="swiper-slide" href="Demonstration.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--demonstration_3.svg" alt="">
+          <p>Demonstration</p>
+        </a>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="">
+
+      <div>
+        <h1 class="heading">LONG CHAIN FATTY ACUD INTRACELLULAR BIOSENSOR</h1>
+
+        <p>Analyzing fatty acid uptake capabilities of bacteria is not an easy task. Up to the moment, the most
+          reliable technique is GC/MS. This method, only allows to obtain discrete data and it is very expensive. Also,
+          very few laboratories have the necessary equipment. Therefore, performing these experiments is a task that
+          can only be done by a very limited part of the research community.</p>
+
+        <p>Our team aims to design a genetic long chain fatty acid (LCFA) sensor device. This system will allow a
+          reliable characterization of the fatty acid absorption capabilities of any bacterial system. This system can
+          be coupled to other genes allowing their expression only in the presence of LCFA without compromising the
+          LCFA uptake capabilities of bacteria. Thus creating a LCFA-dependent expression system.</p>
+
+        <p>In order to sense LCFAs, we take advantage of the <i>E. coli</i> endogenous promoter <b>pFad</b>. This
+          promotor works as follows:</p>
+
+
+        <!-- Scheme pFadBA & FadR-->
+        <center><img src="/assets/T--UPF_CRG_Barcelona--biosensor_scheme.svg" style="width: 500px;">
+          <h6> Figure 1 | The pfad promoter is constitutively repressed by FadR protein. LCFA enter the cell through
+            the outer membrane receptor fadL, then, they get bound to acety-CoA. LCFA-acetyl-CoA is able to bind to
+            FadR which allows it to be released from the promoter making the later active </h6>
+        </center>
+
+        <p>FadR protein is the main player in transcription regulation of fatty acid (FA) metabolism. It is involved
+          in negative regulation of FA degradation, thus constitutively repressing the Fad genes. This repression is
+          mediated through the binding of LCFA-acetyl-CoA to FadR and the following release of FadR from the
+          promoters of the Fad genes allowing its transcription.</p>
+
+        <p>In bacteria, this sensing device is coupled to the transcription of Fad genes. These genes code for the
+          beta-oxidation enzymes, which are the ones that metabolize LCFA.</p>
+
+        <p>Other iGEM teams have previously attempted to create LCFA reporter systems by coupling the pFad promoter
+          to a fluorescent protein, such as NTU_Taida 2014. However, their systems had a very high baseline
+          expression of the reporter proteins. This did not allow them to see a significant signal rise after
+          induction with LCFA. In order to lower the baseline expression, these teams overexpressed the repressor
+          FadR. However, by overexpressing FadR, the Fad genes get repressed, this way their systems interfered with
+          LCFA absorption and metabolism. This is a major concern as it diminishes a lot LCFA absorption and it does
+          not allow to reliably discriminate within bacterial systems with enhanced LCFA uptake.</p>
+
+        <p>In order to tackle this problem, our team has designed a LCFA biosensor that does not need FadR
+          overexpression to work. To do so, we have followed four different approaches to really be able to modulate
+          the activation threshold and to diminish the baseline expression.</p>
+
+
+        <h2>Use of different RBS</h2>
+
+        <p>Although the promoter has leakage, if the RBS is weak with low LCFA indices the signal will not be
+          transmitted to the next node.</p>
+        <!-- Scheme RBS-->
+        <center><img src="/assets/T--UPF_CRG_Barcelona--rbs_1.svg" style="width: 200px; margin: 10px;">
+          <img src="/assets/T--UPF_CRG_Barcelona--rbs_2.svg" style="width: 200px; margin: 10px;">
+          <img src="/assets/T--UPF_CRG_Barcelona--rbs_3.svg" style="width: 200px; margin: 10px;">
+          <h6> Figure 2 | BLA BLA BLA </h6>
+        </center>
+
+        <h2>High-pass filter</h2>
+
+        <p>Through an incoherent feed-forward loop the effect called high-pass filter occurs. This structure is
+          widely used in the treatment of electrical and radiofrequency signals, since it causes the only signals
+          that pass to be those of a high frequency. In our case, the highpass filter eliminates weak signals by
+          passing only those strong, in other words, signals from higher LCFA concentrations. In this way we manage
+          to eliminate the baseline that the promoter has in case.</p>
+
+        <center><img src="assets/T--UPF_CRG_Barcelona--highpassfilter.svg" style="width: 500px;">
+          <h6>Figure 3 | BLA BLA BLA BLA BLA</h6>
+        </center>
+
+        <h2>Inducible LuxR-pLux engineered device</h2>
+
+        <p>We coupled the pfadBA promoter to the LuxR/pluxR lactone inducible system. This way, although the baseline
+          expression of LuxR is high, after LCFA induction there is a >10X folds concentration increase. This allows
+          the differential expression of the reporter protein, when the system is induced by the correct
+          concentration of lactone.</p>
+        <center><img src="assets/T--UPF_CRG_Barcelona--plux.svg" style="width: 500px;">
+          <h6>Figure 3 | BLA BLA BLA BLA</h6>
+        </center>
+
+
+        <h2>Optimized promoter</h2>
+
+        <p>As we have said before, pFadBA is a natural sensor with excessive leakage. However, there is an improved
+          version of the same called for, which we will use and characterize for the first time to avoid these levels
+          of basality.</p>
+
+        <center><img src="assets/T--UPF_CRG_Barcelona--par.svg" style="width: 250px;">
+          <h6>Figure 5 | BLA BLA BLA BLA BLA</h6>
+        </center>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h3>Follow us at:</h3>
+        <a href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg"
+            alt=""></a>
+        <a href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
+            alt=""></a>
+        <a href="https://www.facebook.com/igembarcelona/""><embed class=" social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+          alt=""></a>
+      </div>
+
+      <div>
+        <h3>Contact us:</h3>
+        <p>igem [at] upf [dot] edu</p>
+        <p> PRBB Building</p>
+        <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS code -->
+  <script src="js/scripts.js"></script>
+  <script src="js/devel.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      loop: true,
+      freeMode: true,
+      observer: true,
+      watchOverflow: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+      },
+      preventClicks: true,
+    });
+  </script>
+</body>
+
+</html>

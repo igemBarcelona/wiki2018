@@ -157,7 +157,6 @@ p {
 }
 
 h1 {
-  font-size: 45px;
   font-weight: 800;
   color: #36393d;
 }
@@ -331,4 +330,11 @@ tr:hover {
   display: inline-block;
   height: 50px;
   border-radius: 50%;
+}
+
+.full-width {
+  width: 100%;
+  .centered {
+    text-align: center;
+  }
 }

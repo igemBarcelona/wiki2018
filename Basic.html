@@ -38,15 +38,15 @@
       <div class="navbar-menu" id="navbar-menu">
         <!-- navbar items -->
         <div class="navbar-grid">
-            <!--class is-active for showing active menu-->
-            <a class="navbar-item is-active" href="Description.html">Project</a>
-            <a class="navbar-item" href="DryLab.html">DryLab</a>
-            <a class="navbar-item" href="Parts.html">Parts</a>
-            <a class="navbar-item" href="Deliverables.html">Deliverables</a>
-            <a class="navbar-item" href="WetLab.html">WetLab</a>
-            <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
-            <a class="navbar-item" href="Aboutteam.html">Team</a>
-          </div>
+          <!--class is-active for showing active menu-->
+          <a class="navbar-item is-active" href="Description.html">Project</a>
+          <a class="navbar-item" href="DryLab.html">DryLab</a>
+          <a class="navbar-item" href="Parts.html">Parts</a>
+          <a class="navbar-item" href="Deliverables.html">Deliverables</a>
+          <a class="navbar-item" href="WetLab.html">WetLab</a>
+          <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
+          <a class="navbar-item" href="Aboutteam.html">Team</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -60,6 +60,10 @@
           <embed src="assets/T--UPF_CRG_Barcelona--basicpart_3.svg" alt="">
           <p>Basic Parts</p>
         </a>
+        <a class="swiper-slide" href="Intermediate.html">
+            <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
+            <p>Construction<br>Intermediates</p>
+          </a>
         <a class="swiper-slide" href="Composite.html">
           <embed src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
           <p>Composite Parts</p>
@@ -84,8 +88,32 @@
     <section class="">
 
       <div>
-        <h1 class="heading">Jump off balcony, onto stranger's head ignore the squirrels, you'll never catch them anyway</h1>
-       
+        <h1>BASIC PARTS</h1>
+        <p><b>BBa_K2581014: FadE</b></p>
+        <p>The UPF_CRG_Barcelona iGEM team 2018 has synthesized this part as a result of a pcr amplification from the
+          DH5-alpha <i>E. coli</i> strain. It consists of the coding sequence of the acyl-coA dehydrogenase (FadE) gene
+          which converts acyl-coA into enoyl-coA. This part is a twin of the BBa_K861020). </p>
+        <center><img src="/assets/T--UPF_CRG_Barcelona--partFadE.svg" style="width: 35%;"></center>
+        <p><b>BBa_K2581015: FadL</b></p>
+        <p>The UPF_CRG_Barcelona iGEM team 2018 has synthesized this part as a result of a pcr amplification from the
+          DH5-alpha <i>E. coli</i> strain. It consists of the coding sequence of the transmembrane protein FadL. This
+          gene has an essential role in the fatty acid transportation across the cell membrane via a transportation.</p>
+        <center><img src="/assets/T--UPF_CRG_Barcelona--partFadL.svg" style="width: 35%;"></center>
+
+        <p><b>Bba_K2581016: FadD</b></p>
+        <p>The UPF_CRG_Barcelona iGEM team 2018 has synthesized this part as a result of a pcr amplification from the
+          DH5-alpha <i>E. coli</i> strain. It consists of the coding sequence of the acyl-coA synthetase gene FadD.
+          This gene has an essential role in the fatty acid transportation inside the cell and in acyl-activation
+          mechanism.</p>
+        <center><img src="/assets/T--UPF_CRG_Barcelona--partFadD.svg" style="width: 35%;"></center>
+
+        <p><b>BBa_K2581020: pAR</b></p>
+        <p>The UPF_CRG_Barcelona iGEM team 2018 has create this part as an improved element from the existing fatty
+          acid intracellular promoter pFadBA (BBa_K817002). This new promoter has two binding sites for FadR in
+          comparison with the existing part.
+        </p>
+        <center><img src="/assets/T--UPF_CRG_Barcelona--pARbasic.svg" style="width: 35%;"></center>
+
 
       </div>
 
@@ -98,9 +126,12 @@
     <div class="container">
       <div>
         <h3>Follow us at:</h3>
-        <a class="social" href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg" alt=""></a>
-        <a class="social" href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg" alt=""></a>
-        <a class="social" href="https://www.facebook.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg" alt=""></a>
+        <a class="social" href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg"
+            alt=""></a>
+        <a class="social" href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
+            alt=""></a>
+        <a class="social" href="https://www.facebook.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+            alt=""></a>
       </div>
 
       <div>
@@ -120,7 +151,7 @@
   <script>
     // Initialize Swiper
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 6,
+      slidesPerView: 5,
       slidesPerGroup: 1,
       loop: true,
       freeMode: true,

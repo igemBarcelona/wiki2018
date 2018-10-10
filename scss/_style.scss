@@ -242,6 +242,21 @@ h6 {
   padding: 15px;
 }
 
+.grid-threecolumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+  p {
+    text-align: center;
+  }
+}
+
+.svg-threecolumns {
+  width: 400px;
+}
+
+
 table {
   width: 90%;
   text-align: center;

@@ -53,89 +53,111 @@
   <header id="header">
     <div id="blur"></div>
     <!-- Swiper -->
-    <div class="swiper-container" id="sw-container">
+    <div class="swiper-container swiper1" id="sw-container">
       <div class="swiper-wrapper">
         <a class="swiper-slide" href="LabBook.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="Notebook Doodle">
-          <p>Lab book</p>
+          <embed  src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="">
+          <p>LabBook</p>
         </a>
         <a class="swiper-slide" href="Methods.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="Protocol Doodle">
-          <p>Methods and <br> Protocols</p>
+          <embed  src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="">
+          <p>Methods</p>
         </a>
       </div>
       <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next swiper-button-next1"></div>
+      <div class="swiper-button-prev swiper-button-prev1"></div>
     </div>
   </header>
 
-  <div class="swiper-container swiper2" id="swiper-photos">
-      <div class="swiper-wrapper">
- 
-        <a href="#" class="swiper-slide"><img src="http://complex.upf.edu/templates/csl/images/csl-header.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="http://complex.upf.edu/templates/csl/images/csl-header.png" alt=""></a>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination swiper-pagination2"></div>
-    </div>
-    
+<div class="swiper-container swiper2" id="swiper-photos">
+  <div class="swiper-wrapper">
+    <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab2.png" alt=""></a>
+    <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab3.png" alt=""></a>
+    <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab1.png" alt=""></a>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination2"></div>
+</div>
 
   <!-- Footer -->
   <footer class="footer">
-      <div class="container">
-        <div>
-          <h3>Follow us at:</h3>
-          <a href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg" alt=""></a>
-          <a href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg" alt=""></a>
-          <a href="https://www.facebook.com/igembarcelona/""><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg" alt=""></a>
-        </div>
-
-        <div>
-          <center><h3>For Judges</h3></center> 
-          <div id="judges">
-            <a href="Attributions.html">Attributions</a>
-            <a href="Collaborations.html">Collaborations</a>
-            <a href="Demonstrate.html">Demonstration</a>
-            <a href="Human_Practices.html">Human Practices</a>
-            <a href="InterLab.html">InterLab</a>
-            <a href="Improve.html">Improved part</a>
-            <a href="http://igem.org/2018_Judging_Form?id=2581">Judging Form</a>
-            <a href="Model.html">Model</a>
-            <a href="Parts">Parts</a>
-          </div>
-        </div>
-  
-        <div class="footer-contact">
-          <h3>Contact us:</h3>
-            <p>igem [at] upf [dot] edu</p>
-            <p> PRBB Building</p>
-            <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
-        </div>
-  
+    <div class="container">
+      <div>
+        <h3>Follow us at:</h3>
+        <a class="social" href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg" alt=""></a>
+        <a class="social" href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg" alt=""></a>
+        <a class="social" href="https://www.facebook.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg" alt=""></a>
       </div>
-    </footer>
+
+      <div>
+        <h3>Contact us:</h3>
+        <p>igem [at] upf [dot] edu</p>
+        <p> PRBB Building</p>
+        <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
+      </div>
+
+    </div>
+  </footer>
+
 
   <!-- JS code -->
   <script src="js/scripts.js"></script>
   <script src="js/devel.js"></script>
   <script>
     // Initialize Swiper
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper1', {
       slidesPerView: 2,
       slidesPerGroup: 1,
       loop: true,
       freeMode: true,
       observer: true,
       watchOverflow: true,
+      freeModeSticky: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
       },
       keyboard: {
         enabled: true,
       },
+      mousewheel: true,
       preventClicks: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      },
+    });
+    
+    var swiper = new Swiper('.swiper2', {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      loop: true,
+      observer: true,
+      watchOverflow: true,     
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      paginationClickable: true,
+      preventClicks: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000, // ms
+        disableOnInteraction: false,
+      },
+      observeParents: true,
+      iOSEdgeSwipeDetection: true,
+      mousewheel: true,
     });
   </script>
 </body>

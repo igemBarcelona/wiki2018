@@ -1,5 +1,3 @@
-//document.getElementById('header-fixed').style.top = document.getElementById('navbar').clientHeight + 'px';
-
 document.addEventListener('DOMContentLoaded', function () {
 
     // Get all "navbar-burger" elements

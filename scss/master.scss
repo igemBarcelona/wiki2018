@@ -25,17 +25,14 @@ $grey-bar: #36393D;
 // Variables
 $default-font: 'PT Sans', sans-serif !important;
 
-/* 
-
-
-
-*/
-
 html,
 body,
 p,
 h1,
-h2 {
+h2,
+h3,
+span, 
+a {
     font-family: $default-font;
 }
 
@@ -47,4 +44,5 @@ h2 {
 @import "./swiper_mod";
 @import "./svgs.scss";
 @import "./custombox";
+@import "./plotly";
 @import "./footer.scss";

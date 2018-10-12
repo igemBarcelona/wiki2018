@@ -19,24 +19,25 @@
 </head>
 
 <body>
-  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
-    <div class="container">
+  <div class="sticky-top">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+      <div class="container">
 
-      <div class="navbar-brand">
-        <a class="navbar-logo" href="#">
-          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
-        </a>
-        <div class="navbar-burger" data-target="navbar-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="navbar-brand">
+          <a class="navbar-logo" href="#">
+            <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+          </a>
+          <div class="navbar-burger" data-target="navbar-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-      </div>
 
-      <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
-      <div class="navbar-menu" id="navbar-menu">
-        <!-- navbar items -->
-        <div class="navbar-grid">
+        <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+        <div class="navbar-menu" id="navbar-menu">
+          <!-- navbar items -->
+          <div class="navbar-grid">
             <!--class is-active for showing active menu-->
             <a class="navbar-item is-active" href="Description.html">Project</a>
             <a class="navbar-item" href="DryLab.html">DryLab</a>
@@ -46,48 +47,52 @@
             <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
             <a class="navbar-item" href="Aboutteam.html">Team</a>
           </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <header id="header">
-    <div id="blur"></div>
-    <!-- Swiper -->
-    <div class="swiper-container swiper1" id="sw-container">
-      <div class="swiper-wrapper">
-        <a class="swiper-slide" href="LabBook.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="">
-          <p>LabBook</p>
-        </a>
-        <a class="swiper-slide" href="Methods.html">
-          <embed  src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="">
-          <p>Methods</p>
-        </a>
+    <header id="header">
+      <div id="blur"></div>
+      <!-- Swiper -->
+      <div class="swiper-container swiper1" id="sw-container">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide" href="LabBook.html">
+            <embed src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="">
+            <p>LabBook</p>
+          </a>
+          <a class="swiper-slide" href="Methods.html">
+            <embed src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="">
+            <p>Methods</p>
+          </a>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-next1"></div>
+        <div class="swiper-button-prev swiper-button-prev1"></div>
       </div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next swiper-button-next1"></div>
-      <div class="swiper-button-prev swiper-button-prev1"></div>
-    </div>
-  </header>
-
-<div class="swiper-container swiper2" id="swiper-photos">
-  <div class="swiper-wrapper">
-    <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab2.png" alt=""></a>
-    <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab3.png" alt=""></a>
-    <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab1.png" alt=""></a>
+    </header>
   </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination swiper-pagination2"></div>
-</div>
+
+  <div class="swiper-container swiper2" id="swiper-photos">
+    <div class="swiper-wrapper">
+      <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab2.png" alt=""></a>
+      <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab3.png" alt=""></a>
+      <a href="#" class="swiper-slide"><img src="assets/T--UPF_CRG_Barcelona--wetlab1.png" alt=""></a>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination2"></div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div>
         <h3>Follow us at:</h3>
-        <a class="social" href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg" alt=""></a>
-        <a class="social" href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg" alt=""></a>
-        <a class="social" href="https://www.facebook.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg" alt=""></a>
+        <a class="social" href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg"
+            alt=""></a>
+        <a class="social" href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
+            alt=""></a>
+        <a class="social" href="https://www.facebook.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+            alt=""></a>
       </div>
 
       <div>
@@ -138,13 +143,13 @@
         }
       },
     });
-    
+
     var swiper = new Swiper('.swiper2', {
       slidesPerView: 1,
       slidesPerGroup: 1,
       loop: true,
       observer: true,
-      watchOverflow: true,     
+      watchOverflow: true,
       pagination: {
         el: '.swiper-pagination',
       },

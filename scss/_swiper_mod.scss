@@ -1,6 +1,7 @@
 #sw-container {
   @include container;
   padding: 0 1rem;
+  z-index: 1;
 }
 
 #swiper-photos {

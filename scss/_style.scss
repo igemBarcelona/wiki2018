@@ -48,7 +48,6 @@ aside {
 
 header {
   margin: 1rem 0;
-  z-index: 9999;
   text-align: center;
 }
 
@@ -72,19 +71,13 @@ header {
   }
 }
 
-.header-fixed {
-  position: -webkit-sticky;
-  /* Safari */
+.sticky-top {
   position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.header-blur {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-
+.header-fixed {
   background-color: rgba(255, 255, 255, .9);
   backdrop-filter: blur(2.5px);
 }

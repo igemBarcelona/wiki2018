@@ -32,10 +32,9 @@ window.onscroll = function () {
 };
 
 function Fix_on_scroll() {
-    var slides = document.getElementsByClassName("swiper-slide");
+    var slides = document.getElementById("sw-container");
     if (window.scrollY >= h) {
         document.getElementById("header").classList.add("header-fixed");
-        document.getElementById("blur").classList.add("header-blur");
         for (i = 0; i < slides.length; i++) {
             slides[i].childNodes[1].style.transition = "height 0s linear 0s";
             slides[i].childNodes[1].style.height = "0px";

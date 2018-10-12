@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=2.5" />
+  <!-- Title, Description -->
+  <title>Wiki</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis cupiditate ducimus modi culpa. Et ducimus excepturi molestiae alias.">
+  <!-- Open Graph Metadata -->
+  <meta property="og:url" content="" /> <!-- PAGE URL -->
+  <meta property="og:type" content="website" /> <!-- TYPE -->
+  <meta property="og:title" content="" /> <!-- TITLE -->
+  <meta property="og:description" content="" /> <!-- DESCRIPTION-->
+  <meta property="og:image" content="" /> <!-- IMAGE URL -->
+  <!-- Stylesheets, Fonts, Neccessary Scripts -->
+  <link rel="stylesheet" href="css/master.min.css">
+  <!--PLOT.LY JavaScript-->
+  <script src="js/plotly.js"></script>
+</head>
+
+<body>
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+    <div class="container">
+
+      <div class="navbar-brand">
+        <a class="navbar-logo" href="#">
+          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+        </a>
+        <div class="navbar-burger" data-target="navbar-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+      <div class="navbar-menu" id="navbar-menu">
+        <!-- navbar items -->
+        <div class="navbar-grid">
+          <!--class is-active for showing active menu-->
+          <a class="navbar-item is-active" href="Description.html">Project</a>
+          <a class="navbar-item" href="DryLab.html">DryLab</a>
+          <a class="navbar-item" href="Parts.html">Parts</a>
+          <a class="navbar-item" href="Deliverables.html">Deliverables</a>
+          <a class="navbar-item" href="WetLab.html">WetLab</a>
+          <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
+          <a class="navbar-item" href="Aboutteam.html">Team</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div id="blur"></div>
+    <!-- Swiper -->
+    <div class="swiper-container" id="sw-container">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide" href="Background.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--background_2.svg" alt="">
+          <p>Background<br>and design</p>
+        </a>
+        <a class="swiper-slide" href="Overexpression.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--fads_2.svg" alt="">
+          <p>Overexpression</p>
+        </a>
+        <a class="swiper-slide" href="Biosensor.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--biosensor_3.svg" alt="">
+          <p>Biosensor</p>
+        </a>
+        <a class="swiper-slide" href="Integration.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--mage_2.svg" alt="">
+          <p>Integration</p>
+        </a>
+        <a class="swiper-slide" href="Results.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--results_2.svg" alt="">
+          <p>Results</p>
+        </a>
+        <a class="swiper-slide" href="Demonstration.html">
+          <embed src="assets/T--UPF_CRG_Barcelona--demonstration_3.svg" alt="">
+          <p>Demonstration</p>
+        </a>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="container-centered">
+
+      <div>
+        <h1>RESULTS</h1>
+
+        <div class="grid-threecolumns">
+          <div>
+            <a href="#Overview"><button class="button">Overview</button></a>
+          </div>
+          <div>
+            <a href="#Overexpression"><button class="button">Overexpression</button></a>
+          </div>
+          <div>
+            <a href="#Biosensor"> <button class="button">Biosensor</button></a>
+          </div>
+          <div>
+            <a href="#Integration"><button class="button">Integration</button></a>
+          </div>
+          <div>
+            <a href="#Conclusion"><button class="button">Conclusion</button></a>
+          </div>
+        </div>
+
+        <a name="Biosensor">
+          <h2>Biosensor Results</h2>
+        </a>
+        <h3>Lactone Inducible Constructs</h3>
+        <p>Here we show the results of T14_pFadBA_34_LuxR_T14_pAR_34_RFP.</p>
+
+        <div id="results_1" style="width:90%; height: 400px;"></div>
+        <script>
+          var trace1 = {
+            x: [0, 1E-11, 1E-10, 0.000000001, 0.00000001, 0.00000005, 0.0000001, 0.0000005],
+            y: [0, 0, 0, 0, 86.47296604, 230.0024592, 253.4587263, 247.5003907],
+            error_y: {
+              color: '#0079bf',
+              thickness: 1,
+              type: 'data',
+              array: [0, 0, 0, 0, 3.211822345, 4.684008833, 4.092778435, 7.320232685],
+              visible: true
+            },
+            type: 'scatter',
+            line: {
+              color: "#0079bf",
+              width: 1,
+            },
+            name: "LB, 4 mM Palmitic Acid",
+          };
+          var trace2 = {
+            x: [0, 1E-11, 1E-10, 0.000000001, 0.00000001, 0.00000005, 0.0000001, 0.0000005],
+            y: [0, 0, 0, 0, 82.96160526, 116.722969, 218.2906376, 178.479066],
+            error_y: {
+              color: '#225A7F',
+              thickness: 1,
+              type: 'data',
+              array: [0, 0, 0, 0, 8.50099171, 18.9158157, 7.603264368, 14.37943969],
+              visible: true
+            },
+            type: 'scatter',
+            line: {
+              color: "#225A7F",
+              width: 1,
+            },
+            name: "LB",
+          };
+          var data = [trace1, trace2];
+          var layout = {
+            title: "Mean Fluorescence Intensity",
+            titlefont: {
+              family: "PT Sans",
+              size: 15,
+            },
+            xaxis: {
+              title: "Lactone Concentration (3mM)",
+              titlefont: {
+                family: "PT Sans",
+                size: 12,
+                color: "#36393d",
+              },
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+            yaxis: {
+              title: "Fluorescence a.u.",
+              titlefont: {
+                family: "PT Sans",
+                size: 12,
+                color: "#36393d",
+              },
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+          };
+          Plotly.newPlot('results_1', data, layout, {
+            displayModeBar: false
+          });
+        </script>
+
+        <h6>Figure X | We see a transfer function. The fluorescence and OD were analised between reads 39 and 49,
+          aproximately 11-14h.</h6>
+
+        <p>Here we show the results of T14_pFadBA_34_LuxR_T14_pAR_32_RFP.</p>
+
+        <div id="results_2" style="width:90%; height: 400px;"></div>
+        <script>
+          var trace1 = {
+            x: [0, 1E-11, 1E-10, 0.000000001, 0.00000001, 0.00000005, 0.0000001, 0.0000005],
+            y: [106.3838363, 106.4694195, 102.7493727, 117.5812494, 265.5181971, 385.523329, 375.3539748, 366.6704448],
+            error_y: {
+              color: '#0079bf',
+              thickness: 1,
+              type: 'data',
+              array: [1.997300942, 1.295238027, 2.347322585, 1.914231292, 9.673911966, 13.37909525, 9.98966882,
+                9.846410246
+              ],
+              visible: true
+            },
+            type: 'scatter',
+            line: {
+              color: "#0079bf",
+              width: 1,
+            },
+            name: "LB, 0.4 mM Palmitic Acid",
+          };
+          var trace2 = {
+            x: [0, 1E-11, 1E-10, 0.000000001, 0.00000001, 0.00000005, 0.0000001, 0.0000005],
+            y: [108.593886, 95.26674578, 99.91113516, 122.7746529, 238.5676223, 305.965694, 336.5847911, 309.9574548],
+            error_y: {
+              color: '#225A7F',
+              thickness: 1,
+              type: 'data',
+              array: [1.302501058, 2.235792774, 1.717801064, 2.480333354, 4.112689948, 7.458492809, 5.601397841,
+                11.5175872
+              ],
+              visible: true
+            },
+            type: 'scatter',
+            line: {
+              color: "#225A7F",
+              width: 1,
+            },
+            name: "LB",
+          };
+          var data = [trace1, trace2];
+          var layout = {
+            title: "Mean Fluorescence Intensity",
+            titlefont: {
+              family: "PT Sans",
+              size: 15,
+            },
+            xaxis: {
+              title: "Lactone Concentration (M)",
+              titlefont: {
+                family: "PT Sans",
+                size: 12,
+                color: "#36393d",
+              },
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+            yaxis: {
+              title: "Fluorescence a.u.",
+              titlefont: {
+                family: "PT Sans",
+                size: 12,
+                color: "#36393d",
+              },
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+          };
+          Plotly.newPlot('results_2', data, layout, {
+            displayModeBar: false
+          });
+        </script>
+
+        <h6>Figure X | We see a transfer function. The fluorescence and OD were analised between reads 46 and 55,
+          aproximately 13-16h.</h6>
+
+          <div id="results_3" style="width:90%; height: 400px;"></div>
+          <script>
+            var trace1 = {
+              x: [0, 1E-10, 0.000000001, 0.000000005, 0.00000001, 0.00000003, 0.00000006, 0.0000001, 0.0000005],
+              y: [0, 0, 0, 24.47787627, 59.81279408, 173.9901365, 242.2969439, 351.8179998, 352.8631549],
+              error_y: {
+                color: '#0079bf',
+                thickness: 1,
+                type: 'data',
+                array: [0.32967397, 0.240925185, 0.606558403, 4.19451, 6.040336356, 18.94352644, 24.0019637, 13.4457921, 13.77850533],
+                visible: true
+              },
+              type: 'scatter',
+              line: {
+                color: "#0079bf",
+                width: 1,
+              },
+              name: "LB, 1 mM Palmitic Acid",
+            };
+            var trace2 = {
+              x: [0, 1E-10, 0.000000001, 0.000000005, 0.00000001, 0.00000003, 0.00000006, 0.0000001, 0.0000005],
+              y: [0, 0, 0, 5.729644425, 47.5786795, 128.6202892, 166.8820341, 212.9574509, 214.7712896],
+              error_y: {
+                color: '#225A7F',
+                thickness: 1,
+                type: 'data',
+                array: [0, 0, 0, 3.866844254, 11.07806428, 21.39195408, 13.22761684, 8.261882718, 10.94265593],
+                visible: true
+              },
+              type: 'scatter',
+              line: {
+                color: "#225A7F",
+                width: 1,
+              },
+              name: "LB",
+            };
+            var data = [trace1, trace2];
+            var layout = {
+              title: "Mean Fluorescence Intensity",
+              titlefont: {
+                family: "PT Sans",
+                size: 15,
+              },
+              xaxis: {
+                title: "Lactone Concentration (M)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                title: "Fluorescence a.u.",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+            };
+            Plotly.newPlot('results_3', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+
+        <h6>Figure X | We see a transfer function. The fluorescence and OD were analised between reads 39 and 49,
+          aproximately 11-14h.</h6>
+
+          <h3>pFadBA promoter analysis</h3>
+          
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h3>Follow us at:</h3>
+        <a href="https://www.instagram.com/igembarcelona/"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--instagram.svg"
+            alt=""></a>
+        <a href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
+            alt=""></a>
+        <a href="https://www.facebook.com/igembarcelona/""><embed class=" social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+          alt=""></a>
+      </div>
+
+      <div>
+        <center>
+          <h3>For Judges</h3>
+        </center>
+        <div id="judges">
+          <a href="Attributions.html">Attributions</a>
+          <a href="Collaborations.html">Collaborations</a>
+          <a href="Demonstrate.html">Demonstration</a>
+          <a href="Human_Practices.html">Human Practices</a>
+          <a href="InterLab.html">InterLab</a>
+          <a href="Improve.html">Improved part</a>
+          <a href="http://igem.org/2018_Judging_Form?id=2581">Judging Form</a>
+          <a href="Model.html">Model</a>
+          <a href="Parts">Parts</a>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact us:</h3>
+        <p>igem [at] upf [dot] edu</p>
+        <p> PRBB Building</p>
+        <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- JS code -->
+  <script src="js/scripts.js"></script>
+  <script src="js/devel.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      loop: true,
+      freeMode: true,
+      observer: true,
+      watchOverflow: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+      },
+      preventClicks: true,
+    });
+  </script>
+</body>
+
+</html>

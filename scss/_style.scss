@@ -220,6 +220,79 @@ h6 {
   display: table;
 }
 
+/* COLLAGE IMATGES */
+.row_collage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column_collage {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column_collage img {
+  margin-top: 30px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column_collage {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column_collage {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* text per sobre de les imatges */
+
+.text_image {
+  position: relative;
+}
+
+.image_collage {
+opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+transition: .2s ease;
+backface-visibility: hidden;
+}
+
+.text_middle {
+transition: .2s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.text_image:hover .image_collage {
+opacity: 0.3;
+}
+
+.text_image:hover .text_middle {
+opacity: 1;
+}
+
+.text {
+background-color: #412350;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
+}
 
 .grid-deliverables {
   display: grid;
@@ -240,6 +313,21 @@ h6 {
   background-color: #c6e1d5;
   padding: 15px;
 }
+
+.grid-threecolumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+  p {
+    text-align: center;
+  }
+}
+
+.svg-threecolumns {
+  width: 400px;
+}
+
 
 table {
   width: 90%;
@@ -337,3 +425,5 @@ tr:hover {
     text-align: center;
   }
 }
+
+

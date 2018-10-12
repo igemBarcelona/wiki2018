@@ -1,4 +1,4 @@
-document.getElementById('header-fixed').style.top = document.getElementById('navbar').clientHeight + 'px';
+//document.getElementById('header-fixed').style.top = document.getElementById('navbar').clientHeight + 'px';
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -32,20 +32,23 @@ window.onscroll = function () {
 };
 
 function Fix_on_scroll() {
-    var slides = document.getElementById("sw-container");
+    var slides = document.getElementsByClassName("swiper-slide");
     if (window.scrollY >= h) {
         document.getElementById("header").classList.add("header-fixed");
+        document.getElementById("sw-container").classList.add("header-blur");
         for (i = 0; i < slides.length; i++) {
-            slides[i].childNodes[1].style.transition = "height 0s linear 0s";
-            slides[i].childNodes[1].style.height = "0px";
+            slides[i].firstElementChild.style.transition = "height 0s linear 0s";
+            slides[i].firstElementChild.style.height = "0px";
+            slides[i].style.padding = "0";
         }
     } 
     if (window.scrollY < h) {
         document.getElementById("header").classList.remove("header-fixed");
-        document.getElementById("blur").classList.remove("header-blur");
+        document.getElementById("sw-container").classList.remove("header-blur");
         for (i = 0; i < slides.length; i++) {
-            slides[i].childNodes[1].style.transition = "height 0s linear 0s";
-            slides[i].childNodes[1].style.height = "50px";
+            slides[i].firstElementChild.style.transition = "height 0s linear 0s";
+            slides[i].firstElementChild.style.height = "50px";
+            slides[i].style.padding = ".5rem 0";
         }
     }
 }

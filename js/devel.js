@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-var h = document.getElementById('navbar').clientHeight + 16;
+var h = 66;
 window.onscroll = function () {
     Fix_on_scroll();
 };

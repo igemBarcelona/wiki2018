@@ -128,7 +128,7 @@
       },
       watchOverflow: true,
       freeModeSticky: true,
-      mousewheel: true,
+      mousewheel: {forceToAxis: true,},
       preventClicks: true,
       iOSEdgeSwipeDetection: true,
       observeParents: true,
@@ -157,7 +157,9 @@
       },
       observeParents: true,
       iOSEdgeSwipeDetection: true,
-      mousewheel: true,
+      mousewheel: {
+        forceToAxis: true,
+      }
     });
   </script>
 </body>

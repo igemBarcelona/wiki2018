@@ -23,8 +23,7 @@ $grey-bar: #36393D;
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 // Variables
-$default-font: 'PT Sans',
-sans-serif !important;
+$default-font: 'PT Sans', sans-serif !important;
 
 html,
 body,
@@ -46,4 +45,5 @@ a {
 @import "./svgs.scss";
 @import "./custombox";
 @import "./plotly";
+@import "./main_photoswipe";
 @import "./footer.scss";

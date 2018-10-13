@@ -59,27 +59,27 @@
       <!-- Swiper -->
       <div class="swiper-container" id="sw-container">
         <div class="swiper-wrapper">
-          <a class="swiper-slide" href="Background.html">
+          <a class="swiper-slide swiper-slide-menu" href="Background.html">
             <embed src="assets/T--UPF_CRG_Barcelona--background_2.svg" alt="">
             <p>Background<br>and design</p>
           </a>
-          <a class="swiper-slide" href="Overexpression.html">
+          <a class="swiper-slide swiper-slide-menu" href="Overexpression.html">
             <embed src="assets/T--UPF_CRG_Barcelona--fads_2.svg" alt="">
             <p>Overexpression</p>
           </a>
-          <a class="swiper-slide" href="Biosensor.html">
+          <a class="swiper-slide swiper-slide-menu" href="Biosensor.html">
             <embed src="assets/T--UPF_CRG_Barcelona--biosensor_3.svg" alt="">
             <p>Biosensor</p>
           </a>
-          <a class="swiper-slide" href="Integration.html">
+          <a class="swiper-slide swiper-slide-menu" href="Integration.html">
             <embed src="assets/T--UPF_CRG_Barcelona--mage_2.svg" alt="">
             <p>Integration</p>
           </a>
-          <a class="swiper-slide" href="Results.html">
+          <a class="swiper-slide swiper-slide-menu" href="Results.html">
             <embed src="assets/T--UPF_CRG_Barcelona--results_2.svg" alt="">
             <p>Results</p>
           </a>
-          <a class="swiper-slide" href="Demonstration.html">
+          <a class="swiper-slide swiper-slide-menu" href="Demonstration.html">
             <embed src="assets/T--UPF_CRG_Barcelona--demonstration_3.svg" alt="">
             <p>Demonstration</p>
           </a>
@@ -156,8 +156,30 @@
         keyboard: {
           enabled: true,
         },
-        preventClicks: true,
-      });
+      watchOverflow: true,
+      freeModeSticky: true,
+      mousewheel: true,
+      preventClicks: true,
+      iOSEdgeSwipeDetection: true,
+      observeParents: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        640: {
+          slidesPerView: 3,
+        },
+        500: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      },
+    });
     </script>
 </body>
 

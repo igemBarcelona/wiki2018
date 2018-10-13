@@ -55,19 +55,19 @@
     <!-- Swiper -->
     <div class="swiper-container" id="sw-container">
       <div class="swiper-wrapper">
-        <a class="swiper-slide" href="Validation.html">
+        <a class="swiper-slide swiper-slide-menu" href="Validation.html">
           <embed src="assets/T--UPF_CRG_Barcelona--exp_validation_2.svg" alt="Experimental Validation Doodle">
           <p>Experimental Validation</p>
         </a>
-        <a class="swiper-slide" href="Model.html">
+        <a class="swiper-slide swiper-slide-menu" href="Model.html">
           <embed src="assets/T--UPF_CRG_Barcelona--model_2.svg" alt="Computationtal Model Doodle">
           <p>Model</p>
         </a>
-        <a class="swiper-slide" href="Design.html">
+        <a class="swiper-slide swiper-slide-menu" href="Design.html">
           <embed src="assets/T--UPF_CRG_Barcelona--mage_2.svg" alt="Graphic Design Doodle">
           <p>Graphic Design</p>
         </a>
-        <a class="swiper-slide" href="Tutorials.html">
+        <a class="swiper-slide swiper-slide-menu" href="Tutorials.html">
           <embed src="assets/T--UPF_CRG_Barcelona--results_2.svg" alt="Tutorials doodle">
           <p>Tutorials</p>
         </a>
@@ -149,7 +149,29 @@
       keyboard: {
         enabled: true,
       },
+      watchOverflow: true,
+      freeModeSticky: true,
+      mousewheel: true,
       preventClicks: true,
+      iOSEdgeSwipeDetection: true,
+      observeParents: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        640: {
+          slidesPerView: 3,
+        },
+        500: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      },
     });
   </script>
 </body>

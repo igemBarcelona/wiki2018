@@ -30,7 +30,7 @@ window.onscroll = function () {
 };
 
 function Fix_on_scroll() {
-    var slides = document.getElementsByClassName("swiper-slide");
+    var slides = document.getElementsByClassName("swiper-slide-menu");
     if (window.scrollY > h) {
         document.getElementById("header").classList.add("header-fixed");
         document.getElementById("sw-container").classList.add("header-blur");

@@ -55,11 +55,11 @@
     <!-- Swiper -->
     <div class="swiper-container" id="sw-container">
       <div class="swiper-wrapper">
-        <a class="swiper-slide" href="Background.html">
+        <a class="swiper-slide swiper-slide-menu" href="Background.html">
           <embed src="assets/T--UPF_CRG_Barcelona--humanpractices_silver_3.svg" alt="">
           <p>Human Practices</p>
         </a>
-        <a class="swiper-slide" href="Overexpression.html">
+        <a class="swiper-slide swiper-slide-menu" href="Overexpression.html">
           <embed src="assets/T--UPF_CRG_Barcelona--education_2.svg" alt="">
           <p>Education and<br>Public Engagement</p>
         </a>
@@ -277,7 +277,17 @@
       keyboard: {
         enabled: true,
       },
+      watchOverflow: true,
+      freeModeSticky: true,
+      mousewheel: true,
       preventClicks: true,
+      iOSEdgeSwipeDetection: true,
+      observeParents: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        }
+      },
     });
   </script>
 </body>

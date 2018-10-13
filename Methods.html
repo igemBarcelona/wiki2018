@@ -57,11 +57,11 @@
       <!-- Swiper -->
       <div class="swiper-container" id="sw-container">
         <div class="swiper-wrapper">
-          <a class="swiper-slide" href="LabBook.html">
+          <a class="swiper-slide swiper-slide-menu" href="LabBook.html">
             <embed src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="Notebook doodle">
               <p>LabBook</p>
           </a>
-          <a class="swiper-slide" href="Methods.html">
+          <a class="swiper-slide swiper-slide-menu" href="Methods.html">
             <embed src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="Protocol Doodle">
               <p>Methods and<br>Protocols</p>
             </a>
@@ -351,7 +351,17 @@
       keyboard: {
         enabled: true,
       },
+      watchOverflow: true,
+      freeModeSticky: true,
+      mousewheel: true,
       preventClicks: true,
+      iOSEdgeSwipeDetection: true,
+      observeParents: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        }
+      },
     });
   </script>
 </body>

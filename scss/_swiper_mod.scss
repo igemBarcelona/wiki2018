@@ -9,8 +9,9 @@
   padding: 0;
   overflow:hidden;
   width: 100%;
+  z-index: 0;
   img {
-    max-height: 70%;
+    width: 100%;
   }
 }
 

@@ -56,23 +56,23 @@
     <!-- Swiper -->
     <div class="swiper-container" id="sw-container">
       <div class="swiper-wrapper">
-        <a class="swiper-slide" href="Basic.html">
+        <a class="swiper-slide swiper-slide-menu" href="Basic.html">
           <embed src="assets/T--UPF_CRG_Barcelona--basicpart_3.svg" alt="">
           <p>Basic Parts</p>
         </a>
-        <a class="swiper-slide" href="Intermediate.html">
+        <a class="swiper-slide swiper-slide-menu" href="Intermediate.html">
           <img style="height: 50px" src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
           <p>Construction<br>Intermediates</p>
         </a>
-        <a class="swiper-slide" href="Composite.html">
+        <a class="swiper-slide swiper-slide-menu" href="Composite.html">
           <embed src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
           <p>Composite Parts</p>
         </a>
-        <a class="swiper-slide" href="Improve.html">
+        <a class="swiper-slide swiper-slide-menu" href="Improve.html">
           <embed src="assets/T--UPF_CRG_Barcelona--improvedpart_1.svg" alt="">
           <p>Improved Parts</p>
         </a>
-        <a class="swiper-slide" href="Registry.html">
+        <a class="swiper-slide swiper-slide-menu" href="Registry.html">
           <embed src="assets/T--UPF_CRG_Barcelona--registryparts_2.svg" alt="">
           <p>Parts Registry</p>
         </a>
@@ -197,7 +197,26 @@
       keyboard: {
         enabled: true,
       },
+      watchOverflow: true,
+      freeModeSticky: true,
+      mousewheel: true,
       preventClicks: true,
+      iOSEdgeSwipeDetection: true,
+      observeParents: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
+        },
+        640: {
+          slidesPerView: 3,
+        },
+        500: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      },
     });
   </script>
 </body>

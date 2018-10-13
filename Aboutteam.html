@@ -72,11 +72,11 @@
     <!-- Swiper -->
     <div class="swiper-container" id="sw-container">
       <div class="swiper-wrapper">
-        <a class="swiper-slide" href="Team.html">
+        <a class="swiper-slide swiper-slide-menu" href="Team.html">
           <embed src="assets/T--UPF_CRG_Barcelona--team_2.svg" alt="">
           <p>Team</p>
         </a>
-        <a class="swiper-slide" href="Sponsors.html">
+        <a class="swiper-slide swiper-slide-menu" href="Sponsors.html">
           <embed src="assets/T--UPF_CRG_Barcelona--sponsors_2.svg" alt="">
           <p>Sponsors</p>
         </a>
@@ -140,7 +140,17 @@
       keyboard: {
         enabled: true,
       },
+      watchOverflow: true,
+      freeModeSticky: true,
+      mousewheel: true,
       preventClicks: true,
+      iOSEdgeSwipeDetection: true,
+      observeParents: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        }
+      },
     });
   </script>
 </body>

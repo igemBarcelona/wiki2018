@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-var h = document.getElementById('navbar').clientHeight;
+var h = document.getElementById('navbar').clientHeight + 16;
 window.onscroll = function () {
     Fix_on_scroll();
 };
 
 function Fix_on_scroll() {
     var slides = document.getElementsByClassName("swiper-slide");
-    if (window.scrollY >= h) {
+    if (window.scrollY > h) {
         document.getElementById("header").classList.add("header-fixed");
         document.getElementById("sw-container").classList.add("header-blur");
         for (i = 0; i < slides.length; i++) {

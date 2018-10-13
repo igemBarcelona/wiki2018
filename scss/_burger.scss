@@ -22,16 +22,20 @@ $sass-burger-add-vendor-prefixes: true !default;
         -moz-user-select: none;
         -ms-user-select: none;
     }
+
     user-select: none;
 
     // 1. Fixes jagged edges in Firefox, see issue #10.
-    &, &::before, &::after {
+    &,
+    &::before,
+    &::after {
         display: block;
         width: $width;
         height: $height;
         background-color: $color;
         outline: 1px solid transparent; // 1
-        @if $border-radius != 0 {
+
+        @if $border-radius !=0 {
             border-radius: $border-radius;
         }
 
@@ -40,17 +44,21 @@ $sass-burger-add-vendor-prefixes: true !default;
             -moz-transition-property: background-color, -moz-transform;
             -o-transition-property: background-color, -o-transform;
         }
-        transition-property: background-color, transform;
+
+        transition-property: background-color,
+        transform;
 
         @if $sass-burger-add-vendor-prefixes {
             -webkit-transition-duration: $transition-duration;
             -moz-transition-duration: $transition-duration;
             -o-transition-duration: $transition-duration;
         }
+
         transition-duration: $transition-duration;
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
         position: absolute;
         content: "";
     }
@@ -67,7 +75,10 @@ $sass-burger-add-vendor-prefixes: true !default;
 
 // Select parts of the burger
 @mixin burger-parts {
-    &, &::before, &::after {
+
+    &,
+    &::before,
+    &::after {
         @content;
     }
 }
@@ -96,11 +107,15 @@ $sass-burger-add-vendor-prefixes: true !default;
     & {
         background-color: transparent;
     }
-    @if ($color != auto) {
-        &::before, &::after {
+
+    @if ($color !=auto) {
+
+        &::before,
+        &::after {
             background-color: $color;
         }
     }
+
     &::before {
         @if $sass-burger-add-vendor-prefixes {
             -webkit-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
@@ -108,8 +123,10 @@ $sass-burger-add-vendor-prefixes: true !default;
             -ms-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
             -o-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
         }
+
         transform: translateY($burger-gutter + $burger-height) rotate(45deg);
     }
+
     &::after {
         @if $sass-burger-add-vendor-prefixes {
             -webkit-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
@@ -117,6 +134,7 @@ $sass-burger-add-vendor-prefixes: true !default;
             -ms-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
             -o-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
         }
+
         transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
     }
 }

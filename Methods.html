@@ -20,63 +20,64 @@
   <script src="js/plotly.js"></script>
 </head>
 
-<body> <div class="sticky-top">
+<body>
   <div class="sticky-top">
-    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
-      <div class="container">
-        
-        <div class="navbar-brand">
-          <a class="navbar-logo" href="#">
-          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
-        </a>
-        <div class="navbar-burger" data-target="navbar-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      
-        <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
-        <div class="navbar-menu" id="navbar-menu">
-          <!-- navbar items -->
-          <div class="navbar-grid">
-            <!--class is-active for showing active menu-->
-            <a class="navbar-item is-active" href="Description.html">Project</a>
-            <a class="navbar-item" href="DryLab.html">DryLab</a>
-            <a class="navbar-item" href="Parts.html">Parts</a>
-            <a class="navbar-item" href="Deliverables.html">Deliverables</a>
-            <a class="navbar-item" href="WetLab.html">WetLab</a>
-            <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
-            <a class="navbar-item" href="Aboutteam.html">Team</a>
+    <div class="sticky-top">
+      <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+        <div class="container">
+
+          <div class="navbar-brand">
+            <a class="navbar-logo" href="#">
+              <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+            </a>
+            <div class="navbar-burger" data-target="navbar-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+          <div class="navbar-menu" id="navbar-menu">
+            <!-- navbar items -->
+            <div class="navbar-grid">
+              <!--class is-active for showing active menu-->
+              <a class="navbar-item is-active" href="Description.html">Project</a>
+              <a class="navbar-item" href="DryLab.html">DryLab</a>
+              <a class="navbar-item" href="Parts.html">Parts</a>
+              <a class="navbar-item" href="Deliverables.html">Deliverables</a>
+              <a class="navbar-item" href="WetLab.html">WetLab</a>
+              <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
+              <a class="navbar-item" href="Aboutteam.html">Team</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    
-    <header id="header">
-      <!-- Swiper -->
-      <div class="swiper-container" id="sw-container">
-        <div class="swiper-wrapper">
-          <a class="swiper-slide swiper-slide-menu" href="LabBook.html">
-            <embed src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="Notebook doodle">
+      </nav>
+
+      <header id="header">
+        <!-- Swiper -->
+        <div class="swiper-container" id="sw-container">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide swiper-slide-menu" href="LabBook.html">
+              <embed src="assets/T--UPF_CRG_Barcelona--notebook_2.svg" alt="Notebook doodle">
               <p>LabBook</p>
-          </a>
-          <a class="swiper-slide swiper-slide-menu" href="Methods.html">
-            <embed src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="Protocol Doodle">
+            </a>
+            <a class="swiper-slide swiper-slide-menu" href="Methods.html">
+              <embed src="assets/T--UPF_CRG_Barcelona--protocols_2.svg" alt="Protocol Doodle">
               <p>Methods and<br>Protocols</p>
             </a>
-            
+
           </div>
           <!-- Add Arrows -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
-      </div>
+    </div>
     </header>
   </div>
-  
+
   <main>
-    
+
     <section class="container-centered">
       <div>
         <h1>METHODS AND PROTOCOLS</h1>
@@ -221,7 +222,9 @@
             },
           };
 
-          Plotly.newPlot("standard_curve_cupric", data, layout, {displayModeBar: false});
+          Plotly.newPlot("standard_curve_cupric", data, layout, {
+            displayModeBar: false
+          });
         </script>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed odio praesentium doloribus voluptas tempore,
@@ -280,10 +283,10 @@
             <p>Protocol for Cupric Acetate Fatty Acid Quantification </p>
           </a>
           <a class="protocols" href="http://2018.igem.org/wiki/images/2/28/T--UPF_CRG_Barcelona--protocol_mage.pdf"
-          target="_blank">
-          <p>Protocol for Multiplex Automated Genomic Engineering </p>
-        </a>
-          
+            target="_blank">
+            <p>Protocol for Multiplex Automated Genomic Engineering </p>
+          </a>
+
         </div>
 
       </div>
@@ -301,10 +304,10 @@
             alt=""></a>
         <a href="https://twitter.com/igemBarcelona"><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--twitter.svg"
             alt=""></a>
-        <a href="https://www.facebook.com/igembarcelona/""><embed class="social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
+        <a href="https://www.facebook.com/igembarcelona/""><embed class=" social-svg" src="assets/T--UPF_CRG_Barcelona--facebook.svg"
           alt=""></a>
       </div>
-      
+
       <div>
         <center>
           <h3>For Judges</h3>
@@ -353,7 +356,9 @@
       },
       watchOverflow: true,
       freeModeSticky: true,
-      mousewheel: {forceToAxis: true,},
+      mousewheel: {
+        forceToAxis: true,
+      },
       preventClicks: true,
       iOSEdgeSwipeDetection: true,
       observeParents: true,

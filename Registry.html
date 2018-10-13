@@ -19,69 +19,71 @@
   <script src="js/plotly.js"></script>
 </head>
 
-<body> <div class="sticky-top">
-  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
-    <div class="container">
+<body>
+  <div class="sticky-top">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation" id="navbar">
+      <div class="container">
 
-      <div class="navbar-brand">
-        <a class="navbar-logo" href="#">
-          <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
-        </a>
-        <div class="navbar-burger" data-target="navbar-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="navbar-brand">
+          <a class="navbar-logo" href="#">
+            <img src="assets/T--UPF_CRG_Barcelona--logosensebarcelona.svg" alt="iGEM Barcelona team 2018">
+          </a>
+          <div class="navbar-burger" data-target="navbar-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+        <div class="navbar-menu" id="navbar-menu">
+          <!-- navbar items -->
+          <div class="navbar-grid">
+            <!--class is-active for showing active menu-->
+            <a class="navbar-item is-active" href="Description.html">Project</a>
+            <a class="navbar-item" href="DryLab.html">DryLab</a>
+            <a class="navbar-item" href="Parts.html">Parts</a>
+            <a class="navbar-item" href="Deliverables.html">Deliverables</a>
+            <a class="navbar-item" href="WetLab.html">WetLab</a>
+            <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
+            <a class="navbar-item" href="Aboutteam.html">Team</a>
+          </div>
         </div>
       </div>
+    </nav>
 
-      <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
-      <div class="navbar-menu" id="navbar-menu">
-        <!-- navbar items -->
-        <div class="navbar-grid">
-          <!--class is-active for showing active menu-->
-          <a class="navbar-item is-active" href="Description.html">Project</a>
-          <a class="navbar-item" href="DryLab.html">DryLab</a>
-          <a class="navbar-item" href="Parts.html">Parts</a>
-          <a class="navbar-item" href="Deliverables.html">Deliverables</a>
-          <a class="navbar-item" href="WetLab.html">WetLab</a>
-          <a class="navbar-item" href="Intro_HP.html">Human Practices</a>
-          <a class="navbar-item" href="Aboutteam.html">Team</a>
+    <header id="header">
+      <div id="blur"></div>
+      <!-- Swiper -->
+      <div class="swiper-container" id="sw-container">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide swiper-slide-menu" href="Basic.html">
+            <embed src="assets/T--UPF_CRG_Barcelona--basicpart_3.svg" alt="">
+            <p>Basic Parts</p>
+          </a>
+          <a class="swiper-slide swiper-slide-menu" href="Intermediate.html">
+            <embed src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
+            <p>Construction<br>Intermediates</p>
+          </a>
+          <a class="swiper-slide swiper-slide-menu" href="Composite.html">
+            <embed src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
+            <p>Composite Parts</p>
+          </a>
+          <a class="swiper-slide swiper-slide-menu" href="Improve.html">
+            <embed src="assets/T--UPF_CRG_Barcelona--improvedpart_1.svg" alt="">
+            <p>Improved Parts</p>
+          </a>
+          <a class="swiper-slide swiper-slide-menu" href="Registry.html">
+            <embed src="assets/T--UPF_CRG_Barcelona--registryparts_2.svg" alt="">
+            <p>Parts Registry</p>
+          </a>
         </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </div>
-  </nav>
-
-  <header id="header">
-    <div id="blur"></div>
-    <!-- Swiper -->
-    <div class="swiper-container" id="sw-container">
-      <div class="swiper-wrapper">
-        <a class="swiper-slide swiper-slide-menu" href="Basic.html">
-          <embed src="assets/T--UPF_CRG_Barcelona--basicpart_3.svg" alt="">
-          <p>Basic Parts</p>
-        </a>
-        <a class="swiper-slide swiper-slide-menu" href="Intermediate.html">
-          <embed src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
-          <p>Construction<br>Intermediates</p>
-        </a>
-        <a class="swiper-slide swiper-slide-menu" href="Composite.html">
-          <embed src="assets/T--UPF_CRG_Barcelona--compositepart_3.svg" alt="">
-          <p>Composite Parts</p>
-        </a>
-        <a class="swiper-slide swiper-slide-menu" href="Improve.html">
-          <embed src="assets/T--UPF_CRG_Barcelona--improvedpart_1.svg" alt="">
-          <p>Improved Parts</p>
-        </a>
-        <a class="swiper-slide swiper-slide-menu" href="Registry.html">
-          <embed src="assets/T--UPF_CRG_Barcelona--registryparts_2.svg" alt="">
-          <p>Parts Registry</p>
-        </a>
-      </div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </header> </div>
+    </header>
+  </div>
 
   <main>
 
@@ -342,7 +344,9 @@
       },
       watchOverflow: true,
       freeModeSticky: true,
-      mousewheel: {forceToAxis: true,},
+      mousewheel: {
+        forceToAxis: true,
+      },
       preventClicks: true,
       iOSEdgeSwipeDetection: true,
       observeParents: true,

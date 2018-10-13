@@ -39,7 +39,7 @@ function Fix_on_scroll() {
             slides[i].firstElementChild.style.height = "0px";
             slides[i].style.padding = "0";
         }
-    } 
+    }
     if (window.scrollY < h) {
         document.getElementById("header").classList.remove("header-fixed");
         document.getElementById("sw-container").classList.remove("header-blur");

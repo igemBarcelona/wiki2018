@@ -7,9 +7,10 @@
 #swiper-photos {
   margin: 0;
   padding: 0;
-  overflow:hidden;
+  overflow: hidden;
   width: 100%;
   z-index: 0;
+
   img {
     width: 100%;
   }
@@ -24,8 +25,9 @@
   cursor: pointer;
   text-decoration: none;
   padding: .5rem 0;
+
   p {
-    text-align:center;
+    text-align: center;
     vertical-align: middle;
     color: #000000;
   }

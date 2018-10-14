@@ -114,7 +114,84 @@
             <a href="#Conclusion"><button class="button">Conclusion</button></a>
           </div>
         </div>
-
+        <a name="Overexpression">
+          <h2>Overexpression results</h2>
+        </a>
+        <p>bla bla bla bla bla</p>
+        <div id="results_overexpression1" style="width:90%; height: 400px;"></div>
+        <script>
+          var pa = {
+            x: ['Not induced', 'Induced', 'Control'],
+            y: [0.048294151, 0.051237715, 0.059049989],
+            name: '0,4 mM PA',
+            type: 'bar',
+            error_y: {
+              type: 'data',
+              array: [0.000353554,	0.002687004,	0.00098995],
+              visible: true,
+              thickness: 1,
+              color: '#0079bf',
+            },
+            marker: {
+              color: '#0079bf',
+            }
+          };
+          var oa = {
+            x: ['Not induced', 'Induced', 'Control'],
+            y: [0.021051573, 0.027976643, 0.015975604],
+            name: '0.4 mM OA',
+            type: 'bar',
+            marker: {
+              color: "#c2ca6c",
+            },
+            error_y: {
+              type: 'data',
+              array: [0.0000707066067330886, 0.000636396,	0.002899139],
+              visible: true,
+              thickness: 1,
+              color: '#0079bf',
+            },
+          };
+          var data = [pa, oa];
+          var layout = {
+            barmode: 'group',
+            title: "Palmitate Uptake with glucose present",
+            titlefont: {
+              family: "PT Sans",
+              size: 15,
+              color: "#36393d",
+            },
+            xaxis: {
+              autorange: true,
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+            yaxis: {
+              zeroline: false,
+              autorange: true,
+              title: "Growth rate / palmitate uptake",
+              titlefont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+              showticklabels: true,
+              tickfont: {
+                family: "PT Sans",
+                size: 11,
+                color: "#36393d",
+              },
+            },
+          };
+          Plotly.newPlot('results_overexpression1', data, layout, {
+            displayModeBar: false
+          });
+        </script>
+        <h6>figure X | bla bla bla bla bla </h6>
         <a name="Biosensor">
           <h2>Biosensor Results</h2>
         </a>

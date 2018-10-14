@@ -1,3 +1,13 @@
+d df T--UPF_CRG_Barcelona--logo1.jpg
+d d3 T--UPF_CRG_Barcelona--facebook.svg
+c cf T--UPF_CRG_Barcelona--instagram.svg
+8 8e T--UPF_CRG_Barcelona--twitter.svg
+0 0e T--UPF_CRG_Barcelona--biologics_bin.png
+c c3 T--UPF_CRG_Barcelona--logoCRG.jpg
+5 58 T--UPF_CRG_Barcelona--visitpromega.JPG
+2 23 T--UPF_CRG_Barcelona--cytotoxic_bin.png
+2 25 T--UPF_CRG_Barcelona--sharp_biologics_bin.png
+1 10 T--UPF_CRG_Barcelona--logoidt.png
 9 92 T--UPF_CRG_Barcelona--logopromega.png
 e ea T--UPF_CRG_Barcelona--logolabclinics.png
 3 37 T--UPF_CRG_Barcelona--logosensebarcelona.svg

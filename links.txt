@@ -1,273 +1,126 @@
-http://2018.igem.org/wiki/images/d/df/T--UPF_CRG_Barcelona--logo1.jpg
-
-http://2018.igem.org/wiki/images/d/d3/T--UPF_CRG_Barcelona--facebook.svg
-
-http://2018.igem.org/wiki/images/c/cf/T--UPF_CRG_Barcelona--instagram.svg
-
-http://2018.igem.org/wiki/images/8/8e/T--UPF_CRG_Barcelona--twitter.svg
-
-http://2018.igem.org/wiki/images/0/0e/T--UPF_CRG_Barcelona--biologics_bin.png
-
-http://2018.igem.org/wiki/images/c/c3/T--UPF_CRG_Barcelona--logoCRG.jpg
-
-http://2018.igem.org/wiki/images/5/58/T--UPF_CRG_Barcelona--visitpromega.JPG
-
-http://2018.igem.org/wiki/images/2/23/T--UPF_CRG_Barcelona--cytotoxic_bin.png
-
-http://2018.igem.org/wiki/images/2/25/T--UPF_CRG_Barcelona--sharp_biologics_bin.png
-
-http://2018.igem.org/wiki/images/1/10/T--UPF_CRG_Barcelona--logoidt.png
-
-http://2018.igem.org/wiki/images/9/92/T--UPF_CRG_Barcelona--logopromega.png
-
-http://2018.igem.org/wiki/images/e/ea/T--UPF_CRG_Barcelona--logolabclinics.png
-
-http://2018.igem.org/wiki/images/3/37/T--UPF_CRG_Barcelona--logosensebarcelona.svg
-
-http://2018.igem.org/wiki/images/e/ef/T--UPF_CRG_Barcelona--PT_Sans-Web-Bold.ttf
-
-http://2018.igem.org/wiki/images/a/a8/T--UPF_CRG_Barcelona--PT_Sans-Web-BoldItalic.ttf
-
-http://2018.igem.org/wiki/images/d/db/T--UPF_CRG_Barcelona--PT_Sans-Web-Italic.ttf
-
-http://2018.igem.org/wiki/images/f/f8/T--UPF_CRG_Barcelona--PT_Sans-Web-Regular.ttf
-
-http://2018.igem.org/wiki/images/6/61/T--UPF_CRG_Barcelona--postcard_front.png
-
-http://2018.igem.org/wiki/images/0/0a/T--UPF_CRG_Barcelona--postcard_back.png
-
-http://2018.igem.org/wiki/images/b/be/T--UPF_CRG_Barcelona--covercomicspanish.jpg
-
-http://2018.igem.org/wiki/images/d/d8/T--UPF_CRG_Barcelona--covercomiccatalan.jpg
-
-http://2018.igem.org/wiki/images/c/cd/T--UPF_CRG_Barcelona--meetup5.jpg
-
-http://2018.igem.org/wiki/images/9/9d/T--UPF_CRG_Barcelona--meetup1.jpg
-
-http://2018.igem.org/wiki/images/9/92/T--UPF_CRG_Barcelona--meetup4.jpg
-
-http://2018.igem.org/wiki/images/d/db/T--UPF_CRG_Barcelona--meetup3.jpg
-
-http://2018.igem.org/wiki/images/1/12/T--UPF_CRG_Barcelona--meetup2.jpg
-
-http://2018.igem.org/wiki/images/8/8a/T--UPF_CRG_Barcelona--000000.png
-
-http://2018.igem.org/wiki/images/b/be/T--UPF_CRG_Barcelona--0079bf.png
-
-http://2018.igem.org/wiki/images/5/5e/T--UPF_CRG_Barcelona--412350.png
-
-http://2018.igem.org/wiki/images/4/4d/T--UPF_CRG_Barcelona--attributions.svg
-
-http://2018.igem.org/wiki/images/2/29/T--UPF_CRG_Barcelona--159B69.png
-
-http://2018.igem.org/wiki/images/2/2f/T--UPF_CRG_Barcelona--84AD84.png
-
-http://2018.igem.org/wiki/images/a/ab/T--UPF_CRG_Barcelona--225A7F.png
-
-http://2018.igem.org/wiki/images/8/8a/T--UPF_CRG_Barcelona--577d95.png
-
-http://2018.igem.org/wiki/images/9/90/T--UPF_CRG_Barcelona--36393D.png
-
-http://2018.igem.org/wiki/images/0/0c/T--UPF_CRG_Barcelona--AVENCIA.jpg
-
-http://2018.igem.org/wiki/images/d/d5/T--UPF_CRG_Barcelona--background.svg
-
-http://2018.igem.org/wiki/images/2/25/T--UPF_CRG_Barcelona--basicpart.svg
-
-http://2018.igem.org/wiki/images/c/c8/T--UPF_CRG_Barcelona--biosensor.svg
-
-http://2018.igem.org/wiki/images/1/18/T--UPF_CRG_Barcelona--biosensor_scheme.svg
-
-http://2018.igem.org/wiki/images/0/0c/T--UPF_CRG_Barcelona--c2ac6c.png
-
-http://2018.igem.org/wiki/images/9/95/T--UPF_CRG_Barcelona--demonstration.svg
-
-http://2018.igem.org/wiki/images/1/1f/T--UPF_CRG_Barcelona--cupricmethods.png
-
-http://2018.igem.org/wiki/images/e/ed/T--UPF_CRG_Barcelona--compositepart.svg
-
-http://2018.igem.org/wiki/images/0/0c/T--UPF_CRG_Barcelona--collaborations.svg
-
-http://2018.igem.org/wiki/images/1/1c/T--UPF_CRG_Barcelona--CARLA.jpg
-
-http://2018.igem.org/wiki/images/b/b3/T--UPF_CRG_Barcelona--C6E1D5.png
-
-http://2018.igem.org/wiki/images/9/90/T--UPF_CRG_Barcelona--exp_validation.svg
-
-http://2018.igem.org/wiki/images/9/91/T--UPF_CRG_Barcelona--EVA.jpg
-
-http://2018.igem.org/wiki/images/0/0c/T--UPF_CRG_Barcelona--education.svg
-
-http://2018.igem.org/wiki/images/3/39/T--UPF_CRG_Barcelona--description.svg
-
-http://2018.igem.org/wiki/images/e/ed/T--UPF_CRG_Barcelona--fads_3plasmics.svg
-
-http://2018.igem.org/wiki/images/6/6d/T--UPF_CRG_Barcelona--fads.svg
-
-http://2018.igem.org/wiki/images/6/6a/T--UPF_CRG_Barcelona--F26D6B.png
-
-http://2018.igem.org/wiki/images/c/c7/T--UPF_CRG_Barcelona--gelnightmare.jpg
-
-http://2018.igem.org/wiki/images/6/6a/T--UPF_CRG_Barcelona--FFFFFF.png
-
-http://2018.igem.org/wiki/images/7/72/T--UPF_CRG_Barcelona--fads_scheme.svg
-
-http://2018.igem.org/wiki/images/0/0e/T--UPF_CRG_Barcelona--highpassfilter.svg
-
-http://2018.igem.org/wiki/images/c/c3/T--UPF_CRG_Barcelona--DIMI.jpg
-
-http://2018.igem.org/wiki/images/f/f0/T--UPF_CRG_Barcelona--graphicdesign.svg
-
-http://2018.igem.org/wiki/images/5/5c/T--UPF_CRG_Barcelona--goldenpart34.svg
-
-http://2018.igem.org/wiki/images/e/ec/T--UPF_CRG_Barcelona--goldenpart32.svg
-
-http://2018.igem.org/wiki/images/5/59/T--UPF_CRG_Barcelona--HP3.png
-
-http://2018.igem.org/wiki/images/8/88/T--UPF_CRG_Barcelona--HP2.png
-
-http://2018.igem.org/wiki/images/a/a2/T--UPF_CRG_Barcelona--HP1.png
-
-http://2018.igem.org/wiki/images/1/14/T--UPF_CRG_Barcelona--highpassfilter34.svg
-
-http://2018.igem.org/wiki/images/d/de/T--UPF_CRG_Barcelona--highpassfilter32.svg
-
-http://2018.igem.org/wiki/images/9/92/T--UPF_CRG_Barcelona--HP10.png
-
-http://2018.igem.org/wiki/images/e/e9/T--UPF_CRG_Barcelona--HP9.png
-
-http://2018.igem.org/wiki/images/e/e3/T--UPF_CRG_Barcelona--HP8.png
-
-http://2018.igem.org/wiki/images/3/37/T--UPF_CRG_Barcelona--HP7.png
-
-http://2018.igem.org/wiki/images/b/b5/T--UPF_CRG_Barcelona--HP6.png
-
-http://2018.igem.org/wiki/images/b/b7/T--UPF_CRG_Barcelona--HP5.png
-
-http://2018.igem.org/wiki/images/9/90/T--UPF_CRG_Barcelona--HP4.png
-
-http://2018.igem.org/wiki/images/e/ec/T--UPF_CRG_Barcelona--HP20.png
-
-http://2018.igem.org/wiki/images/a/a2/T--UPF_CRG_Barcelona--HP19.png
-
-http://2018.igem.org/wiki/images/0/0e/T--UPF_CRG_Barcelona--GUILLEM.jpg
-
-http://2018.igem.org/wiki/images/f/fe/T--UPF_CRG_Barcelona--HP18.png
-
-http://2018.igem.org/wiki/images/9/9d/T--UPF_CRG_Barcelona--HP17.png
-
-http://2018.igem.org/wiki/images/d/df/T--UPF_CRG_Barcelona--HP16.png
-
-http://2018.igem.org/wiki/images/9/9f/T--UPF_CRG_Barcelona--HP15.png
-
-http://2018.igem.org/wiki/images/a/a5/T--UPF_CRG_Barcelona--HP14.png
-
-http://2018.igem.org/wiki/images/d/d6/T--UPF_CRG_Barcelona--HP13.png
-
-http://2018.igem.org/wiki/images/5/5d/T--UPF_CRG_Barcelona--HP12.png
-
-http://2018.igem.org/wiki/images/7/7d/T--UPF_CRG_Barcelona--HP11.png
-
-http://2018.igem.org/wiki/images/f/fc/T--UPF_CRG_Barcelona--intermediateconstruction_4.svg
-
-http://2018.igem.org/wiki/images/b/bd/T--UPF_CRG_Barcelona--intermediateconstruction_3.svg
-
-http://2018.igem.org/wiki/images/b/bf/T--UPF_CRG_Barcelona--intermediateconstruction_2.svg
-
-http://2018.igem.org/wiki/images/7/75/T--UPF_CRG_Barcelona--intermediateconstruction_1.svg
-
-http://2018.igem.org/wiki/images/f/fe/T--UPF_CRG_Barcelona--interlab.svg
-
-http://2018.igem.org/wiki/images/d/d7/T--UPF_CRG_Barcelona--integrated.svg
-
-http://2018.igem.org/wiki/images/9/96/T--UPF_CRG_Barcelona--improvedpart.svg
-
-http://2018.igem.org/wiki/images/5/57/T--UPF_CRG_Barcelona--humanpractices_silver.svg
-
-http://2018.igem.org/wiki/images/9/92/T--UPF_CRG_Barcelona--collaboration_accessiblewiki.png
-
-http://2018.igem.org/wiki/images/d/d8/T--UPF_CRG_Barcelona--logo.png
-
-http://2018.igem.org/wiki/images/7/7d/T--UPF_CRG_Barcelona--logo_horizontal.png
-
-http://2018.igem.org/wiki/images/b/b0/T--UPF_CRG_Barcelona--LAURA.jpg
-
-http://2018.igem.org/wiki/images/b/b4/T--UPF_CRG_Barcelona--JORDI.jpg
-
-http://2018.igem.org/wiki/images/f/fc/T--UPF_CRG_Barcelona--mage_scheme.svg
-
-http://2018.igem.org/wiki/images/c/c3/T--UPF_CRG_Barcelona--mage.svg
-
-http://2018.igem.org/wiki/images/b/bd/T--UPF_CRG_Barcelona--collaboration_marburg_team.png
-
-http://2018.igem.org/wiki/images/0/0c/T--UPF_CRG_Barcelona--notebook.svg
-
-http://2018.igem.org/wiki/images/d/d9/T--UPF_CRG_Barcelona--model.svg
-
-http://2018.igem.org/wiki/images/5/57/T--UPF_CRG_Barcelona--measurement.svg
-
-http://2018.igem.org/wiki/images/9/97/T--UPF_CRG_Barcelona--overexpression_scheme.svg
-
-http://2018.igem.org/wiki/images/8/80/T--UPF_CRG_Barcelona--par.svg
-
-http://2018.igem.org/wiki/images/5/5b/T--UPF_CRG_Barcelona--pARbasic.svg
-
-http://2018.igem.org/wiki/images/e/e5/T--UPF_CRG_Barcelona--logoDCEXSDTIC.png
-
-http://2018.igem.org/wiki/images/5/5a/T--UPF_CRG_Barcelona--plux.svg
-
-http://2018.igem.org/wiki/images/b/bc/T--UPF_CRG_Barcelona--partpFadBA34.svg
-
-http://2018.igem.org/wiki/images/6/6a/T--UPF_CRG_Barcelona--partpFadBA33.svg
-
-http://2018.igem.org/wiki/images/c/c1/T--UPF_CRG_Barcelona--partpFadBA32.svg
-
-http://2018.igem.org/wiki/images/7/76/T--UPF_CRG_Barcelona--partlux3434.svg
-
-http://2018.igem.org/wiki/images/3/34/T--UPF_CRG_Barcelona--partlux34.svg
-
-http://2018.igem.org/wiki/images/b/b3/T--UPF_CRG_Barcelona--partfadLcomposite.svg
-
-http://2018.igem.org/wiki/images/d/d8/T--UPF_CRG_Barcelona--partFadL.svg
-
-http://2018.igem.org/wiki/images/0/01/T--UPF_CRG_Barcelona--partfadEcomposite.svg
-
-http://2018.igem.org/wiki/images/8/8d/T--UPF_CRG_Barcelona--partFadE.svg
-
-http://2018.igem.org/wiki/images/9/94/T--UPF_CRG_Barcelona--partfadDcomposite.svg
-
-http://2018.igem.org/wiki/images/3/36/T--UPF_CRG_Barcelona--partFadD.svg
-
-http://2018.igem.org/wiki/images/5/58/T--UPF_CRG_Barcelona--safety.svg
-
-http://2018.igem.org/wiki/images/9/9c/T--UPF_CRG_Barcelona--results.svg
-
-http://2018.igem.org/wiki/images/f/f5/T--UPF_CRG_Barcelona--registryparts.svg
-
-http://2018.igem.org/wiki/images/0/00/T--UPF_CRG_Barcelona--rbs_3.svg
-
-http://2018.igem.org/wiki/images/c/c5/T--UPF_CRG_Barcelona--rbs_2.svg
-
-http://2018.igem.org/wiki/images/4/45/T--UPF_CRG_Barcelona--rbs_1.svg
-
-http://2018.igem.org/wiki/images/0/0d/T--UPF_CRG_Barcelona--protocols.svg
-
-http://2018.igem.org/wiki/images/6/6c/T--UPF_CRG_Barcelona--page_description.svg
-
-http://2018.igem.org/wiki/images/8/8c/T--UPF_CRG_Barcelona--labcoat_safety.svg
-
-http://2018.igem.org/wiki/images/8/8d/T--UPF_CRG_Barcelona--gloves_safety.svg
-
-http://2018.igem.org/wiki/images/e/ee/T--UPF_CRG_Barcelona--food_safety.svg
-
-http://2018.igem.org/wiki/images/1/15/T--UPF_CRG_Barcelona--t14par.svg
-
-http://2018.igem.org/wiki/images/f/f5/T--UPF_CRG_Barcelona--wildtypepromoter.gif
-
-http://2018.igem.org/wiki/images/5/5a/T--UPF_CRG_Barcelona--team.svg
-
-http://2018.igem.org/wiki/images/8/85/T--UPF_CRG_Barcelona--typography.png
-
-http://2018.igem.org/wiki/images/7/70/T--UPF_CRG_Barcelona--sponsors.svg
-
-
+9 92 T--UPF_CRG_Barcelona--logopromega.png
+e ea T--UPF_CRG_Barcelona--logolabclinics.png
+3 37 T--UPF_CRG_Barcelona--logosensebarcelona.svg
+e ef T--UPF_CRG_Barcelona--PT_Sans-Web-Bold.ttf
+a a8 T--UPF_CRG_Barcelona--PT_Sans-Web-BoldItalic.ttf
+d db T--UPF_CRG_Barcelona--PT_Sans-Web-Italic.ttf
+f f8 T--UPF_CRG_Barcelona--PT_Sans-Web-Regular.ttf
+6 61 T--UPF_CRG_Barcelona--postcard_front.png
+0 0a T--UPF_CRG_Barcelona--postcard_back.png
+b be T--UPF_CRG_Barcelona--covercomicspanish.jpg
+d d8 T--UPF_CRG_Barcelona--covercomiccatalan.jpg
+c cd T--UPF_CRG_Barcelona--meetup5.jpg
+9 9d T--UPF_CRG_Barcelona--meetup1.jpg
+9 92 T--UPF_CRG_Barcelona--meetup4.jpg
+d db T--UPF_CRG_Barcelona--meetup3.jpg
+1 12 T--UPF_CRG_Barcelona--meetup2.jpg
+8 8a T--UPF_CRG_Barcelona--000000.png
+b be T--UPF_CRG_Barcelona--0079bf.png
+5 5e T--UPF_CRG_Barcelona--412350.png
+4 4d T--UPF_CRG_Barcelona--attributions.svg
+2 29 T--UPF_CRG_Barcelona--159B69.png
+2 2f T--UPF_CRG_Barcelona--84AD84.png
+a ab T--UPF_CRG_Barcelona--225A7F.png
+8 8a T--UPF_CRG_Barcelona--577d95.png
+9 90 T--UPF_CRG_Barcelona--36393D.png
+0 0c T--UPF_CRG_Barcelona--AVENCIA.jpg
+d d5 T--UPF_CRG_Barcelona--background.svg
+2 25 T--UPF_CRG_Barcelona--basicpart.svg
+c c8 T--UPF_CRG_Barcelona--biosensor.svg
+1 18 T--UPF_CRG_Barcelona--biosensor_scheme.svg
+0 0c T--UPF_CRG_Barcelona--c2ac6c.png
+9 95 T--UPF_CRG_Barcelona--demonstration.svg
+1 1f T--UPF_CRG_Barcelona--cupricmethods.png
+e ed T--UPF_CRG_Barcelona--compositepart.svg
+0 0c T--UPF_CRG_Barcelona--collaborations.svg
+1 1c T--UPF_CRG_Barcelona--CARLA.jpg
+b b3 T--UPF_CRG_Barcelona--C6E1D5.png
+9 90 T--UPF_CRG_Barcelona--exp_validation.svg
+9 91 T--UPF_CRG_Barcelona--EVA.jpg
+0 0c T--UPF_CRG_Barcelona--education.svg
+3 39 T--UPF_CRG_Barcelona--description.svg
+e ed T--UPF_CRG_Barcelona--fads_3plasmics.svg
+6 6d T--UPF_CRG_Barcelona--fads.svg
+6 6a T--UPF_CRG_Barcelona--F26D6B.png
+c c7 T--UPF_CRG_Barcelona--gelnightmare.jpg
+6 6a T--UPF_CRG_Barcelona--FFFFFF.png
+7 72 T--UPF_CRG_Barcelona--fads_scheme.svg
+0 0e T--UPF_CRG_Barcelona--highpassfilter.svg
+c c3 T--UPF_CRG_Barcelona--DIMI.jpg
+f f0 T--UPF_CRG_Barcelona--graphicdesign.svg
+5 5c T--UPF_CRG_Barcelona--goldenpart34.svg
+e ec T--UPF_CRG_Barcelona--goldenpart32.svg
+5 59 T--UPF_CRG_Barcelona--HP3.png
+8 88 T--UPF_CRG_Barcelona--HP2.png
+a a2 T--UPF_CRG_Barcelona--HP1.png
+1 14 T--UPF_CRG_Barcelona--highpassfilter34.svg
+d de T--UPF_CRG_Barcelona--highpassfilter32.svg
+9 92 T--UPF_CRG_Barcelona--HP10.png
+e e9 T--UPF_CRG_Barcelona--HP9.png
+e e3 T--UPF_CRG_Barcelona--HP8.png
+3 37 T--UPF_CRG_Barcelona--HP7.png
+b b5 T--UPF_CRG_Barcelona--HP6.png
+b b7 T--UPF_CRG_Barcelona--HP5.png
+9 90 T--UPF_CRG_Barcelona--HP4.png
+e ec T--UPF_CRG_Barcelona--HP20.png
+a a2 T--UPF_CRG_Barcelona--HP19.png
+0 0e T--UPF_CRG_Barcelona--GUILLEM.jpg
+f fe T--UPF_CRG_Barcelona--HP18.png
+9 9d T--UPF_CRG_Barcelona--HP17.png
+d df T--UPF_CRG_Barcelona--HP16.png
+9 9f T--UPF_CRG_Barcelona--HP15.png
+a a5 T--UPF_CRG_Barcelona--HP14.png
+d d6 T--UPF_CRG_Barcelona--HP13.png
+5 5d T--UPF_CRG_Barcelona--HP12.png
+7 7d T--UPF_CRG_Barcelona--HP11.png
+f fc T--UPF_CRG_Barcelona--intermediateconstruction_4.svg
+b bd T--UPF_CRG_Barcelona--intermediateconstruction_3.svg
+b bf T--UPF_CRG_Barcelona--intermediateconstruction_2.svg
+7 75 T--UPF_CRG_Barcelona--intermediateconstruction_1.svg
+f fe T--UPF_CRG_Barcelona--interlab.svg
+d d7 T--UPF_CRG_Barcelona--integrated.svg
+9 96 T--UPF_CRG_Barcelona--improvedpart.svg
+5 57 T--UPF_CRG_Barcelona--humanpractices_silver.svg
+9 92 T--UPF_CRG_Barcelona--collaboration_accessiblewiki.png
+d d8 T--UPF_CRG_Barcelona--logo.png
+7 7d T--UPF_CRG_Barcelona--logo_horizontal.png
+b b0 T--UPF_CRG_Barcelona--LAURA.jpg
+b b4 T--UPF_CRG_Barcelona--JORDI.jpg
+f fc T--UPF_CRG_Barcelona--mage_scheme.svg
+c c3 T--UPF_CRG_Barcelona--mage.svg
+b bd T--UPF_CRG_Barcelona--collaboration_marburg_team.png
+0 0c T--UPF_CRG_Barcelona--notebook.svg
+d d9 T--UPF_CRG_Barcelona--model.svg
+5 57 T--UPF_CRG_Barcelona--measurement.svg
+9 97 T--UPF_CRG_Barcelona--overexpression_scheme.svg
+8 80 T--UPF_CRG_Barcelona--par.svg
+5 5b T--UPF_CRG_Barcelona--pARbasic.svg
+e e5 T--UPF_CRG_Barcelona--logoDCEXSDTIC.png
+5 5a T--UPF_CRG_Barcelona--plux.svg
+b bc T--UPF_CRG_Barcelona--partpFadBA34.svg
+6 6a T--UPF_CRG_Barcelona--partpFadBA33.svg
+c c1 T--UPF_CRG_Barcelona--partpFadBA32.svg
+7 76 T--UPF_CRG_Barcelona--partlux3434.svg
+3 34 T--UPF_CRG_Barcelona--partlux34.svg
+b b3 T--UPF_CRG_Barcelona--partfadLcomposite.svg
+d d8 T--UPF_CRG_Barcelona--partFadL.svg
+0 01 T--UPF_CRG_Barcelona--partfadEcomposite.svg
+8 8d T--UPF_CRG_Barcelona--partFadE.svg
+9 94 T--UPF_CRG_Barcelona--partfadDcomposite.svg
+3 36 T--UPF_CRG_Barcelona--partFadD.svg
+5 58 T--UPF_CRG_Barcelona--safety.svg
+9 9c T--UPF_CRG_Barcelona--results.svg
+f f5 T--UPF_CRG_Barcelona--registryparts.svg
+0 00 T--UPF_CRG_Barcelona--rbs_3.svg
+c c5 T--UPF_CRG_Barcelona--rbs_2.svg
+4 45 T--UPF_CRG_Barcelona--rbs_1.svg
+0 0d T--UPF_CRG_Barcelona--protocols.svg
+6 6c T--UPF_CRG_Barcelona--page_description.svg
+8 8c T--UPF_CRG_Barcelona--labcoat_safety.svg
+8 8d T--UPF_CRG_Barcelona--gloves_safety.svg
+e ee T--UPF_CRG_Barcelona--food_safety.svg
+1 15 T--UPF_CRG_Barcelona--t14par.svg
+f f5 T--UPF_CRG_Barcelona--wildtypepromoter.gif
+5 5a T--UPF_CRG_Barcelona--team.svg
+8 85 T--UPF_CRG_Barcelona--typography.png
+7 70 T--UPF_CRG_Barcelona--sponsors.svg

@@ -1,0 +1,39 @@
+.team-grid {
+    @include container;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2rem;
+    .team {
+        &-member {
+            margin: .5rem;
+            box-shadow: 0 1px 5px #E2E9ED;
+            grid-column: span 3;
+            transition: box-shadow 0.2s ease,
+                        transform 0.2s ease;
+            text-align: center;
+            &:hover {
+                z-index: 1;
+                box-shadow: 0 8px 2rem rgba(#000, 0.2);
+                transform: scale(1.1);
+            }    
+            img {
+                width: 100%;
+                padding-top: 1.5rem;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                //border-radius: 50%;
+            }
+            p.name {
+                text-align: center;
+                font-weight: 800;
+            }
+            p.title {
+                text-align: center;
+                color: #6F808A;
+            }
+        }
+        &-filler {
+            grid-column: span 1
+        }
+    }
+}

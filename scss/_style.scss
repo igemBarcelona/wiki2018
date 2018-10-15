@@ -148,34 +148,34 @@ a {
   text-decoration: none !important;
 }
 
-h1 {
+.page-title {
   font-weight: 800;
   color: #36393d;
 }
 
-h2 {
+.subapart1 {
   font-size: 24px;
   font-weight: 400px;
   color: #f26d6d;
 }
 
-h3 {
+.subapart2 {
   font-style: italic;
 }
 
-h4 {
+.subapart3 {
   font-weight: 800;
 }
 
 // References -------------------------
-h5 {
+.references {
   font-weight: 100;
   font-size: 15px;
 
 }
 
-// Figures footer = h6-----------------
-h6 {
+// Figures footer = .fig-caption-----------------
+.fig-caption {
   font-size: 10pt;
 }
 
@@ -404,7 +404,7 @@ tr:hover {
   color: #36393d;
   border-radius: 15px;
 
-  h3 {
+  .subapart2 {
     color: #36393d;
     text-align: center;
     font-style: normal;

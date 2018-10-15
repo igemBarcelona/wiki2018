@@ -371,42 +371,6 @@ tr:hover {
   background-color: #36393d;
 }
 
-#parts {
-  background-color: #36393d;
-  background-image: url("/assets/DNA_fons_parts.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  padding: 15px;
-}
-
-.boxes-table {
-  display: table;
-  margin-top: 10px;
-  border-spacing: 15px;
-  margin-bottom: -30px;
-  float: right;
-}
-
-.cell {
-  display: table-cell;
-}
-
-.box {
-  background-color: #fff;
-  text-decoration: none;
-  color: #36393d;
-  border-radius: 15px;
-
-  h3 {
-    color: #36393d;
-    text-align: center;
-    font-style: normal;
-  }
-
-  p {
-    padding: 10px;
-  }
-}
 
 .social {
   display: inline-block;

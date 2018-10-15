@@ -297,13 +297,20 @@ h6 {
   }
 }
 
-.svg-deliverables {
-  width: 400px;
+@media screen and (max-width: 800px) {
+  .grid-deliverables {
+    grid-template-columns: 1fr;
+  }
 }
 
-.svg-deliverables:hover {
+
+.deliverables-icon {
+  max-width: 300px;
+}
+
+.deliverables-icon:hover {
   background-color: #c6e1d5;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .grid-threecolumns {

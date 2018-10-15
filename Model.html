@@ -89,9 +89,12 @@
       <div>
         <p class=page-title>MODEL</p>
         <div class="grid-threecolumns">
-            <div>
-                <a href="#Overview"><button class="button">Model overview</button></a>
-              </div>
+          <div>
+            <a href="#Overview"><button class="button">Model overview</button></a>
+          </div>
+          <div>
+            <a href="#fba"><button class="button">Flux Balance Analysis Models</button></a>
+          </div>
           <div>
             <a href="#Simulation"><button class="button">Simulation of Intestine Conditions</button></a>
           </div>
@@ -101,12 +104,50 @@
         </div>
 
         <a name="Overview">
-            <p class=subapart1>Model overview</p>
-          </a>
+          <p class=subapart1>Model overview</p>
+        </a>
+        <p>It is very important to have in mind in which environment the genetically modified bacteria are going to be
+          working. In the intestine there is a steep gradient for oxygen and its concentrations decrease precipitously
+          to near anoxia at the midpoint of the lumen (Espey, 2013). For this reason, if we want our engineered
+          bacteria to work in the gut, it has to work under anaerobic conditions. However, LCFA are degraded via the
+          beta-oxidation pathway, an aerobic pathway for excellence, therefore it is needed to find alternative
+          strategies in order to metabolize LCFA without oxygen. </p>
+        <p>Moreover, when engineering a pathway in order to optimize it, it is very important to have in mind that the
+          overall efficiency of the synthetic pathway can be reduced by the loss of metabolic intermediates by
+          diffusion or by competent pathways (Na, Kim and Lee, 2010]. In the intestine, after diet ingest, there is
+          going to be other energetic substrates aside of LCFA, especially sugars and amino acids. Therefore, most of
+          the catabolic pathways of bacteria are going to be active and can interfere with beta oxidation efficiency.
+          For this reason, it is very important to study the metabolic network as a whole instead of only focusing on
+          the pathway that we want to modify. </p>
+
+        <a name="fba">
+          <p class=subapart1>Flux Balance Analysis Models</p>
+        </a>
+        <p>
+          In order to simulate LCFA uptake and metabolism by <i>E. coli</i> we performed flux balance analysis (FBA),
+          which is
+          a mathematical approach for analyzing the flow of metabolites through a metabolic network (Orth, Thiele and
+          Palsson, 2010) (see figure 1). FBA models make possible to predict cellular growth rate under different
+          environmental conditions or genetic perturbations. Also, it allows to analyze the influx or production of a
+          desired metabolite. For our models, we used the genome-scale metabolic network reconstruction of Escherichia
+          coli K-12 MG1655 iJO1366 (Orth et al., 2014), which contain all the known metabolic reactions in our <i>E.
+            coli</i>
+          strain and the genes that encode each enzyme (Oberhardt, Palsson and Papin, 2009). The final goal was to find
+          new strategies to engineer <i>E. coli</i> for achieving a bacterial system capable of efficiently uptaking
+          LCFA in
+          human gut-like conditions.
+        </p>
+        <img src="" alt="Figura FBA poster TFG">
+
         <a name="Simulation">
           <p class=subapart1>Simulation of Intestine Conditions</p>
         </a>
-        <p class=subapart2>Graph 1</p>
+        <p class=subapart2>Aerobic vs anaerobic growth with LCFA</p>
+
+        <p>First, we wanted to assess whether beta oxidation of LCFA was possible under anaerobic conditions. To do so,
+          growth was predicted by optimizing the biomass function under either aerobic or anaerobic conditions. Each
+          condition was analyzed with palmitate as the sole carbon source or glucose as a control variable. </p>
+
         <div id="graph_1" style="width:90%;height:400px;">
           <script>
             var wt_palmitate = {
@@ -146,7 +187,6 @@
                 color: "#0079bf",
               }
             };
-
             var anaerobic_glucose = {
               x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
               y: [0, 0, 0.020447524, 0.048079257, 0.075711014, 0.103342813, 0.130974529, 0.158606286, 0.186238043,
@@ -160,9 +200,7 @@
                 color: "#c2ca6c",
               }
             };
-
             var data = [wt_glucose, wt_palmitate, anaerobic_glucose, anaerobic_palmitate];
-
             var layout = {
               title: 'Anaerobic growth simulation with different electron acceptors',
               titlefont: {
@@ -196,14 +234,32 @@
                 },
               },
             };
-
             Plotly.newPlot('graph_1', data, layout, {
               displayModeBar: false
             });
           </script>
         </div>
+        <p class="fig-caption">Figure 1 | jdjjnf</p>
 
-        <p class=subapart2>Graph 2</p>
+        <p>The model predicted no growth at all when PA was the only carbon source in anaerobic conditions (Figure 1).
+          On the other hand, in aerobic conditions the simulations predicted a lot of growth (more than with only
+          glucose*). <b>That means that beta oxidation cannot be functional under anaerobic conditions </b>. When
+          glucose was the only carbon source <i>E. coli</i> showed little growth compared to aerobic conditions as
+          expected. </p>
+
+        <p class=subapart2>Anaerobic growth with different electron acceptors</p>
+        <p>The fact that in the simulated minimal medium bacteria could not grow with only palmitate as a carbon source
+          under anaerobic conditions, can be explained by the lack of reductive power in the cell. This blocks the beta
+          oxidation preventing the metabolism of palmitic acid. </p>
+        <p>Alternative electron acceptors molecules have been shown to allow anaerobic respiration of sugars (Unden and
+          Bongaerts, 1997). We hypothesized that these molecules could be able to oxidize LCFA too. Since the final
+          objective is to make our bacteria work in a human gut-like environment, we were only interested in those
+          electron acceptor molecules that could be found in the gut. Fumarate, nitrate and Trimethylamine N-oxide
+          (TMAO) have been shown to allow anaerobic respiration and both can be found in the gut in normal conditions
+          (Jones et al., 2011). Therefore, it was modelled the effect of these three molecules on the phenotype of
+          <i>E. coli</i> under anaerobic conditions.</p>
+
+
         <div id="graph_2" style="width:90%;height:400px;">
           <script>
             var wt_palmitate = {
@@ -248,7 +304,8 @@
             var nitrate_glucose = {
               x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
               y: [0, 0.075027774, 0.165970532, 0.256913286, 0.347856044, 0.438798798, 0.52974155, 0.620684313,
-                0.71162707, 0.802569832, 0.893512579, 0.984455339, 1.075398095, 1.166340858, 1.257283609, 1.34822636, 1.439169118, 1.530111878, 1.621054632, 1.711997388
+                0.71162707, 0.802569832, 0.893512579, 0.984455339, 1.075398095, 1.166340858, 1.257283609,
+                1.34822636, 1.439169118, 1.530111878, 1.621054632, 1.711997388
               ],
               name: 'Glucose_nitrate',
               type: 'scatter',
@@ -319,7 +376,9 @@
               }
             };
 
-            var data = [wt_glucose, wt_palmitate, nitrate_glucose, nitrate_palmitate, fumarate_glucose, fumarate_palmitic, tmao_glucose, tmao_palmitic];
+            var data = [wt_glucose, wt_palmitate, nitrate_glucose, nitrate_palmitate, fumarate_glucose,
+              fumarate_palmitic, tmao_glucose, tmao_palmitic
+            ];
 
             var layout = {
               title: 'Anaerobic growth simulation with different electron acceptors',
@@ -364,19 +423,6 @@
         <p class=subapart2>Graph 3</p>
         <div id="graph_3" style="width:90%;height:400px;">
           <script>
-            var uptake_lactate = {
-              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
-                27, 28, 29
-              ],
-              y: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
-                27, 28, 29
-              ],
-              name: 'Lactate Uptake',
-              type: 'scatter',
-              marker: {
-                color: "#0079bf",
-              }
-            };
             var uptake_glucose = {
               x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
                 27, 28, 29
@@ -425,7 +471,7 @@
               }
             };
 
-            var data = [uptake_glucose, uptake_lactate, uptake_palmitate, growth];
+            var data = [uptake_glucose, uptake_palmitate, growth];
 
             var layout = {
               title: 'No té titol',

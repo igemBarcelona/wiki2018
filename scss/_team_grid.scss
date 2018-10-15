@@ -1,39 +1,83 @@
 .team-grid {
     @include container;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-gap: 2rem;
-    .team {
-        &-member {
-            margin: .5rem;
-            box-shadow: 0 1px 5px #E2E9ED;
-            grid-column: span 3;
-            transition: box-shadow 0.2s ease,
-                        transform 0.2s ease;
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 0;
+    
+    .team-member {
+        margin: .5rem;
+        box-shadow: 0 1px 5px #E2E9ED;
+        transition: box-shadow 0.2s ease,
+        transform 0.2s ease;
+        text-align: center;
+        
+        &:hover {
+            z-index: 0;
+            box-shadow: 0 8px 2rem rgba(#000, 0.2);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        
+        img {
+            width: 100%;
+            padding-top: 1.5rem;
+            padding-left: .75rem;
+            padding-right: .75rem;
+            //border-radius: 50%;
+        }
+        
+        p.name {
             text-align: center;
-            &:hover {
-                z-index: 1;
-                box-shadow: 0 8px 2rem rgba(#000, 0.2);
-                transform: scale(1.1);
-            }    
-            img {
-                width: 100%;
-                padding-top: 1.5rem;
-                padding-left: .75rem;
-                padding-right: .75rem;
-                //border-radius: 50%;
-            }
-            p.name {
-                text-align: center;
-                font-weight: 800;
-            }
-            p.title {
-                text-align: center;
-                color: #6F808A;
+            font-weight: 800;
+        }
+        
+        p.title {
+            text-align: center;
+            color: #6F808A;
+        }
+    }
+}
+
+.team-image_description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+    img {
+        width: 100%;
+    }
+    div {
+        margin-top: auto;
+        p {
+            text-align: justify;
+        }
+        .question {
+            font-weight: 800;
+        }
+        .answer {
+            font-style: oblique;
+        }
+        .social-icons-team {
+            a {
+                color: #000;
+                text-decoration: none;
             }
         }
-        &-filler {
-            grid-column: span 1
-        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-image_description {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .team-grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -148,34 +148,34 @@ a {
   text-decoration: none !important;
 }
 
-h1 {
+.page-title {
   font-weight: 800;
   color: #36393d;
 }
 
-h2 {
+.subapart1 {
   font-size: 24px;
   font-weight: 400px;
   color: #f26d6d;
 }
 
-h3 {
+.subapart2 {
   font-style: italic;
 }
 
-h4 {
+.subapart3 {
   font-weight: 800;
 }
 
 // References -------------------------
-h5 {
+.references {
   font-weight: 100;
   font-size: 15px;
 
 }
 
-// Figures footer = h6-----------------
-h6 {
+// Figures footer = .fig-caption-----------------
+.fig-caption {
   font-size: 10pt;
 }
 
@@ -297,13 +297,20 @@ h6 {
   }
 }
 
-.svg-deliverables {
-  width: 400px;
+@media screen and (max-width: 800px) {
+  .grid-deliverables {
+    grid-template-columns: 1fr;
+  }
 }
 
-.svg-deliverables:hover {
+
+.deliverables-icon {
+  max-width: 300px;
+}
+
+.deliverables-icon:hover {
   background-color: #c6e1d5;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .grid-threecolumns {
@@ -371,6 +378,45 @@ tr:hover {
   background-color: #36393d;
 }
 
+<<<<<<< HEAD
+#parts {
+  background-color: #36393d;
+  background-image: url("/assets/DNA_fons_parts.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+.boxes-table {
+  display: table;
+  margin-top: 10px;
+  border-spacing: 15px;
+  margin-bottom: -30px;
+  float: right;
+}
+
+.cell {
+  display: table-cell;
+}
+
+.box {
+  background-color: #fff;
+  text-decoration: none;
+  color: #36393d;
+  border-radius: 15px;
+
+  .subapart2 {
+    color: #36393d;
+    text-align: center;
+    font-style: normal;
+  }
+
+  p {
+    padding: 10px;
+  }
+}
+=======
+>>>>>>> b29b9b9212adbb89fc30a3b1b8b64876b076762f
 
 .social {
   display: inline-block;
@@ -389,4 +435,8 @@ tr:hover {
 .spacer {
   height: 2rem;
   width: 100%;
+}
+
+.not-displayed {
+  display: none;
 }

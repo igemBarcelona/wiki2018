@@ -243,7 +243,7 @@
 
         <p>The model predicted no growth at all when PA was the only carbon source in anaerobic conditions (Figure 1).
           On the other hand, in aerobic conditions the simulations predicted a lot of growth (more than with only
-          glucose*). <b>That means that beta oxidation cannot be functional under anaerobic conditions </b>. When
+          glucose*). <b>That means that beta-oxidation cannot be functional under anaerobic conditions </b>. When
           glucose was the only carbon source <i>E. coli</i> showed little growth compared to aerobic conditions as
           expected. </p>
 
@@ -258,8 +258,13 @@
           (TMAO) have been shown to allow anaerobic respiration and both can be found in the gut in normal conditions
           (Jones et al., 2011). Therefore, it was modelled the effect of these three molecules on the phenotype of
           <i>E. coli</i> under anaerobic conditions.</p>
+        <p class=subapart2>Anaerobic growth with palmitate and glucose </p>
 
-
+        <p>In the gut, PA is never found alone, normally there are also sugars that come from the diet. Therefore, it
+          was analyzed how the uptake of PA is affected under different concentrations of glucose, the main sugar for
+          excellence. To do that, a fixed concentration of palmitate was set and the biomass function was optimized for
+          an increasing concentration of glucose. The nitrate available was set to be really low as we did before, in
+          order to make it the limiting factor.</p>
         <div id="graph_2" style="width:90%;height:400px;">
           <script>
             var wt_palmitate = {
@@ -375,11 +380,9 @@
                 symbol: "star-diamond",
               }
             };
-
             var data = [wt_glucose, wt_palmitate, nitrate_glucose, nitrate_palmitate, fumarate_glucose,
               fumarate_palmitic, tmao_glucose, tmao_palmitic
             ];
-
             var layout = {
               title: 'Anaerobic growth simulation with different electron acceptors',
               titlefont: {
@@ -413,12 +416,23 @@
                 },
               },
             };
-
             Plotly.newPlot('graph_2', data, layout, {
               displayModeBar: false
             });
           </script>
         </div>
+
+        <p class="fig-caption">Figure 2 | jdjjnf</p>
+
+        <p>Growth rate was predicted under anaerobic conditions with an arbitrary high concentration of nitrate,
+          fumarate or TMAO in the simulated medium. When nitrate was present, both palmitate and glucose were able to
+          be oxidized (Figure 2), indicating that nitrate was the final electron acceptor in the phosphorylative
+          oxidation. On the other hand, neither fumarate nor TMAO were able to oxidize PA. </p>
+        <p>Gut concentrations of nitrate and fumarate are not well known due to the fact that is very difficult to
+          quantify molecule concentrations in vivo in the intestine. However, in healthy conditions their
+          concentrations are not very high (Jones et al., 2007). For this reason, in order to model PA uptake, we set a
+          low concentration of nitrate in the medium for all the models (20 mmol gDW<sup>-1 </sup>hr<sup>-1</sup> ,
+          millimoles per gram dry cell weight per hour). </p>
 
         <p class=subapart2>Graph 3</p>
         <div id="graph_3" style="width:90%;height:400px;">
@@ -529,7 +543,25 @@
             });
           </script>
         </div>
-        <p class=subapart2>Graph 4</p>
+
+        <p class="fig-caption">Figure 3 | jdjjnf</p>
+
+        <p>The model predicted a reduction of PA uptake (from 2.5 to 0.4 mmol gDW<sup>-1 </sup> hr<sup>-1 </sup>) when
+          glucose concentration was increased (Figure 3). Nevertheless, when glucose concentration overcame a certain
+          threshold, approximately at 14 mmol, palmitate uptake got stabilized at 0.4 mmol (Figure 3). These results
+          indicate that bacteria, in order to maximize their growth, when both PA and glucose are present and there is
+          little reductive power, prioritize the oxidation of glucose before palmitate. When the reductive power is not
+          enough to fully oxidize all the glucose available, glucose is partially fermented. When this happens,
+          palmitate uptake does not decrease anymore for any increase in glucose concentration.</p>
+
+
+        <p class=subapart2>Finding strategies to priorize LCFA oxidation over sugars oxidation</p>
+        <p>After the previous results, we hypothesized that an increase of glucose fermentation would increase PA
+          uptake. In order to check the hypothesis, it was optimized the production of lactate using FBA in order to
+          force the organism to ferment glucose. To do so, the lower bound of the lactate exchange reaction was set to
+          be different positive values.</p>
+
+
         <div id="graph_4" style="width:90%;height:400px;">
           <script>
             var uptake_glucose = {
@@ -627,7 +659,28 @@
             });
           </script>
         </div>
-        <p class=subapart2>Palmitate Uptake</p>
+
+        <p>Our models predicted that an increase of lactate production allowed an increase of palmitate uptake (Figure
+          4). PA uptake flux went from 0.99 to 2.81 mmol gDW<sup>-1 </sup> hr<sup>-1 </sup>, when there was no lactate
+          production and when there was 19 mmol gDW<sup>-1 </sup> hr<sup>-1 </sup> of lactate production respectively
+          (Figure 4). Biomass was reduced from 0.93 to 0.41 mmol gDW<sup>-1 </sup> hr<sup>-1 </sup>.</p>
+
+
+        <p class=subapart2>Creating the perfect intestine PA eater</p>
+        <p>To achieve this behavior for our bacteria, we would have to genetically modify it. One simplistic option
+          would be to overexpress the lactate dehydrogenase gene. However, this system would not be very effective
+          because of blab bla and we would be creating a metabolic burden that would reduce bacterial growth a lot. For
+          this reason we decided to find genome knock outs that would cause the same effect. </p>
+
+        <p>We implemented an algorithm to compare the metabolic flow between the wildtype strain and a simulated lactate
+          producer strain, with that, we were able to find possible targets as knock outs. We designed another
+          algorithm to simulate the effects of the target knock outs on the biomass and PA uptake and we iterated both
+          algorithms until achieving a substantial increase in PA uptake without creating a letal genome modification.
+          We ended up with a list of 63 knock outs that together produced the desirable effect. However, it would be
+          unfeasible to perform that many knock outs. We designed one more algorithm to refine the large list and rule
+          out the redundant gene knock outs. We achieved to find a combination of 6 knock out that were able to
+          increase a lot PA uptake.</p>
+
         <div id="palmitate_uptake" style="width:90%;height:400px;">
           <script>
             var palmitate_up = {
@@ -688,6 +741,7 @@
             });
           </script>
         </div>
+
         <a name="Switch">
           <p class=subapart1>Metabolic Switch</p>
         </a>

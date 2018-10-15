@@ -16,6 +16,8 @@
   <meta property="og:image" content="" /> <!-- IMAGE URL -->
   <!-- Stylesheets, Fonts, Neccessary Scripts -->
   <link rel="stylesheet" href="css/master.min.css">
+  <!--PLOT.LY JavaScript-->
+  <script src="js/plotly.js"></script>
 </head>
 
 <body>
@@ -56,10 +58,13 @@
       <!-- Swiper -->
       <div class="swiper-container" id="sw-container">
         <div class="swiper-wrapper">
+<<<<<<< HEAD
+=======
           <a class="swiper-slide swiper-slide-menu" href="Validation.html">
             <embed rc="assets/T--UPF_CRG_Barcelona--exp_validation.svg" alt="Experimental Validation Doodle">
             <p>Experimental Validation</p>
           </a>
+>>>>>>> 97a006a00cb1c452b26f22097a75c8d95b7108a6
           <a class="swiper-slide swiper-slide-menu" href="Model.html">
             <embed rc="assets/T--UPF_CRG_Barcelona--model.svg" alt="Computationtal Model Doodle">
             <p>Model</p>
@@ -68,10 +73,13 @@
             <embed rc="assets/T--UPF_CRG_Barcelona--mage.svg" alt="Graphic Design Doodle">
             <p>Graphic Design</p>
           </a>
+<<<<<<< HEAD
+=======
           <a class="swiper-slide swiper-slide-menu" href="Tutorials.html">
             <embed rc="assets/T--UPF_CRG_Barcelona--results.svg" alt="Tutorials doodle">
             <p>Tutorials</p>
           </a>
+>>>>>>> 97a006a00cb1c452b26f22097a75c8d95b7108a6
         </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
@@ -82,12 +90,568 @@
 
   <main>
 
-    <section class="">
+    <section class="container-centered">
 
       <div>
-        <h1 class="heading">Jump off balcony, onto stranger's head ignore the squirrels, you'll never catch them anyway</h1>
+        <h1>MODEL</h1>
+        <div class="grid-threecolumns">
+            <div>
+                <a href="#Overview"><button class="button">Model overview</button></a>
+              </div>
+          <div>
+            <a href="#Simulation"><button class="button">Simulation of Intestine Conditions</button></a>
+          </div>
+          <div>
+            <a href="#Switch"><button class="button">Metabolic Switch</button></a>
+          </div>
+        </div>
 
+        <a name="Overview">
+            <h2>Model overview</h2>
+          </a>
+        <a name="Simulation">
+          <h2>Simulation of Intestine Conditions</h2>
+        </a>
+        <h3>Graph 1</h3>
+        <div id="graph_1" style="width:90%;height:400px;">
+          <script>
+            var wt_palmitate = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0.229996059, 0.472515672, 0.715035284, 0.957554897, 1.20007451, 1.442594122, 1.685113735,
+                1.927633348, 2.17015296, 2.412672573, 2.65519218560, 2.89771179827, 3.14023141094, 3.38275102361,
+                3.62527063628, 3.86779024894, 4.11030986161, 4.35282947428, 4.59534908695
+              ],
+              name: 'Palmitic',
+              type: 'scatter',
+              marker: {
+                color: "#0079bf",
+              }
+            };
+            var wt_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0.086478583, 0.186022275, 0.285565967, 0.385109659, 0.484653352, 0.584197044, 0.683740736,
+                0.783284428, 0.88282812, 0.982371813, 1.081915505, 1.181459197, 1.281002889, 1.380546582,
+                1.480090274, 1.579633966, 1.679177658, 1.778721351, 1.878265043,
+              ],
+              name: 'Glucose',
+              type: 'scatter',
+              marker: {
+                color: "#c2ca6c",
+              }
+            };
+            var anaerobic_palmitate = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0, -0.052796042, -0.052796181, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604,
+                -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -
+                0.05279604, -0.05279604, -0.05279604, -0.05279604
+              ],
+              name: 'Anaerobic palmitic',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#0079bf",
+              }
+            };
 
+            var anaerobic_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0, 0.020447524, 0.048079257, 0.075711014, 0.103342813, 0.130974529, 0.158606286, 0.186238043,
+                0.2138698, 0.241501566, 0.269133314, 0.296765071, 0.324396829, 0.352028586, 0.379660341, 0.4072921,
+                0.434923859, 0.462555618, 0.490187371,
+              ],
+              name: 'Anaerobic glucose',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#c2ca6c",
+              }
+            };
+
+            var data = [wt_glucose, wt_palmitate, anaerobic_glucose, anaerobic_palmitate];
+
+            var layout = {
+              title: 'Anaerobic growth simulation with different electron acceptors',
+              titlefont: {
+                family: "PT Sans",
+                size: 15,
+                color: "#36393d",
+              },
+              xaxis: {
+                title: "Maximum uptake rate",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                title: 'Growth rate',
+                autorange: true,
+                showticklabels: true,
+                zeroline: false,
+                autorange: true,
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+            };
+
+            Plotly.newPlot('graph_1', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+        </div>
+
+        <h3>Graph 2</h3>
+        <div id="graph_2" style="width:90%;height:400px;">
+          <script>
+            var wt_palmitate = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0, -0.052796042, -0.052796181, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604,
+                -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -0.05279604, -
+                0.05279604, -0.05279604, -0.05279604, -0.05279604
+              ],
+              name: 'Palmitic',
+              type: 'scatter',
+              marker: {
+                color: "#0079bf",
+              }
+            };
+            var wt_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0, 0.020447523874698, 0.0480792573625964, 0.0757110144675361, 0.103342813469439,
+                0.130974528677416, 0.158606285782357, 0.186238042887297, 0.213869799992238, 0.241501566051737,
+                0.26913331420, 0.296765071307057, 0.324396828546013, 0.352028585516939, 0.379660341423004,
+                0.407292099726817, 0.434923858847469, 0.462555617559701, 0.490187371041636
+              ],
+              name: 'Glucose',
+              type: 'scatter',
+              marker: {
+                color: "#c2ca6c",
+              }
+            };
+            var nitrate_palmitate = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0.136442081384302, 0.289672934741247, 0.442903788098192, 0.596134636907663, 0.749365490264608,
+                0.902596343442927, 1.055827197, 1.20905805, 1.362288904, 1.515519757, 1.66875061, 1.821981464,
+                1.975212317, 2.128443171, 2.281674024, 2.434904882, 2.588135731, 2.741366583, 2.894597433
+              ],
+              name: 'Palmitic_nitrate',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#0079bf",
+              }
+            };
+
+            var nitrate_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0.075027774, 0.165970532, 0.256913286, 0.347856044, 0.438798798, 0.52974155, 0.620684313,
+                0.71162707, 0.802569832, 0.893512579, 0.984455339, 1.075398095, 1.166340858, 1.257283609, 1.34822636, 1.439169118, 1.530111878, 1.621054632, 1.711997388
+              ],
+              name: 'Glucose_nitrate',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#c2ca6c",
+              }
+            };
+            var tmao_palmitic = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, -0.0435845059232994, -0.0435845059232996, -0.0435845059232997, -0.0435845059232994, -
+                0.0435845059232994, -0.0435845059232993, -0.0435845059232994, -0.0435845059232995, -
+                0.0435845059232996, -0.0435845059232994, -0.0435845059232996, -0.0435845059232996, -
+                0.0435845059232993, -0.0435845059232996, -0.0435845059232996, -0.0435845059232995, -
+                0.0435845059232998, -0.0435845059232997, -0.0435845059232994
+              ],
+              name: 'Palmitic_TMAO',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#0079bf",
+                symbol: "square",
+              }
+            };
+            var tmao_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0.0424658429089024, 0.111160588790953, 0.179855334672997, 0.248550080555252, 0.317244826437098,
+                0.385939572319142, 0.454634318201201, 0.523329064083245, 0.592023855818731, 0.660718555847334,
+                0.729413301729391, 0.798108047611444, 0.866802793493473, 0.935497539375541, 1.00419228525758,
+                1.07288703113964, 1.14158177702167, 1.21027652290374, 1.2789712687858
+              ],
+              name: 'Glucose_TMAO',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#c2ca6c",
+                symbol: "square",
+              }
+            };
+            var fumarate_palmitic = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0.0729514559456984, 0.0729514559456983, 0.0729514559456978, 0.0729514559456978,
+                0.0729514559456978, 0.0729514559456978, 0.0729514559456988, 0.0729514559456984, 0.072951455946407,
+                0.0729514559457008, 0.0729514559456989, 0.0729514559452601, 0.0729514559456976, 0.0729514559456968,
+                0.0729514559457012, 0.0729514559457171, 0.0729514559470517, 0.072951455945701, 0.072951455945167
+              ],
+              name: 'Palmitic_fumarate',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#0079bf",
+                symbol: "star-diamond",
+              }
+            };
+            var fumarate_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 0, 0.020447523874698, 0.0480792573625964, 0.0757110144675361, 0.103342813469439,
+                0.130974528677416, 0.158606285782357, 0.186238042887297, 0.213869799992238, 0.241501566051737,
+                0.269133314202118, 0.296765071307057, 0.324396828546013, 0.352028585516939, 0.379660341423004,
+                0.407292099726817, 0.434923858847469, 0.462555617559701, 0.490187371041636
+              ],
+              name: 'Glucose_fumarate',
+              type: 'scatter',
+              mode: 'markers',
+              marker: {
+                color: "#c2ca6c",
+                symbol: "star-diamond",
+              }
+            };
+
+            var data = [wt_glucose, wt_palmitate, nitrate_glucose, nitrate_palmitate, fumarate_glucose, fumarate_palmitic, tmao_glucose, tmao_palmitic];
+
+            var layout = {
+              title: 'Anaerobic growth simulation with different electron acceptors',
+              titlefont: {
+                family: "PT Sans",
+                size: 15,
+                color: "#36393d",
+              },
+              xaxis: {
+                title: "Maximum uptake rate",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                title: 'Growth rate',
+                autorange: true,
+                showticklabels: true,
+                zeroline: false,
+                autorange: true,
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+            };
+
+            Plotly.newPlot('graph_2', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+        </div>
+
+        <h3>Graph 3</h3>
+        <div id="graph_3" style="width:90%;height:400px;">
+          <script>
+            var uptake_lactate = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+                27, 28, 29
+              ],
+              y: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+                27, 28, 29
+              ],
+              name: 'Lactate Uptake',
+              type: 'scatter',
+              marker: {
+                color: "#0079bf",
+              }
+            };
+            var uptake_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+                27, 28, 29
+              ],
+              y: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+                10, 10, 10, 10, 10,
+              ],
+              name: 'Glucose Uptake',
+              type: 'scatter',
+              marker: {
+                color: "#c2ca6c",
+              }
+            };
+            var uptake_palmitate = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+                27, 28, 29
+              ],
+              y: [0.999814085, 1.093689037, 1.18756399, 1.281438942, 1.375313894, 1.469188847, 1.563063799,
+                1.656938751, 1.750813704, 1.844688656, 1.938563609, 2.032438561, 2.126313513, 2.220188466,
+                2.314063418, 2.40793837, 2.501813323, 2.595688275, 2.689563227, 2.78343818, 2.877313132,
+                2.971188084, 3.065063037, 3.158937989, 3.252812942, 3.346687894, 3.440562846, 3.534437799,
+                3.628312751, 3.722187703
+              ],
+              name: 'Palmitate Uptake',
+              type: 'scatter',
+              marker: {
+                color: "#577d95",
+              }
+            };
+
+            var growth = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+                27, 28, 29
+              ],
+              y: [0.938295419, 0.910513661, 0.882731903, 0.854950145, 0.827168387, 0.799386629, 0.771604871,
+                0.743823113, 0.716041355, 0.688259597, 0.660477839, 0.632696081, 0.604914323, 0.577132565,
+                0.549350807, 0.52156905, 0.493787292, 0.466005534, 0.438223776, 0.410442018, 0.38266026,
+                0.354878502, 0.327096744, 0.299314986, 0.271533228, 0.24375147, 0.215969712, 0.188187954,
+                0.160406196, 0.132624438
+              ],
+              name: 'Growth Rate',
+              yaxis: 'y2',
+              type: 'scatter',
+              marker: {
+                color: "#412350",
+              }
+            };
+
+            var data = [uptake_glucose, uptake_lactate, uptake_palmitate, growth];
+
+            var layout = {
+              title: 'No té titol',
+              titlefont: {
+                family: "PT Sans",
+                size: 15,
+                color: "#36393d",
+              },
+              xaxis: {
+                title: "Lactate production",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                title: 'Uptake rate',
+                autorange: true,
+                showticklabels: true,
+                zeroline: false,
+                autorange: true,
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis2: {
+                title: 'Growth rate',
+                autorange: true,
+                showticklabels: true,
+                zeroline: false,
+                autorange: true,
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                overlaying: 'y',
+                side: 'right',
+              },
+            };
+            Plotly.newPlot('graph_3', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+        </div>
+        <h3>Graph 4</h3>
+        <div id="graph_4" style="width:90%;height:400px;">
+          <script>
+            var uptake_glucose = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              name: 'Glucose Uptake',
+              type: 'scatter',
+              marker: {
+                color: "#0079bf",
+              }
+            };
+            var uptake_palmitate = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [2.495245375, 2.363192096, 2.213396909, 2.061699056, 1.910001203, 1.75830335, 1.606605497,
+                1.454907644, 1.303209791, 1.151511938, 0.999814085, 0.848116232, 0.696418379, 0.539605421,
+                0.382675316, 0.396134278, 0.410469656, 0.424805034, 0.439140412, 0.45347579
+              ],
+              name: 'Palmitate Uptake',
+              type: 'scatter',
+              marker: {
+                color: "#c2ca6c",
+              }
+            };
+
+            var growth = {
+              x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+              y: [0.205666742, 0.287031811, 0.360177912, 0.432442601, 0.504707289, 0.576971977, 0.649236666,
+                0.721501354, 0.793766042, 0.86603073, 0.938295419, 1.010560107, 1.082824795, 1.152719903,
+                1.222560742, 1.268563352, 1.314470349, 1.360377346, 1.406284343, 1.45219134
+              ],
+              name: 'Growth Rate',
+              yaxis: 'y2',
+              type: 'scatter',
+              marker: {
+                color: "#412350",
+              }
+            };
+
+            var data = [uptake_glucose, uptake_palmitate, growth];
+
+            var layout = {
+              title: 'No té titol',
+              titlefont: {
+                family: "PT Sans",
+                size: 15,
+                color: "#36393d",
+              },
+              xaxis: {
+                title: "Glucose Maximum uptake rate",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                title: 'Uptake rate',
+                autorange: true,
+                showticklabels: true,
+                zeroline: false,
+                autorange: true,
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis2: {
+                title: 'Growth rate',
+                autorange: true,
+                showticklabels: true,
+                zeroline: false,
+                autorange: true,
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                overlaying: 'y',
+                side: 'right',
+              },
+            };
+            Plotly.newPlot('graph_4', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+        </div>
+        <h3>Palmitate Uptake</h3>
+        <div id="palmitate_uptake" style="width:90%;height:400px;">
+          <script>
+            var palmitate_up = {
+              x: ['Wildtype', '6 KO', '7 KO', '5 KO', '6 KO only glucose', '6 KO only palmitate'],
+              y: [0.45347579, 1.788431437, 2.04101627, 0.446545532, 0, 2.495197114],
+              name: 'Palmitate Uptake',
+              type: 'bar',
+              marker: {
+                color: '#0079bf',
+              }
+            };
+            var growth = {
+              x: ['Wildtype', '6 KO', '7 KO', '5 KO', '6 KO only glucose', '6 KO only palmitate'],
+              y: [1.45219134, 0.928854207, 0.841675175, 1.42999818, 0.623268257, 0.205644384],
+              name: 'Growth',
+              type: 'bar',
+              marker: {
+                color: "#c2ca6c",
+              }
+            };
+            var data = [palmitate_up, growth];
+            var layout = {
+              barmode: 'group',
+              title: "Palmitate Uptake with glucose present",
+              titlefont: {
+                family: "PT Sans",
+                size: 15,
+                color: "#36393d",
+              },
+              xaxis: {
+                autorange: true,
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                zeroline: false,
+                autorange: true,
+                title: "Growth rate / palmitate uptake",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+            };
+            Plotly.newPlot('palmitate_uptake', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+        </div>
+        <a name="Switch">
+          <h2>Metabolic Switch</h2>
+        </a>
       </div>
 
     </section>
@@ -139,7 +703,7 @@
   <script>
     // Initialize Swiper
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 6,
+      slidesPerView: 2,
       slidesPerGroup: 1,
       loop: true,
       freeMode: true,

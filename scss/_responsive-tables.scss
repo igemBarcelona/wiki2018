@@ -1,47 +1,43 @@
-.scrollable {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px; }
-  .scrollable ::-webkit-scrollbar {
-    width: 0.5em;
-    height: 0.5em; }
-  .scrollable ::-webkit-scrollbar-thumb {
-    background: silver; }
-  .scrollable ::-webkit-scrollbar-track {
-    background: grey; }
-  .scrollable body {
-    scrollbar-face-color: silver;
-    scrollbar-track-color: grey; }
-  .scrollable .scroll-wrap {
-    overflow-x: auto; }
-    .scrollable .scroll-wrap.scroll:before, .scrollable .scroll-wrap.scroll:after {
-      content: "";
-      height: 100%;
-      position: absolute;
-      top: 30px;
-      width: 50px;
-      opacity: 0; }
-    .scrollable .scroll-wrap.scroll.shadow-left:before {
-      border-radius: 0 10px 10px 0 / 0 50% 50% 0;
-      box-shadow: 5px 0 10px rgba(0, 0, 0, 0.25);
-      right: 100%;
-      opacity: 1; }
-    .scrollable .scroll-wrap.scroll.shadow-right:after {
-      border-radius: 10px 0 0 10px / 50% 0 0 50%;
-      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
-      left: 100%;
-      opacity: 1; }
-  @media (min-width: 0px) and (max-width: 720px) {
-    .scrollable .swipe-icon:after {
-      display: block;
-      height: 30px;
-      content: "❮ Swipe ❯";
-      text-align: right;
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase; } }
-  .scrollable table {
-    margin: 0; }
-    @media (min-width: 0px) and (max-width: 720px) {
-      .scrollable table {
-        min-width: 700px !important; } }
+/*! fluid-table.css v0.0.1 | MIT License | github.com/amalfra/fluid-table */
+
+.fluid-table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  word-break: break-word;
+}
+
+@media only screen and (max-width: 1000px) {
+  .fluid-table thead {
+    display: none;
+  }
+
+  .fluid-table tr {
+    display: block;
+  }
+
+  .fluid-table td {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    clear: both;
+    width: 100% !important;
+    max-width: none !important;
+    white-space: normal !important;
+    text-align: right;
+    line-height: 2;
+    border: 5px solid #fff;
+  }
+
+  .fluid-table td.heading {
+    color: #fff;
+    background-color: #36393d;
+  }
+
+  .fluid-table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}

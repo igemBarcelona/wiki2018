@@ -161,6 +161,8 @@ a {
 
 .subapart2 {
   font-style: italic;
+  font-weight: 700;
+  font-size: 2em;
 }
 
 .subapart3 {
@@ -329,7 +331,6 @@ a {
 
 
 table {
-  width: 90%;
   text-align: center;
   vertical-align: middle;
   font-size: 13px;
@@ -339,7 +340,7 @@ th {
   font-weight: 800;
   background-color: #36393d;
   color: #ffffff;
-  height: 10px;
+  line-height: 1.2;
   padding: 5px;
 }
 

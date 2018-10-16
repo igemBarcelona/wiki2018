@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/master.min.css">
   <!--PLOT.LY JavaScript-->
   <script src="js/plotly.js"></script>
+  <style>table{overflow-x: auto;}</style>
 </head>
 
 <body>
@@ -183,7 +184,7 @@
         </center>
         <p class="subapart3">Particle Standard Curve</p>
         <center>
-          <div id="interlab_standardcurve_1" style="width:90%;height:400px;">
+          <div id="interlab_standardcurve_1" style="width:70vw;">
             <script>
               INTERLAB = document.getElementById('interlab_standardcurve_1');
               var x = [2.350e+008, 1.180e+008, 5.880e+007, 2.940e+007, 1.470e+007, 7350000.000, 3680000.000,
@@ -218,6 +219,7 @@
                 titlefont: {
                   family: "PT Sans",
                   size: 15,
+                  autosize: true // set autosize to rescale
                 },
                 xaxis: {
                   title: "Concentration of beads (uM)",
@@ -254,17 +256,17 @@
             </script>
           </div>
           <p class="fig-caption">Figure 1 | Graph showing the Standard curve for the calibration of OD600nm with silica beads. </p>
-          <div id="interlab_standardcurve" style="width:90%;height:400px;">
+          <div id="interlab_standardcurve" style="width:70vw;">
             <script>
              
               var x = [2.350e+008, 1.180e+008, 5.880e+007, 2.940e+007, 1.470e+007, 7350000.000, 3680000.000,
                 1840000.000,
                 919000.000, 460000.000, 230000.000, 0.000
-              ],
+              ];
               var y = [0.364, 0.2165, 0.1515, 0.101, 0.073249996, 0.05725, 0.047250003, 0.041, 0.039249998, 0.038,
                 0.0375,
                 0.03475
-              ],
+              ];
               var trace1 = {
                 x: x,
                 y: y,
@@ -289,6 +291,7 @@
                 titlefont: {
                   family: "PT Sans",
                   size: 15,
+                  autosize: true // set autosize to rescale
                 },
                 xaxis: {
                   type: 'log',
@@ -381,7 +384,7 @@
         <p class="subapart3">Fluorescein Standard Curve</p>
         <p>This calibration has a R<sup>2</sup>=0,8547.</p>
         <center>
-          <div id="interlab_standardcurve3" style="width:90%;height:400px;">
+          <div id="interlab_standardcurve3" style="width:70vw;">
             <script>
               var x = [10, 5, 2.5, 0.625, 0.3125, 0.15625, 0.078125, 0.0390625, 0.0195313, 0.0097656, 0];
               var y = [76499.00, 76169.75, 40478, 20857.75, 10605.50, 5375.50, 2715.75, 1114.00, 804.75, 431.00, 226.00,
@@ -411,6 +414,7 @@
                 titlefont: {
                   family: "PT Sans",
                   size: 15,
+                  autosize: true // set autosize to rescale
                 },
                 xaxis: {
                   title: "Fluorescein (uM)",
@@ -448,7 +452,7 @@
           </div>
           <p class="fig-caption">Figure 3 | Fluorescence standard curve to calibrate the measurements with fluorescein. </p>
          
-          <div id="interlab_standardcurve_4" style="width:90%;height:400px;">
+          <div id="interlab_standardcurve_4" style="width:70vw;">
             <script>
              
               var x = [10, 5, 2.5, 0.625, 0.3125, 0.15625, 0.078125, 0.0390625, 0.0195313, 0.0097656, 0]
@@ -479,6 +483,7 @@
                 titlefont: {
                   family: "PT Sans",
                   size: 15,
+                  autosize: true // set autosize to rescale
                 },
                 xaxis: {
                   type: 'log',
@@ -586,7 +591,7 @@
         <p class="subapart2">Measurement</p>
         <p class="subapart3">Fluorescence per optical density</p>
         <center>
-          <div id="interlab_measure1" style="width:90%;height:400px;"></div>
+          <div id="interlab_measure1" style="width:70vw;"></div>
           <script>
             var x = ['Negative Control', 'Negative Control', 'Negative Control', 'Negative Control', 'Negative Control',
               'Negative Control', 'Positive Control', 'Positive Control', 'Positive Control', 'Positive Control',
@@ -636,6 +641,7 @@
               titlefont: {
                 family: "PT Sans",
                 size: 15,
+                autosize: true // set autosize to rescale
               },
               xaxis: {
                 autorange: true,
@@ -676,7 +682,7 @@
           </script>
 
           <p class="fig-caption">Figure 5 | Fluorescein (uM) related to OD600nm to extrapolate measures of fluorescence with optical density measurements.  </p>
-          <div id="interlab_measure2" style="width:90%;height:400px;">
+          <div id="interlab_measure2" style="width:70vw;">
             <script>
               var x = ['Negative Control', 'Negative Control', 'Negative Control', 'Negative Control',
                 'Negative Control',
@@ -732,6 +738,7 @@
                 titlefont: {
                   family: "PT Sans",
                   size: 15,
+                  autosize: true // set autosize to rescale
                 },
                 xaxis: {
                   autorange: true,
@@ -775,7 +782,7 @@
         </center>
         <p class="subapart3">Colony Forming Units per OD600</p>
         <center>
-          <div id="interlab_measure3" style="width:90%;height:400px;">
+          <div id="interlab_measure3" style="width:70vw;">
             <script>
               var first = {
                 x: ['Negative Control', 'Positive Control', ],
@@ -834,6 +841,7 @@
                 titlefont: {
                   family: "PT Sans",
                   size: 15,
+                  autosize: true // set autosize to rescale
                 },
                 xaxis: {
                   autorange: true,
@@ -867,10 +875,7 @@
                   },
                 },
               };
-
-              Plotly.newPlot('interlab_measure3', data, layout, {
-                displayModeBar: false
-              });
+              Plotly.newPlot('interlab_measure3', data, layout, {responsive: true, displayModeBar: false});
             </script>
           </div>
           <p class="fig-caption">Figure 7 | Colony forming units count on each dilution and on each device (postive and negative control) </p>
@@ -949,6 +954,29 @@
         }
       },
     });
+    window.onresize = function() {
+        Plotly.relayout('interlab_standardcurve_1', {
+          width: Math.round(document.body.clientWidth * 0.7),
+        })
+        Plotly.relayout('interlab_standardcurve', {
+          width: Math.round(document.body.clientWidth * 0.7),
+        })
+        Plotly.relayout('interlab_standardcurve3', {
+          width: Math.round(document.body.clientWidth * 0.7),
+        })
+        Plotly.relayout('interlab_standardcurve_4', {
+          width: Math.round(document.body.clientWidth * 0.7),
+        })
+        Plotly.relayout('interlab_measure1', {
+          width: Math.round(document.body.clientWidth * 0.7),
+        })
+        Plotly.relayout('interlab_measure2', {
+          width: Math.round(document.body.clientWidth * 0.7),
+        })
+        Plotly.relayout('interlab_measure3', {
+          width: Math.round(document.body.clientWidth * 0.7),
+        })
+    };
   </script>
 </body>
 

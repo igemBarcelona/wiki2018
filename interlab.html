@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="css/master.min.css">
   <!--PLOT.LY JavaScript-->
   <script src="js/plotly.js"></script>
-  <style>table{overflow-x: auto;}</style>
+  <style>
+  </style>
 </head>
 
 <body>
@@ -133,51 +134,51 @@
         <p class="subapart2">Calibration</p>
         <p class="subapart3"> OD600 Reference Point</p>
         <center>
-          <table style="width: 60%;">
+          <table class="" style="width: 90%">
             <tr>
-              <th></th>
-              <th>Ludox CL-X</th>
-              <th>H<sub>2</sub>O</th>
+              <th class="tg-0lax"></th>
+              <th class="tg-0lax">Ludox CL-X</th>
+              <th class="tg-0lax">H2O</th>
             </tr>
             <tr>
-              <td>Replicate 1</td>
-              <td>0.056</td>
-              <td>0.034</td>
+              <td class="tg-0lax">Replicate 1</td>
+              <td class="tg-0lax">0.056</td>
+              <td class="tg-0lax">0.034</td>
             </tr>
             <tr>
-              <td>Replicate 2</td>
-              <td>0.056</td>
-              <td>0.034</td>
+              <td class="tg-0lax">Replicate 2</td>
+              <td class="tg-0lax">0.056</td>
+              <td class="tg-0lax">0.034</td>
             </tr>
             <tr>
-              <td>Replicate 3</td>
-              <td>0.056</td>
-              <td>0.034</td>
+              <td class="tg-0lax">Replicate 3</td>
+              <td class="tg-0lax">0.056</td>
+              <td class="tg-0lax">0.034</td>
             </tr>
             <tr>
-              <td>Replicate 4</td>
-              <td>0.056</td>
-              <td>0.034</td>
+              <td class="tg-0lax">Replicate 4</td>
+              <td class="tg-0lax">0.056</td>
+              <td class="tg-0lax">0.034</td>
             </tr>
             <tr>
-              <td>Arithmetic Mean</td>
-              <td>0.056</td>
-              <td>0.034</td>
+              <td class="tg-0lax">Arithmetic Mean</td>
+              <td class="tg-0lax">0.056</td>
+              <td class="tg-0lax">0.034</td>
             </tr>
             <tr>
-              <td>Corrected Abs600</td>
-              <td>0.022</td>
-              <td></td>
+              <td class="tg-0lax">Corrected Abs600</td>
+              <td class="tg-0lax">0.022</td>
+              <td class="tg-0lax"></td>
             </tr>
             <tr>
-              <td>Reference OD600</td>
-              <td>0.063</td>
-              <td></td>
+              <td class="tg-0lax">Reference OD600</td>
+              <td class="tg-0lax">0.063</td>
+              <td class="tg-0lax"></td>
             </tr>
             <tr>
-              <td>OD600/Abs600</td>
-              <td>2.864</td>
-              <td></td>
+              <td class="tg-0lax">OD600/Abs600</td>
+              <td class="tg-0lax">2.864</td>
+              <td class="tg-0lax"></td>
             </tr>
           </table>
           <p class="fig-caption">Table 1 | Date from the OD600 Reference Point in calibration 1. </p>
@@ -335,7 +336,7 @@
           <p class="fig-caption">Figure 2 | Graph showing the Logaritmic Standard curve for the calibration of OD600nm with silica beads. </p>
         </center>
         <center>
-          <table style="width: 90%;">
+          <table class="fancy-table"  style="max-width: 90%;">
             <tr>
               <th>Number of Particles</th>
               <th>2.35E+08</th>
@@ -527,7 +528,7 @@
           <p class="fig-caption">Figure 4 | Logaritmic Fluorescence Standard curve to calibrate the measurements with fluorescein.</p>
         </center>
         <center>
-          <table style="width: 90%;">
+          <table class="fancy-table"  style="max-width: 90%;">
             <tr>
               <th>Fluorescein uM</th>
               <th>10.00</th>
@@ -977,6 +978,10 @@
           width: Math.round(document.body.clientWidth * 0.7),
         })
     };
+    var tables = document.getElementsByClassName("fancy-table");
+    for (i = 0; i < tables.length; i++) {
+            tables[i].width = Math.round(document.body.clientWidth * 0.7);
+        }
   </script>
 </body>
 

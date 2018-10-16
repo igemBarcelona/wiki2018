@@ -51,8 +51,13 @@
     }
     div {
         margin-top: auto;
-        p {
+        p.page-title, p.subapart1 {
+            text-align: left;
+            font-size: 2em;
+        }
+        p.aboutme {
             text-align: justify;
+            font-size: 1em;
         }
         .question {
             font-weight: 800;

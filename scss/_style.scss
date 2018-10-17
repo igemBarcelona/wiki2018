@@ -463,3 +463,17 @@ tr:hover {
   font-family: 'Vollkorn', serif !important;
   color: #159B69;
 }
+
+.grid-sixcolumns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  grid-gap: 1rem;
+  .button_grid_sixcolumns {
+    grid-column: span 2;
+    padding: auto;
+  }
+  .filler {
+    grid-column: span 1;
+  }
+}

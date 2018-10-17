@@ -471,9 +471,35 @@ tr:hover {
   grid-gap: 1rem;
   .button_grid_sixcolumns {
     grid-column: span 2;
-    padding: auto;
+    display: block;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    a {
+      display: block;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
   .filler {
+    grid-column: span 1;
+  }
+}
+
+.js-plotly-plot {
+  display: block;
+  margin: auto;
+}
+
+.grid-plots {
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1.5rem;
+  .plot-title {
+    display: block;
+    margin: auto;
+    grid-column: span 2;
+  }
+  .plot-num{
     grid-column: span 1;
   }
 }

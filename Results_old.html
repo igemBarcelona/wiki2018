@@ -857,7 +857,7 @@
               displayModeBar: false
             });
           </script>
-          <div id="results_biosensor5" style="width:90%; height: 400px;"></div>
+          <div id="results_biosensor11" style="width:90%; height: 400px;"></div>
           <script>
             var pFadBA = {
               x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
@@ -876,13 +876,23 @@
               type: 'bar',
               width: .3,
               marker: {
-                color: '#c2ca6c',
+                color: '#225a7f',
               }
             };
-            var data = [lux, pFadBA];
+            var ci = {
+              x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
+              y: [1, 1.823590659, 3.136393362],
+              name: 'ci',
+              type: 'bar',
+              width: .3,
+              marker: {
+                color: '#577d95',
+              }
+            };
+            var data = [lux, pFadBA, ci];
             var layout = {
               barmode: 'group',
-              title: "NO TE TITOL -fold change",
+              title: "Comparison of Fold Change (FC)",
               titlefont: {
                 family: "PT Sans",
                 size: 15,
@@ -903,8 +913,8 @@
               },
               yaxis: {
                 zeroline: false,
-                autorange: true,
-                title: "Fold change",
+                range: [0.99, 3],
+                title: "Fold change (FC/LB)",
                 titlefont: {
                   family: "PT Sans",
                   size: 13,
@@ -918,7 +928,7 @@
                 },
               },
             };
-            Plotly.newPlot('results_biosensor5', data, layout, {
+            Plotly.newPlot('results_biosensor11', data, layout, {
               displayModeBar: false
             });
           </script>
@@ -1248,14 +1258,14 @@
               type: 'bar',
               width: .3,
               marker: {
-                color: '#c2ca6c',
+                color: '#225a7f',
               }
             };
 
             var data = [pFadBA, pAR];
             var layout = {
               barmode: 'group',
-              title: "NO TE TITOL -fold change",
+              title: ,
               titlefont: {
                 family: "PT Sans",
                 size: 15,

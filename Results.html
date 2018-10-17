@@ -443,7 +443,7 @@
                 },
                 name: "Not induced",
               };
-              
+
               var trace3 = {
                 x: [0, 1057.5, 2115, 3172.5, 4230, 5287.5, 6345, 7402.4, 8459.9, 9517.4, 10574.9, 11632.4, 12689.9,
                   13747.4,
@@ -704,7 +704,7 @@
                 },
                 name: "Not induced",
               };
-              
+
               var trace5 = {
                 x: [0, 1057.5, 2115, 3172.5, 4230, 5287.5, 6345, 7402.4, 8459.9, 9517.4, 10574.9, 11632.4, 12689.9,
                   13747.4,
@@ -1002,7 +1002,7 @@
                 name: "Not induced",
 
               };
-            
+
               var trace7 = {
                 x: [0, 1057.5, 2115, 3172.5, 4230, 5287.5, 6345, 7402.4, 8459.9, 9517.4, 10574.9, 11632.4, 12689.9,
                   13747.4,
@@ -1290,7 +1290,7 @@
                 grid: {
                   rows: 2,
                   columns: 2,
-                  },
+                },
                 title: "FadD overexpression in OA 2mM",
                 titlefont: {
                   family: "PT Sans Bold",
@@ -2123,7 +2123,6 @@
             <p class="subapart1">Integration Results</p>
           </a>
 
-
           <p class="subapart1">MAGE cycling efficiency:</p>
 
           <p>Estimation of allele replacement frequency (ARF) after each cycle was performed by X-gal blue-white
@@ -2131,10 +2130,9 @@
             positive control. Recombineered colonies are deficient in the Beta-galactosidase enzyme and therefore
             appear white when plated on X-gal IPTG containing plates. </p>
 
-
-
           <img src="http://2018.igem.org/wiki/images/6/66/T--UPF_CRG_Barcelona--MAGE_def-10.jpg" style="width: 50%;">
           <img src="http://2018.igem.org/wiki/images/f/fc/T--UPF_CRG_Barcelona--MAGE_def-9.jpg" style="width: 50%;">
+
           <p class="fig-caption"><b>Figures 1 & 2 | ARF screening on LB+X-gal+IPTG plates after five mage cycles in
               EcM2.1 </b>strain. Cultures were plated at 10e-5 (left) and 10e-6 (right).</p>
 
@@ -2142,60 +2140,54 @@
             ~1% of colonies incorporating mutations in the lacZ allele in each cycle. Altrouth our ARF was lower than
             reported (Gallagher 2014), we considered it sufficient to screen for fadR mutants.</p>
 
-
           <p class="subapart1">MAGE fadR KO screening:</p>
 
           <img src="http://2018.igem.org/wiki/images/2/28/T--UPF_CRG_Barcelona--gel3.png" style="width: 50%;">
 
-          <p class="fig-caption"><b>Figure Z: Gel electrophoresis of fadR KO screening through allele specific PCR,
-              after five MAGE cycles. </b>Numbers correspond to screened colonies. 36 colonies were analyzed, only 12
-            of them are shown in the picture. Top wells correspond to colonies screened with wt specific primers.
-            Bottom line shows 12 same colonies amplified with specific primers for the fadR mutations. Note that lower
-            gel wells are not the same size so bands are not aligned. Colony 11 shows no amplification for the wt
-            allele (361bp), but has the expected amplicon for FadR knock-outs; 362bp. </p>
+          <p class="fig-caption"><b>Figure Z: Agarose gel electrophoresis of FadR KO screening through allele specific
+              PCR, after five MAGE cycles. </b>Numbers correspond to screened colonies. 36 colonies were analyzed, only
+            12 of them are shown in the picture. Top wells correspond to colonies screened with wt specific primers.
+            Bottom line shows 12 same colonies amplified with specific primers for the FadR mutations. Colony 11 shows
+            no amplification for the wt allele (361bp), but has the expected amplicon for FadR knock-outs; 362bp. </p>
 
           <p>After performing five cycles in EcM2.1 MAGE strain using oligos coding for two stop codons in the
             beginning of FadR ORF, We performed allele specific PCR screening. One primer pair was designed to
             specifically recognize the WT sequence, while another primer pair was designed to anneal to the mutant
-            sequence. Performing a colony PCR with both primer pairs should lead to only one successful amplification
-            depending of the allele of the picked colony, as seen in figure Z. All colonies are amplified with the WT
-            allele except colony number 11, where amplification with the mutant primer pair appears. This colony was
-            selected as the bona fide mutant of the fadR repressor. A total of 36 colonies were analyzed (only 12 of
-            them shown, all other 24 where WT specific). From this we can make a rough estimate of the efficiency of
-            fadR KO oligo incorporation, which is 2,77%.</p>
+            sequence. Performing a colony PCR with both primer pairs should lead to a single amplicon, depending on the
+            genotype of the analysed colony, as seen in figure Z. All colonies are amplified with the WT allele except
+            colony number 11, in which amplification with the mutant primer pair appears. This colony was selected as
+            the bona fide mutant of the FadR repressor. A total of 36 colonies were analyzed (only 12 of them shown,
+            all other 24 where WT specific). From this we can make a rough estimation of the efficiency of FadR KO
+            oligo incorporation, which is 2,77%.</p>
 
           <p class="subapart1">fadR optimized screening method:</p>
 
-          <p>One of our final composite and biosensor parts; BBa_K2581006 is regulated by fadR repressor, which binds
-            to pfadBA in the absence of LCFA. We hypothesized that fadR KO cells transformed with this construct should
+          <p>One of our final composite and biosensor parts; BBa_K2581006 is regulated by FadR repressor, which binds
+            to pfadBA in the absence of LCFA. We hypothesized that FadR KO cells transformed with this construct should
             have basal expression of RFP. Different red intensities can be seen in EcM2.1 transformed colonies. We
             speculate that this might be due to the fact that EcM2.1 are not optimal for protein expression since they
-            lack mutS machinery and thus have impaired growth. Red colonies were picked and analysed by allele specific
-            PCR. Of 16 analysed colonies, 4 included the mutation ( fig T) which corresponds to ~25%. Although this
-            screening method does not bypass the need for allele specific PCR screening, It significantly increased the
+            lack MutS machinery and thus have impaired growth. Red colonies were picked and analysed by allele specific
+            PCR. Of 16 analysed colonies, 4 included the mutation (Figure T) which corresponds to ~25%. Although this
+            screening method does not bypass the need for allele specific PCR screening, it significantly increased the
             number of positive colonies in our screening, which would allow for a reduced number of cycles when
-            obtaining a fadR KO. Finally, we cultured and re-plated a FadRKO colony (num 9 fig. T) expressing our
+            obtaining a FadR KO. Finally, we cultured and re-plated a FadR KO colony (num 9 figure. T) expressing our
             BBa_K2581006 construct and a fadR negative colony( num. 10 fig. T). As expected, WT colony had a low basal
             level of RFP expression and fadRKO colonies had much higher RFP expression (fig. X)</p>
-
-
+  
           <img src="http://2018.igem.org/wiki/images/a/a5/T--UPF_CRG_Barcelona--UV1.jpg" style="width: 50%;">
           <p class="fig-caption"><b>Figure x | EcM2.1 strain cycled fadR KO. Cells were transformed with
               pfadBA-34-RFP(BBa_K2581006).</b></p>
 
           <img src="http://2018.igem.org/wiki/images/f/f9/T--UPF_CRG_Barcelona--gel2.png" style="width: 50%;">
-
           <p class="fig-caption"><b>Figure T | Allele specific PCR screening with red colonies that were transformed
-              with BBa_K2581006.</b> Top gel lanes correspond to colony screening with WT specific fadR primers. 4 of
+              with BBa_K2581006.</b> Top gel lanes correspond to colony screening with WT specific FadR primers. 4 of
             the 16 tested colonies show amplification for the wt allele. The bottom lanes of the gel show colony
-            screening using fadR KO primers. Four colonies (wells 8,9,12,13) tested positive for fadR ko induced by
-            MAGE.</p>
+            screening using FadR KO primers. Four colonies (8,9,12,13) tested positive for FadR KO induced by MAGE.</p>
 
           <img src="http://2018.igem.org/wiki/images/8/86/T--UPF_CRG_Barcelona--UV2.png" style="width: 50%;">
           <img src="http://2018.igem.org/wiki/images/a/a1/T--UPF_CRG_Barcelona--UV3.png" style="width: 50%;">
-          <p class="fig-caption"><b>Figure X | Biosensor activation comparison between a fadR KO colony expressing RFP
+          <p class="fig-caption"><b>Figure X | Biosensor activation comparison between a FadR KO colony expressing RFP
               and a wt EcM 2.1 biosensor transformed colony. </b></p>
-
 
           </div>
 

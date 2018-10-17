@@ -96,93 +96,135 @@
     <section class="">
 
       <div>
-        <h1 class="heading">LONG CHAIN FATTY ACUD INTRACELLULAR BIOSENSOR</p>
+        <p class="page-title">LONG CHAIN FATTY ACUD INTRACELLULAR BIOSENSOR</p>
+        <p>The main goals of our genetically modified organism are enhancing long chain fatty acids (LCFA) absorption
+          and metabolism and. This is doable by overexpressing Fad genes. However, this results in a metabolic burden
+          that affects the fitness of the cells, compromising the functionality of our probiotic, specially if it has
+          to compete with the rest of the microbiome for resources [1, 2]. For this reason, a system in which this
+          overexpression can be switched on and off depending on intracellular concentration of LCFA would be the best
+          approach for the designed proof of concept.</p>
 
-        <p>Analyzing fatty acid uptake capabilities of bacteria is not an easy task. Up to the moment, the most
-          reliable technique is GC/MS. This method, only allows to obtain discrete data and it is very expensive. Also,
-          very few laboratories have the necessary equipment. Therefore, performing these experiments is a task that
-          can only be done by a very limited part of the research community.</p>
+        <p>We have developed a genetic LCFA sensor device. This system not only allows a reliable characterization of
+          the fatty acid (FA) absorption of any bacterial system but can also be used to have a LCFA inducible
+          expression system.</p>
 
-        <p>Our team aims to design a genetic long chain fatty acid (LCFA) sensor device. This system will allow a
-          reliable characterization of the fatty acid absorption capabilities of any bacterial system. This system can
-          be coupled to other genes allowing their expression only in the presence of LCFA without compromising the
-          LCFA uptake capabilities of bacteria. Thus creating a LCFA-dependent expression system.</p>
+        <p>The starting point of our design has been the pFadBA promoter. This is the promoter of the fadB and fadA
+          genes, and contains FadR binding sequences [3]. Thus, it is a biosensor of LCFA in the cytoplasm, as it is
+          derepressed in the presence of LCFA. Other iGEM teams have previously attempted to use it as a LCFA sensor,
+          such as NTU_Taida 2014 [4]. However, their results showed a very high baseline expression of the reporter
+          proteins coupled to the promoter. This did not allow them to see a significant rise in the signal after
+          induction with LCFA. </p>
 
-        <p>In order to sense LCFAs, we take advantage of the <i>E. coli</i> endogenous promoter <b>pFad</b>. This
-          promotor works as follows:</p>
+        <p>In order to lower baseline expression, NTU_Taida 2014 team overexpressed FadR, forcing the repression of the
+          promoter. However, this approach would impair the functionality of the fad genes, as they are downregulated
+          by FadR.</p>
 
-
-        <!-- Scheme pFadBA & FadR-->
-        <center><img src="/assets/T--UPF_CRG_Barcelona--biosensor_scheme.svg" style="width: 500px;">
-          <p class="fig-caption"> Figure 1 | The pfad promoter is constitutively repressed by FadR protein. LCFA enter the cell through
-            the outer membrane receptor fadL, then, they get bound to acety-CoA. LCFA-acetyl-CoA is able to bind to
-            FadR which allows it to be released from the promoter making the later active </p>
-        </center>
-
-        <p>FadR protein is the main player in transcription regulation of fatty acid (FA) metabolism. It is involved
-          in negative regulation of FA degradation, thus constitutively repressing the Fad genes. This repression is
-          mediated through the binding of LCFA-acetyl-CoA to FadR and the following release of FadR from the
-          promoters of the Fad genes allowing its transcription.</p>
-
-        <p>In bacteria, this sensing device is coupled to the transcription of Fad genes. These genes code for the
-          beta-oxidation enzymes, which are the ones that metabolize LCFA.</p>
-
-        <p>Other iGEM teams have previously attempted to create LCFA reporter systems by coupling the pFad promoter
-          to a fluorescent protein, such as NTU_Taida 2014. However, their systems had a very high baseline
-          expression of the reporter proteins. This did not allow them to see a significant signal rise after
-          induction with LCFA. In order to lower the baseline expression, these teams overexpressed the repressor
-          FadR. However, by overexpressing FadR, the Fad genes get repressed, this way their systems interfered with
-          LCFA absorption and metabolism. This is a major concern as it diminishes a lot LCFA absorption and it does
-          not allow to reliably discriminate within bacterial systems with enhanced LCFA uptake.</p>
-
-        <p>In order to tackle this problem, our team has designed a LCFA biosensor that does not need FadR
-          overexpression to work. To do so, we have followed four different approaches to really be able to modulate
-          the activation threshold and to diminish the baseline expression.</p>
+        <p>As this interference with LCFA uptake was not compatible with our goal, we aimed to design a biosensor that
+          did not compromise bacteria fatty acid metabolism. In order to assess this goal by modulating the activation
+          threshold and diminishing the baseline expression, we have followed four different approaches:</p>
 
 
-        <p class="subapart1">Use of different ribosome binding sites</p>
+        <p class="subapart1">Using different RBS</p>
+        <p>Ribosome binding sites (RBSs) are effective control elements for translation initiation. In fact, they are
+          commonly mutated to optimize genetic circuits and metabolic pathways [5]. In cases where the promoter has
+          leakage, the use of a weak RBS can help to reduce the signal. This approach does not directly tune the
+          promoter activity but the output of our biosensor. We therefore coupled the pFadAB promoter with different
+          RBS to see its contribution in each case. </p>
 
-        <p>Although the promoter has leakage, if the RBS is weak with low LCFA indices the signal will not be
-          transmitted to the next node.</p>
-        <!-- Scheme RBS-->
-        <center><img src="/assets/T--UPF_CRG_Barcelona--rbs_1.svg" style="width: 20%; margin: 10px;">
-          <img src="/assets/T--UPF_CRG_Barcelona--rbs.svg" style="width: 20%; margin: 10px;">
-          <img src="/assets/T--UPF_CRG_Barcelona--rbs.svg" style="width: 20%; margin: 10px;">
-          <p class="fig-caption"> Figure 2 | BLA BLA BLA </p>
-        </center>
+        <p class="subapart1">Inducible LuxR-pLux engineered device </p>
 
-        <p class="subapart1">High-pass filter</p>
+        <p>In order to accurately quantify LCFA uptake with a genetic reporter, it is needed to obtain a significant
+          signal rise after induction with LCFA. Nevertheless, the fold change of the pfadBA promoter after induction
+          is very low and does not allow a reliable quantification. We designed a system that allowed us to externally
+          modulate genetic expression (<a href="http://2018.igem.org/Team:UPF_CRG_Barcelona/Measurement">See More</a>)
+          in an attempt to create an accurate LCFA biosensor.
 
-        <p>Through an incoherent feed-forward loop the effect called high-pass filter occurs. This structure is
-          widely used in the treatment of electrical and radiofrequency signals, since it causes the only signals
-          that pass to be those of a high frequency. In our case, the highpass filter eliminates weak signals by
-          passing only those strong, in other words, signals from higher LCFA concentrations. In this way we manage
-          to eliminate the baseline that the promoter has in case.</p>
+          We coupled the pfadBA promoter to the LuxR/pluxR lactone inducible system [6]. This circuit consists of the
+          LuxR, acyl-homoserine lactone receptor, under the expression of the pfadAB promoter, coupled with the lux
+          promoter expressing a reporter. Lux promoter is activated through luxR-lactone heterodimers.</p>
 
-        <center><img src="assets/T--UPF_CRG_Barcelona--highpassfilter.svg" style="width: 60%;">
-          <p class="fig-caption">Figure 3 | BLA BLA BLA BLA BLA</p>
-        </center>
+        <p>The use of a second inducer, such as lactone, makes possible to modulate the signal in different ways: (A)
+          It enables both to increase the signal and (B) modify the fold change expression of the reporter (with the
+          appropriate lactone concentration) </p>
 
-        <p class="subapart1">Inducible LuxR-pLux engineered device</p>
+        <p class="
+            subapart1">Optimizing the dynamic range of the promoter</p>
+        <p>As already explained, pFadBA is a sensor with excessive leakage and a poor dynamic range. However, Zhang et
+          al. 2012 described a synthetic promoter with a higher dynamic range (pAR), which we have characterized for
+          the first time to avoid these levels of basality [7]. In short, this promoter contains an additional FadR
+          binding sequence than the natural one. In order to evaluate the responses of this promoter, we builded a
+          circuit with pAR and different RBS coupled to fluorescent reporter (BBa_E1010).</p>
 
-        <p>We coupled the pfadBA promoter to the LuxR/pluxR lactone inducible system. This way, although the baseline
-          expression of LuxR is high, after LCFA induction there is a >10X folds concentration increase. This allows
-          the differential expression of the reporter protein, when the system is induced by the correct
-          concentration of lactone.</p>
-        <center><img src="assets/T--UPF_CRG_Barcelona--plux.svg" style="width: 60%;">
-          <p class="fig-caption">Figure 4 | BLA BLA BLA BLA</p>
+        <p class="subapart1">FURTHER APPROACHES: High pass filter</p>
 
-        </center>
+        <p>In order to eliminate the baseline expression of our reporter systems, we designed a genetic construct that
+          would only activate gene expression under the presence of LCFA. Our system consists of an incoherent
+          feed-forward loop which creates a high-pass filter.</p>
 
-        <p class="subapart1">Optimized promoter</p>
+        <p>Through an incoherent feed-forward loop, we could build a biological high-pass filter. This structure is
+          widely used in the treatment of electrical and radiofrequency signals, since only those signals with higher
+          frequency will pass. In our case, the highpass filter eliminates weak signals (leakage) by passing only the
+          strong ones; in other words, signals produced from higher LCFA concentrations.</p>
 
-        <p>As we have said before, pFadBA is a natural sensor with excessive leakage. However, there is an improved
-          version of the same called for, which we will use and characterize for the first time to avoid these levels
-          of basality.</p>
+        <p>One possible structure could be made by the CI/prm/343CI. CI can bind the prm hybrid promoter and activate
+          it. At the same time, the prm promoter is repressed by the 343CI gene which is repressed by the CI also.
+          Coupling pFaDBA with CI we could apply the high pass filter to our LCFA biosensor.</p>
 
-        <center><img src="assets/T--UPF_CRG_Barcelona--par.svg" style="width: 30%;">
-          <p class="fig-caption">Figure 5 | BLA BLA BLA BLA BLA</p>
-        </center>
+     <center>  <embed src="http://2018.igem.org/wiki/images/0/0e/T--UPF_CRG_Barcelona--highpassfilter.svg" alt="High Pass
+          Filter"
+          style="width: 50%;">
+          <p class="fig-caption"><b>Figure 1 |</b></p>
+        </center>   
+        <p>To understand the effect of a high pass filter we must consider two cases:</p>
+        <ol>
+          <li>Low activity of CI:
+            If CI is almost not expressed, it can not fully repress 343_CI and neither activate enough prm. So the
+            constitutively repression of 343_CI over prm will not allow a signal output. </li>
+
+          <li>High activity of CI:
+            If CI is strongly expressed, it can fully repress 343_CI and fully activate prm. Without the 343_CI
+            repressing nor CI activating, prm would be able to spread the signal.</li>
+        </ol>
+        <p class="subapart1">FURTHER APPROACHES: The metabolic switch </p>
+
+        <p>The capacity to induce or repress a gene depending on the presence of FA can not only be applied within
+          the overexpression approach. This could be oriented to change bacteria preference between glucose and LCFA.
+          To do so, we have worked with <i>in silico E. coli</i> metabolic models (<a href="http://2018.igem.org/Team:UPF_CRG_Barcelona/Model">
+            see more </a>). We have found 5 knockouts (KO) that theoretically maintain the growth that a wild type
+          has in presence of glucose and palmitic acid. As mentioned in the <a href="http://2018.igem.org/Team:UPF_CRG_Barcelona/Model">
+            Metabolic Switch Model</a>.The fact is that with only one KO more, the PA uptake multiplies for three
+          with a little decrease of the growth.</p>
+        <p>If we make this sixth gene expression dependent of our
+          biosensor, we can force our bacteria to absorb more PA than glucose in a rich LCFA medium. In this
+          manner, we can maintain our bacteria in absence of PA acid more time in the gut.</p>
+
+        <p>Finally, if we mix the overexpression and the metabolic switch biosensor, we would make our bacteria
+          uptake even more palmitic acid during a longer period.</p>
+
+
+
+
+
+
+        <p class="references">References</p>
+          <p class=" references">[1] Silva, F., Queiroz, J. A., &
+          Domingues, F. C. (2012). Evaluating metabolic stress
+          and plasmid stability in plasmid DNA production by Escherichia coli. Biotechnology advances, 30(3),
+          691-708.</p>
+        <p class="references">[2] Rozkov, A., Avignone‐Rossa, C. A., Ertl, P. F., Jones, P., O'Kennedy, R. D., Smith,
+            J. J., ... & Bushell, M. E. (2004). Characterization of the metabolic burden on Escherichia coli DH1 cells
+            imposed by the presence of a plasmid containing a gene therapy sequence. Biotechnology and bioengineering,
+            88(7), 909-915.</p>
+          <p class="
+          references">[3] Feng Y, Cronan JE Jr: Crosstalk of Escherichia coli FadR with global regulators in
+          expression of fatty acid transport genes. PLoS One 2012, 7:e46275. </p>
+        <p class="references">[4]NTU_Taida 2014 Wiki page. http://2014.igem.org/Team:NTU_Taida </p>
+          <p class="
+          references">[5] Salis, H. M., Mirsky, E. A., & Voigt, C. A. (2009). Automated design of synthetic
+          ribosome binding sites to control protein expression. Nature biotechnology, 27(10), 946.</p>
+          <p class="references">[6] Fuqua, C., Winans, S. C., & Greenberg, E. P. (1996). Census and consensus in bacterial ecosystems: the LuxR-LuxI family of quorum-sensing transcriptional regulators. Annual Reviews in Microbiology, 50(1), 727-751.</p>
+          <p class="references">[7] Zhang, F., Carothers, J. M., & Keasling, J. D. (2012). Design of a dynamic sensor-regulator system for production of chemicals and fuels derived from fatty acids. Nature biotechnology, 30(4), 354.</p>
+          <p class="references">[8]Pédelacq J-D, Cabantous S, Tran T, Terwilliger TC, Waldo GS. 2006. Engineering and characterization of a superfolder green fluorescent protein. Nat Biotechnol 24:79–88. doi:10.1038/nbt1172.</p>
 
 
       </div>

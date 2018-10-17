@@ -121,8 +121,8 @@
           <p class="subapart1">Overview</p>
         </a>
         <ul style="background-color: #c6d1e5; border-radius: 15px; padding: 1.8rem;">
-          <li style="padding: 0.3rem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore fugit, ipsum
-            aliquam debitis itaque id?</li>
+          <li style="padding: 0.3rem">When fadL and fadD are overexpressed LCFA uptake increases resulting in a higher
+            growth if LCFA are the only carbon source available. </li>
           <li style="padding: 0.3rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, recusandae.</li>
           <li style="padding: 0.3rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas, cumque
             obcaecati iste vero facilis eaque mollitia animi similique debitis.</li>
@@ -131,559 +131,667 @@
         <a name="Overexpression">
           <p class="subapart1">Overexpression results</p>
         </a>
-        <p>bla bla bla bla bla</p>
-        <div id="results_overexpression1" style="width:90%; height: 400px;"></div>
-        <script>
-          var control = {
-            x: ['Palmitic Acid', 'Oleic Acid'],
-            y: [0.059049989, 0.015975604],
-            name: 'Control',
-            type: 'bar',
-            error_y: {
-              type: 'data',
-              array: [0.00098995, 0.002899139],
-              visible: true,
-              thickness: 1,
-              color: '#36393D',
+        <p>In order to study the functionality of our system we characterized the constructs both in palmitic acid (PA)
+          and oleic acid (OA). Bacteria was grown for 3 days in M9 minimal medium with the respective fatty acid, so as
+          to be sure that the bacteria was only using LCFA as a carbon source. Additionally, the supernatant was also
+          collected and LCFA concentration was measured using cupric-acetate colorimetric (see <a href="http://2018.igem.org/Team:UPF_CRG_Barcelona/Methods">Methods
+            </a>) technique in OD715nm. This same growth assay was also performed in LB to study growth in enriched
+            media.</p> <p>Different levels of fad genes expression were achieved through different strains. The genetic
+            constructs consisting of either FadD or FadL downstream the TetR repressible promoter were transformed in
+            top10 E. coli strain (DH5-alpha) and Zn1. Top 10 constitutively synthesize tetR, which results in a
+            continuous expression of our construct. Zn1 does not express tetR, thus meaning that our genetic constructs
+            will not be induced. This induction can be modulated by adding anhydrotetracycline (ATc) in the medium. We
+            created a cell library expressing the fadD and fadL proteins: </p>
+        <p class="subapart1">FadD overexpression increases growth when either PA or OA are the only carbon source. </p>
+
+        <p>We analyzed the behavior of the constitutive and inducible FadD cell lines with M9 minimal media
+          supplemented with either PA or OA. Constitutive reporter cell line was used as a control. OD measurements
+          were performed at OD 600 nm as an indicative cell growth for 72 hours.</p>
+
+        <p>Our results show that, when fadD is overexpressed, bacterial growth increases both in 0,4 mM PA (Fig xA) and
+          2 mM PA (figure Xb) in relation to control. Moreover, the non-induced FadD cell show a lower increase of
+          bacterial growth, compared with the control. On the other hand, when tested with OA medium (fig Xc and d),
+          the difference in growth is higher than in PA medium. </p>
+
+        <p class="fig-caption"><b>Figure X | Growth assay of induced and not induced fadD in minimal medium enriched
+            with different concentrations of Oleic Acid (OA) and Palmitic Acid (PA).</b> Figure A show OD600nm over
+          time of induced (top10 strain) and not induced (Zn1 strain) fadD in 0,4mM PA concentration. Figure B show
+          OD600nm over time of induced (top10 strain) and not induced (Zn1 strain) fadD in 2mM PA concentration. Figure
+          C show OD600nm over time of induced (top10 strain) and not induced (Zn1 strain) fadD in 0,4mM OA
+          concentration. Figure D show OD600nm over time of induced (top10 strain) and not induced (Zn1 strain) fadD in
+          2mM OA concentration. Error bars represent the Standard Deviation of the Mean (SEM).</p>
+
+        <p>Moreover, growth in an enriched media (LB) was studied. Expression of induced FadD cell line was tuned with
+          ATc. Tuneable FadD overexpression levels entailed a big metabolic burden (figure X). Our results show that
+          when ATc induction increases, growth rate diminishes. In this way, our results suggested that even when PA is
+          available in the media, our system will prefer other carbon sources. However, when LCFA are the only ones
+          being present, the overexpression of fad genes gives an advantage reflected in enhanced growth (figure X).
+        </p>
+
+        <p class="fig-caption"><b>Figure X | Growth assay of induced and not induced fadD in enriched medium. </b>
+          Bacteria was grown for 16 hours in enriched medium with a concentration of 0,4mM Palmitic Acid. All bacteria
+          was top10 (DH5-alpha strain). To induce fadD expression a concentration of 60ng/ml of ATc was added. Error
+          bars represent the Standard Deviation of the Mean (SEM).</p>
+
+        <p class="subapart1">FadL overexpression reduces metabolic burden when both PA and OA concentration increases.</p>
+        <p>We analyzed the behavior of the constitutive and inducible FadL cell lines with M9 minimal media
+          supplemented with either PA or OA. Constitutive reporter cell line was used as a control. OD measurements
+          were performed at OD 600nm as an indicative cell growth for 72 hours.</p>
+
+        <p>Here we demonstrate that overexpression of fadL entails a metabolic burden. This is shown in the decrease of
+          the OD600 when induced bacteria is grown in both 0,4mM PA or OA (figure X) and 2mM PA or OA (figure X). When
+          comparing this metabolic burden between the two concentrations it is clear that in the 2mM concentration
+          induced bacteria grow more than in 0,4mM. Thus, this results suggest that FadL entails a metabolic burden
+          even in minimum media but is reduced when LCFA concentration increases. </p>
+
+        <p class="fig-caption"><b>Figure X. Growth assay of induced and not induced fadL in minimal medium enriched
+            with different concentrations of Oleic Acid (OA) and Palmitic Acid (PA). </b>Figure A show OD600nm over
+          time of induced (top10 strain) and not induced (Zn1 strain) fadL in 0,4mM PA concentration. Figure B show
+          OD600nm over time of induced (top10 strain) and not induced (Zn1 strain) fadL in 2mM PA concentration. Figure
+          C show OD600nm over time of induced (top10 strain) and not induced (Zn1 strain) fadL in 0,4mM OA
+          concentration. Figure D show OD600nm over time of induced (top10 strain) and not induced (Zn1 strain) fadL in
+          2mM OA concentration. Error bars represent the Standard Deviation of the Mean (SEM).</p>
+
+        <p class="subapart1">FadD overexpression increases OA uptake</p>
+        <p>We analyzed the behavior of the constitutive and inducible FadD cell lines with M9 minimal media
+          supplemented with either PA or OA. Constitutive reporter cell line was used as a control. Supernatant was
+          collected from the medium after 72 hours growing. Cupric-acetate colorimetric technique was performed
+          quantify LCFA concentration (OD715nm).</p>
+
+        <p>Our results showed that, when fadD was overexpressed, OA uptake nearly doubled the uptake of non induced
+          bacteria and control (p < 0.001) (Fig. X). However, this increase could not be observed in PA. A possible
+            explanation would be the infeasibility to obtain a proper standard curve for PA using cupric-acetate
+            technique when compared to oleic acid (see methods). </p> <div id="results_overexpression1" style="width:90%; height: 400px;">
+      </div>
+      <script>
+        var control = {
+          x: ['Palmitic Acid', 'Oleic Acid'],
+          y: [0.059049989, 0.015975604],
+          name: 'Control',
+          type: 'bar',
+          error_y: {
+            type: 'data',
+            array: [0.00098995, 0.002899139],
+            visible: true,
+            thickness: 1,
+            color: '#36393D',
+          },
+          width: .2,
+          marker: {
+            color: '#0079bf',
+          }
+        };
+        var induced = {
+          x: ['Palmitic Acid', 'Oleic Acid'],
+          y: [0.051237715, 0.027976643],
+          name: 'Induced',
+          type: 'bar',
+          marker: {
+            color: "#557d95",
+          },
+          width: .2,
+          error_y: {
+            type: 'data',
+            array: [0.002687004, 0.000636396],
+            visible: true,
+            thickness: 1,
+            color: '#36293D',
+          },
+        };
+        var notinduced = {
+          x: ['Palmitic Acid', 'Oleic Acid'],
+          y: [0.048294151, 0.021051573],
+          name: 'Not induced',
+          type: 'bar',
+          marker: {
+            color: "#225a7f",
+          },
+          width: .2,
+          error_y: {
+            type: 'data',
+            array: [0.000353554107089698, 0.0000707066067330886],
+            visible: true,
+            thickness: 1,
+            color: '#36393D',
+          },
+        };
+        var data = [induced, notinduced, control];
+        var layout = {
+          barmode: 'group',
+          title: "FadD",
+          titlefont: {
+            family: "PT Sans",
+            size: 15,
+            color: "#36393d",
+          },
+          xaxis: {
+            autorange: true,
+            showticklabels: true,
+            tickfont: {
+              family: "PT Sans",
+              size: 13,
+              color: "#36393d",
             },
-            width: .2,
-            marker: {
-              color: '#0079bf',
-            }
-          };
-          var induced = {
-            x: ['Palmitic Acid', 'Oleic Acid'],
-            y: [0.051237715, 0.027976643],
-            name: 'Induced',
-            type: 'bar',
-            marker: {
-              color: "#557d95",
-            },
-            width: .2,
-            error_y: {
-              type: 'data',
-              array: [0.002687004, 0.000636396],
-              visible: true,
-              thickness: 1,
-              color: '#36293D',
-            },
-          };
-          var notinduced = {
-            x: ['Palmitic Acid', 'Oleic Acid'],
-            y: [0.048294151, 0.021051573],
-            name: 'Not induced',
-            type: 'bar',
-            marker: {
-              color: "#225a7f",
-            },
-            width: .2,
-            error_y: {
-              type: 'data',
-              array: [0.000353554107089698, 0.0000707066067330886],
-              visible: true,
-              thickness: 1,
-              color: '#36393D',
-            },
-          };
-          var data = [induced, notinduced, control];
-          var layout = {
-            barmode: 'group',
-            title: "FadD",
+          },
+          yaxis: {
+            zeroline: false,
+            autorange: true,
+            title: "something",
             titlefont: {
               family: "PT Sans",
-              size: 15,
+              size: 13,
               color: "#36393d",
             },
-            xaxis: {
-              autorange: true,
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 13,
-                color: "#36393d",
-              },
-            },
-            yaxis: {
-              zeroline: false,
-              autorange: true,
-              title: "something",
-              titlefont: {
-                family: "PT Sans",
-                size: 13,
-                color: "#36393d",
-              },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 11,
-                color: "#36393d",
-              },
-            },
-          };
-          Plotly.newPlot('results_overexpression1', data, layout, {
-            displayModeBar: false
-          });
-        </script>
-        <h6>figure X | bla bla bla bla bla </h6>
-
-        <div id="results_overexpression2" style="width:90%; height: 400px;"></div>
-        <script>
-          var control = {
-            x: ['Palmitic Acid', 'Oleic Acid'],
-            y: [0.059049989, 0.015975604],
-            name: 'Control',
-            type: 'bar',
-            width: .2,
-            error_y: {
-              type: 'data',
-              array: [0.00098995, 0.002899139],
-              visible: true,
-              thickness: 1,
-              color: '#36393D',
-            },
-            marker: {
-              color: '#0079bf',
-            }
-          };
-          var induced = {
-            x: ['Palmitic Acid', 'Oleic Acid'],
-            y: [0.053295016, 0.035822019],
-            name: 'Induced',
-            type: 'bar',
-            width: .2,
-            marker: {
-              color: "#557d95",
-            },
-            error_y: {
-              type: 'data',
-              array: [0.000424261, 0.001697059],
-              visible: true,
-              thickness: 1,
-              color: '#36293D',
-            },
-          };
-          var notinduced = {
-            x: ['Palmitic Acid', 'Oleic Acid'],
-            y: [0.053694714, 0.014226389],
-            name: 'Not induced',
-            type: 'bar',
-            width: .2,
-            marker: {
-              color: "#225a7f",
-            },
-            error_y: {
-              type: 'data',
-              array: [0.002687004, 0.000989945],
-              visible: true,
-              thickness: 1,
-              color: '#36393D',
-            },
-          };
-          var data = [induced, notinduced, control];
-          var layout = {
-            barmode: 'group',
-            title: "FadL",
-            titlefont: {
+            showticklabels: true,
+            tickfont: {
               family: "PT Sans",
-              size: 15,
+              size: 11,
               color: "#36393d",
             },
-            xaxis: {
-              autorange: true,
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 13,
-                color: "#36393d",
+          },
+        };
+        Plotly.newPlot('results_overexpression1', data, layout, {
+          displayModeBar: false
+        });
+      </script>
+      <p class="fig-caption"><b>Figure X | LCFA uptake in FadD overexpression. </b>Plot showing LCFA uptake when
+        comparing induced (Top10 strain) and not induced (Zn1 strain) fadD gene. Constitutive reporter cell line
+        (top10) was used as a control. Uptake was measured considering the OD715nm difference between the medium at
+        certain concentration of LCFA and the medium with grown bacteria. A concentration of 0,4mM of both PA and OA
+        was used. Cupric-acetate technique was used to quantify LCFA in the medium. LCFA uptake was normalized by the
+        growth of the bacteria, measured at OD600. Error bars represent the Standard Deviation of the Mean (SEM).
+        Statistical significance of the mean was calculated using a paired t-test. P value < 0,05, which indicates a
+          statistically significant difference among relevant groups, is designated with an asterisk.</p> <p class="subapart1">Overexpression
+          of fadL increases OA uptake.</p>
+      <p>Here to study the LCFA uptake the same experimental procedure was followed as described in FadD. Our results
+        show that, when fadL was induced OA uptake was more than 2-fold higher in relation to non-induced and control
+        bacteria (Fig. X). This increased uptake was only statistically significant in OA when compared to control (p < 0.0001)
+          and not induced bacteria (p < 0.0001). PA media didn’t show significant results (figure X).</p> <div id="results_overexpression2"
+          style="width:90%; height: 400px;">
+          </div>
+          <script>
+            var control = {
+              x: ['Palmitic Acid', 'Oleic Acid'],
+              y: [0.059049989, 0.015975604],
+              name: 'Control',
+              type: 'bar',
+              width: .2,
+              error_y: {
+                type: 'data',
+                array: [0.00098995, 0.002899139],
+                visible: true,
+                thickness: 1,
+                color: '#36393D',
               },
-            },
-            yaxis: {
-              zeroline: false,
-              autorange: true,
-              title: "SOMETHING",
+              marker: {
+                color: '#0079bf',
+              }
+            };
+            var induced = {
+              x: ['Palmitic Acid', 'Oleic Acid'],
+              y: [0.053295016, 0.035822019],
+              name: 'Induced',
+              type: 'bar',
+              width: .2,
+              marker: {
+                color: "#557d95",
+              },
+              error_y: {
+                type: 'data',
+                array: [0.000424261, 0.001697059],
+                visible: true,
+                thickness: 1,
+                color: '#36293D',
+              },
+            };
+            var notinduced = {
+              x: ['Palmitic Acid', 'Oleic Acid'],
+              y: [0.053694714, 0.014226389],
+              name: 'Not induced',
+              type: 'bar',
+              width: .2,
+              marker: {
+                color: "#225a7f",
+              },
+              error_y: {
+                type: 'data',
+                array: [0.002687004, 0.000989945],
+                visible: true,
+                thickness: 1,
+                color: '#36393D',
+              },
+            };
+            var data = [induced, notinduced, control];
+            var layout = {
+              barmode: 'group',
+              title: "FadL",
               titlefont: {
                 family: "PT Sans",
-                size: 13,
+                size: 15,
                 color: "#36393d",
               },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 11,
-                color: "#36393d",
+              xaxis: {
+                autorange: true,
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 13,
+                  color: "#36393d",
+                },
               },
-            },
-          };
-          Plotly.newPlot('results_overexpression2', data, layout, {
-            displayModeBar: false
-          });
-        </script>
-        <h6>figure X | bla bla bla bla bla </h6>
+              yaxis: {
+                zeroline: false,
+                autorange: true,
+                title: "SOMETHING",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 13,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 11,
+                  color: "#36393d",
+                },
+              },
+            };
+            Plotly.newPlot('results_overexpression2', data, layout, {
+              displayModeBar: false
+            });
+          </script>
 
-        <a name="Biosensor">
-          <p class="subapart1">Biosensor Results</p>
-        </a>
-        <p class="subapart2">Characterization of the Fatty acid acyl-CoA biosensor (pFadBA)</p>
-        <p>To evaluate the function of the pfadBA promoter, we designed a reporter system with RFP. TOP-10 <i>E. coli</i>
-          strain expressing the construct were induced with different concentrations of PA in LB medium. Fluorescence
-          was
-          analyzed once it had reached the steady state.</p>
+          <p class="fig-caption"><b>Figure X. LCFA uptake in FadL overexpression.</b> Plot showing LCFA uptake when
+            comparing induced (Top10 strain) and not induced (Zn1 strain) fadL gene. Constitutive reporter cell line
+            (top10) was used as a control. Uptake was measured considering the OD715nm difference between the medium at
+            certain concentration of LCFA and the medium with grown bacteria. A concentration of 0,4mM of both PA and
+            OA was used. Cupric-acetate technique was used to quantify LCFA in the medium. LCFA uptake was normalized
+            by the growth of the bacteria, measured at OD600. Error bars represent the Standard Deviation of the Mean
+            (SEM). Statistical significance of the mean was calculated using a paired t-test. P value < 0.05, which
+              indicates a statistically significant difference among relevant groups, is designated with an asterisk.</p>
+              <p class="subapart1">Discussion: </p>
+          <p>Our results demonstrate that overexpression of fadL and fadD in enriched media entails a metabolic burden
+            for the cell. However, when these genes are overexpressed in a minimum media, with LCFA as the unique
+            carbon sources, the metabolic burden is reduced. Furthermore, bacterial growth is even higher between
+            induced and not induced cells. We have demonstrated that induction of fadL and fadD results in a LCFA
+            uptake increase, being statistically significant in OA. </p>
 
-        <div id="results_biosensor1" style="width:90%; height: 400px;"></div>
-        <script>
-          var trace1 = {
-            x: [
-              0, 0.1, 0.2, 0.3, 0.4, 0.6, 0.8, 1
-            ],
-            y: [
-              166.1957236, 170.9917908, 180.3131834, 183.0117334, 188.0914255, 208.3651179, 221.8960085,
-              256.4273664,
-            ],
-            error_y: {
-              color: '#0079bf',
-              thickness: 1,
-              type: 'data',
-              array: [
-                18.02107414, 18.15429603, 11.91156693, 6.577895472, 7.200809337, 11.55551043, 14.45362679,
-                18.01708433,
+          <p>Considering our results, it can be deduced that when fadL and fadD are overexpressed LCFA uptake increases
+            resulting in a higher growth. In this way, we can conclude that LCFA influx is increased in our system,
+            resulting in higher Acyl-CoA concentration inside the cell. Consequently, we have hypothesized that this
+            results in an enhanced expression of the rest of fad genes and therefore in an increase of the LCFA
+            degradation rate. This increase in the LCFA degradation, leads to more metabolic fuel to be used for growth
+            (only when LCFA is the only carbon source available). Therefore, overexpression of fadL and fadD gives the
+            cell a positive advantage that results in enhanced growing when LCFA is the only carbon source. </p>
+
+          <a name="Biosensor">
+            <p class="subapart1">Biosensor Results</p>
+          </a>
+          <p class="subapart2">Characterization of the Fatty acid acyl-CoA biosensor (pFadBA)</p>
+          <p>To evaluate the function of the pfadBA promoter, we designed a reporter system with RFP. TOP-10 <i>E. coli</i>
+            strain expressing the construct were induced with different concentrations of PA in LB medium. Fluorescence
+            was
+            analyzed once it had reached the steady state.</p>
+
+          <div id="results_biosensor1" style="width:90%; height: 400px;"></div>
+          <script>
+            var trace1 = {
+              x: [
+                0, 0.1, 0.2, 0.3, 0.4, 0.6, 0.8, 1
               ],
-              visible: true
-            },
-            type: 'scatter',
-            line: {
-              color: "#0079bf",
-              width: 1,
-              dash: "dot",
-            },
-          };
-          var data = [trace1];
-          var layout = {
-            title: "Mean Fluorescence Intensity",
-            titlefont: {
-              family: "PT Sans Bold",
-              size: 16,
-            },
-            xaxis: {
-              title: "Palmitic Acid concentration (mM)",
-              titlefont: {
-                family: "PT Sans",
-                size: 15,
-                color: "#36393d",
-              },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
-
-              },
-            },
-            yaxis: {
-              title: "Fluorescence (a.u.)",
-              titlefont: {
-                family: "PT Sans",
-                size: 15,
-                color: "#36393d",
-              },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
-              },
-            },
-          };
-          Plotly.newPlot('results_biosensor1', data, layout, {
-            displayModeBar: false
-          });
-        </script>
-        <p>Our data indicates that the activation threshold of the pfadBA promoter is at 0.2 mM of PA. The baseline
-          fluorescence is really high and we only observed a fold change of 1.5 between the fluorescence of the non
-          induced bacteria and of the maximum induced one (PA 1mM). </p>
-        <p>We could not see the saturation in the transfer function due to the fact that medium with PA concentrations
-          higher than 1 mM created a lot of noise which made impossible to analyse fluorescence at this high
-          concentrations. </p>
-
-        <p class="subapart2">Characterization of the Inducible LuxR-pLux engineered device</p>
-
-        <p>In order to modulate the expression of the genes expressed under the pfadBA promoter, we designed a pfadBA
-          reporter system inducible with both LCFA and lactone. TOP 10 bacteria expressing the construct were induced
-          with different concentrations of lactone and 3 different concentrations of PA (0, 0.4 and 1 mM) in LB medium.
-          Fluorescence was analyzed once it had reached the steady state.</p>
-
-        <div id="results_biosensor2" style="width:90%; height: 400px;"></div>
-        <script>
-          var trace0 = {
-            x: [0, 0.0000000001, 0.000000001, 0.00000005, 0.0000001, 0.0000005],
-            y: [0, 0, 0, 44.56481895, 170.446603, 215.0904724, 204.0716625],
-            error_y: {
-              color: '#0079bf',
-              thickness: 1,
-              type: 'data',
-              array: [0, 0, 0, 15.29557911, 19.73763307, 17.61577669, 28.03661507],
-              visible: true
-            },
-            type: 'scatter',
-            line: {
-              color: "#557d95",
-              width: 1,
-              dash: "dot",
-              hape: "spline",
-            },
-            name: "LB",
-          };
-          var trace1 = {
-            x: [0, 0.0000000001, 0.000000001, 0.00000005, 0.0000001, 0.0000005],
-            y: [0,0,0,82.84644574,191.2132307,259.1304718,249.2150203],
-            error_y: {
-              color: '#0079bf',
-              thickness: 1,
-              type: 'data',
-              array: [0,0,0.838338218,9.309595929,12.83295675,8.806343893,25.20344811],
-              visible: true
-            },
-            type: 'scatter',
-            line: {
-              color: "#0079bf",
-              width: 1,
-              dash: "dot",
-              shape: "spline",
-            },
-            name: "LB + 0.4 mM Palmitic Acid",
-          };
-          var trace2 = {
-            x: [0, 0.0000000001, 0.000000001, 0.00000005, 0.0000001, 0.0000005 ],
-            y: [0,0,0,59.81279408,242.2969439,351.8179998,352.8631549],
-            error_y: {
-              color: '#225A7F',
-              thickness: 1,
-              type: 'data',
-              array: [0.659347939, 0.48185037, 1.213116806, 12.08067271, 48.00392739, 26.8915842, 27.55701065],
-              visible: true
-            },
-            type: 'scatter',
-            line: {
-              color: "#225A7F",
-              width: 1,
-              dash: "dot",
-              hape: "spline",
-            },
-            name: "LB + 1 mM Palmitic Acid",
-          };
-          var data = [trace0, trace1, trace2];
-          var layout = {
-            title: "Mean Fluorescence Intensity",
-            titlefont: {
-              family: "PT Sans Bold",
-              size: 16,
-            },
-            xaxis: {
-              type: "log",
-              exponentformat: 'e',
-              showexponent: 'all',
-              title: "Lactone Concentration (M)",
-              titlefont: {
-                family: "PT Sans",
-                size: 15,
-                color: "#36393d",
-              },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
-              },
-            },
-            yaxis: {
-              title: "Fluorescence (a.u.)",
-              titlefont: {
-                family: "PT Sans",
-                size: 15,
-                color: "#36393d",
-              },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
-              },
-            },
-          };
-          Plotly.newPlot('results_biosensor2', data, layout, {
-            displayModeBar: false
-          });
-        </script>
-
-        <p>Our data indicates that the activation threshold of this lactone inducible pfafba construct is approximately
-          at 5x10<sup>-9</sup> M of lactone. It saturates at 1x10<sup>-7</sup> M of lactone. Significant fluorescence
-          difference between different PA concentrations is only observed at saturated lactone ranges. </p>
-
-        <p class="subapart2">Characterization of the High Pass Filter Biosensor</p>
-
-        <div id="results_biosensor3" style="width:90%; height: 400px;"></div>
-        <script>
-          var trace1 = {
-            x: [
-            0, 0.5, 1, 1.5 ],
-            y: [
-            14.87981941, 27.13469968, 46.66896681, 63.57392764 ],
-            error_y: {
-              color: '#0079bf',
-              thickness: 1,
-              type: 'data',
-              array: [5.254043865, 3.122421295, 4.348284106, 5.052001885,
+              y: [
+                166.1957236, 170.9917908, 180.3131834, 183.0117334, 188.0914255, 208.3651179, 221.8960085,
+                256.4273664,
               ],
-              visible: true
-            },
-            type: 'scatter',
-            line: {
-              color: "#0079bf",
-              width: 1,
-              dash: "dot",
-            },
-          };
-          var data = [trace1];
-          var layout = {
-            title: "Mean Fluorescence Intensity",
-            titlefont: {
-              family: "PT Sans Bold",
-              size: 16,
-            },
-            xaxis: {
-              title: "Palmitic Acid concentration (mM)",
+              error_y: {
+                color: '#0079bf',
+                thickness: 1,
+                type: 'data',
+                array: [
+                  18.02107414, 18.15429603, 11.91156693, 6.577895472, 7.200809337, 11.55551043, 14.45362679,
+                  18.01708433,
+                ],
+                visible: true
+              },
+              type: 'scatter',
+              line: {
+                color: "#0079bf",
+                width: 1,
+                dash: "dot",
+              },
+            };
+            var data = [trace1];
+            var layout = {
+              title: "Mean Fluorescence Intensity",
               titlefont: {
-                family: "PT Sans",
-                size: 15,
-                color: "#36393d",
+                family: "PT Sans Bold",
+                size: 16,
               },
-              showline: true,
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
-              },
-            },
-            yaxis: {
-              title: "Fluorescence (a.u.)",
-              titlefont: {
-                family: "PT Sans",
-                size: 15,
-                color: "#36393d",
-              },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
-              },
-            },
-          };
-          Plotly.newPlot('results_biosensor3', data, layout, {
-            displayModeBar: false
-          });
-        </script>
-        <p class="subapart2">Comparative study between the Lux, the pFadBA and the cI biosensors</p>
+              xaxis: {
+                title: "Palmitic Acid concentration (mM)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
 
-        <div id="results_biosensor4" style="width:90%; height: 400px;"></div>
-        <script>
-          var pFadBA = {
-            x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
-            y: [166.1957236, 188.0914255, 256.4273664],
-            name: 'pFadBa',
-            type: 'bar',
-            error_y: {
-              type: 'data',
-              array: [18.02107414, 7.200809337, 18.01708433],
-              visible: true,
-              thickness: 1,
-              color: '#36393D',
-            },
-            width: .2,
-            marker: {
-              color: '#0079bf',
-            }
-          };
-          var lux = {
-            x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
-            y: [212.9574509, 262.1183264, 351.8179998],
-            name: 'Inducible LuxR-pLux ',
-            type: 'bar',
-            error_y: {
-              type: 'data',
-              array: [16.52376544, 23.85503417, 26.8915842],
-              visible: true,
-              thickness: 1,
-              color: '#36393D',
-            },
-            width: .2,
-            marker: {
-              color: '#225a7f',
-            }
-          };
-          var ci = {
-            x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
-            y: [14.87981941, 27.13469968, 46.66896681],
-            name: 'HighPass Filter',
-            type: 'bar',
-            error_y: {
-              type: 'data',
-              array: [5.254043865, 3.122421295, 4.348284106],
-              visible: true,
-              thickness: 1,
-              color: '#36393D',
-            },
-            width: .2,
-            marker: {
-              color: '#577d95',
-            }
-          };
-          var data = [lux, pFadBA, ci];
-          var layout = {
-            barmode: 'group',
-            title: "Comparison of the fluorescence",
-            titlefont: {
-              family: "PT Sans Bold",
-              size: 16,
-              color: "#36393d",
-            },
-            xaxis: {
-              title: "",
-              titlefont: {
-                size: 15,
+                },
               },
-              autorange: true,
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
+              yaxis: {
+                title: "Fluorescence (a.u.)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
               },
-            },
-            yaxis: {
-              zeroline: false,
-              autorange: true,
-              title: "Fluorescence (a.u.)",
-              titlefont: {
-                family: "PT Sans",
-                size: 15,
-                color: "#36393d",
-              },
-              showticklabels: true,
-              tickfont: {
-                family: "PT Sans",
-                size: 12,
-                color: "#36393d",
-              },
-            },
-          };
-          Plotly.newPlot('results_biosensor4', data, layout, {
-            displayModeBar: false
-          });
-        </script>
-        <p class="subapart2">Characterization of the Improved fatty acid acyl-CoA biosensor (pAR)</p>
+            };
+            Plotly.newPlot('results_biosensor1', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+          <p>Our data indicates that the activation threshold of the pfadBA promoter is at 0.2 mM of PA. The baseline
+            fluorescence is really high and we only observed a fold change of 1.5 between the fluorescence of the non
+            induced bacteria and of the maximum induced one (PA 1mM). </p>
+          <p>We could not see the saturation in the transfer function due to the fact that medium with PA
+            concentrations
+            higher than 1 mM created a lot of noise which made impossible to analyse fluorescence at this high
+            concentrations. </p>
 
-        <div id="results_biosensor5" style="width:90%; height: 400px;"></div>
+          <p class="subapart2">Characterization of the Inducible LuxR-pLux engineered device</p>
+
+          <p>In order to modulate the expression of the genes expressed under the pfadBA promoter, we designed a pfadBA
+            reporter system inducible with both LCFA and lactone. TOP 10 bacteria expressing the construct were induced
+            with different concentrations of lactone and 3 different concentrations of PA (0, 0.4 and 1 mM) in LB
+            medium.
+            Fluorescence was analyzed once it had reached the steady state.</p>
+
+          <div id="results_biosensor2" style="width:90%; height: 400px;"></div>
+          <script>
+            var trace0 = {
+              x: [0, 0.0000000001, 0.000000001, 0.00000005, 0.0000001, 0.0000005],
+              y: [0, 0, 0, 44.56481895, 170.446603, 215.0904724, 204.0716625],
+              error_y: {
+                color: '#0079bf',
+                thickness: 1,
+                type: 'data',
+                array: [0, 0, 0, 15.29557911, 19.73763307, 17.61577669, 28.03661507],
+                visible: true
+              },
+              type: 'scatter',
+              line: {
+                color: "#557d95",
+                width: 1,
+                dash: "dot",
+                hape: "spline",
+              },
+              name: "LB",
+            };
+            var trace1 = {
+              x: [0, 0.0000000001, 0.000000001, 0.00000005, 0.0000001, 0.0000005],
+              y: [0, 0, 0, 82.84644574, 191.2132307, 259.1304718, 249.2150203],
+              error_y: {
+                color: '#0079bf',
+                thickness: 1,
+                type: 'data',
+                array: [0, 0, 0.838338218, 9.309595929, 12.83295675, 8.806343893, 25.20344811],
+                visible: true
+              },
+              type: 'scatter',
+              line: {
+                color: "#0079bf",
+                width: 1,
+                dash: "dot",
+                shape: "spline",
+              },
+              name: "LB + 0.4 mM Palmitic Acid",
+            };
+            var trace2 = {
+              x: [0, 0.0000000001, 0.000000001, 0.00000005, 0.0000001, 0.0000005],
+              y: [0, 0, 0, 59.81279408, 242.2969439, 351.8179998, 352.8631549],
+              error_y: {
+                color: '#225A7F',
+                thickness: 1,
+                type: 'data',
+                array: [0.659347939, 0.48185037, 1.213116806, 12.08067271, 48.00392739, 26.8915842, 27.55701065],
+                visible: true
+              },
+              type: 'scatter',
+              line: {
+                color: "#225A7F",
+                width: 1,
+                dash: "dot",
+                hape: "spline",
+              },
+              name: "LB + 1 mM Palmitic Acid",
+            };
+            var data = [trace0, trace1, trace2];
+            var layout = {
+              title: "Mean Fluorescence Intensity",
+              titlefont: {
+                family: "PT Sans Bold",
+                size: 16,
+              },
+              xaxis: {
+                type: "log",
+                exponentformat: 'e',
+                showexponent: 'all',
+                title: "Lactone Concentration (M)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                title: "Fluorescence (a.u.)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+              },
+            };
+            Plotly.newPlot('results_biosensor2', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+
+          <p>Our data indicates that the activation threshold of this lactone inducible pfafba construct is
+            approximately
+            at 5x10<sup>-9</sup> M of lactone. It saturates at 1x10<sup>-7</sup> M of lactone. Significant fluorescence
+            difference between different PA concentrations is only observed at saturated lactone ranges. </p>
+
+          <p class="subapart2">Characterization of the cI mediated activity</p>
+
+          <div id="results_biosensor3" style="width:90%; height: 400px;"></div>
+          <script>
+            var trace1 = {
+              x: [
+                0, 0.5, 1, 1.5
+              ],
+              y: [
+                14.87981941, 27.13469968, 46.66896681, 63.57392764
+              ],
+              error_y: {
+                color: '#0079bf',
+                thickness: 1,
+                type: 'data',
+                array: [5.254043865, 3.122421295, 4.348284106, 5.052001885, ],
+                visible: true
+              },
+              type: 'scatter',
+              line: {
+                color: "#0079bf",
+                width: 1,
+                dash: "dot",
+              },
+            };
+            var data = [trace1];
+            var layout = {
+              title: "Mean Fluorescence Intensity",
+              titlefont: {
+                family: "PT Sans Bold",
+                size: 16,
+              },
+              xaxis: {
+                title: "Palmitic Acid concentration (mM)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                  color: "#36393d",
+                },
+                showline: true,
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                title: "Fluorescence (a.u.)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+              },
+            };
+            Plotly.newPlot('results_biosensor3', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+          <p class="subapart2">Comparative study between the Lux, the pFadBA and the cI biosensors</p>
+
+          <div id="results_biosensor4" style="width:90%; height: 400px;"></div>
+          <script>
+            var pFadBA = {
+              x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
+              y: [166.1957236, 188.0914255, 256.4273664],
+              name: 'pFadBa',
+              type: 'bar',
+              error_y: {
+                type: 'data',
+                array: [18.02107414, 7.200809337, 18.01708433],
+                visible: true,
+                thickness: 1,
+                color: '#36393D',
+              },
+              width: .2,
+              marker: {
+                color: '#0079bf',
+              }
+            };
+            var lux = {
+              x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
+              y: [212.9574509, 262.1183264, 351.8179998],
+              name: 'Inducible LuxR-pLux ',
+              type: 'bar',
+              error_y: {
+                type: 'data',
+                array: [16.52376544, 23.85503417, 26.8915842],
+                visible: true,
+                thickness: 1,
+                color: '#36393D',
+              },
+              width: .2,
+              marker: {
+                color: '#225a7f',
+              }
+            };
+            var ci = {
+              x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
+              y: [14.87981941, 27.13469968, 46.66896681],
+              name: 'HighPass Filter',
+              type: 'bar',
+              error_y: {
+                type: 'data',
+                array: [5.254043865, 3.122421295, 4.348284106],
+                visible: true,
+                thickness: 1,
+                color: '#36393D',
+              },
+              width: .2,
+              marker: {
+                color: '#577d95',
+              }
+            };
+            var data = [lux, pFadBA, ci];
+            var layout = {
+              barmode: 'group',
+              title: "Comparison of the fluorescence",
+              titlefont: {
+                family: "PT Sans Bold",
+                size: 16,
+                color: "#36393d",
+              },
+              xaxis: {
+                title: "",
+                titlefont: {
+                  size: 15,
+                },
+                autorange: true,
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+              },
+              yaxis: {
+                zeroline: false,
+                autorange: true,
+                title: "Fluorescence (a.u.)",
+                titlefont: {
+                  family: "PT Sans",
+                  size: 15,
+                  color: "#36393d",
+                },
+                showticklabels: true,
+                tickfont: {
+                  family: "PT Sans",
+                  size: 12,
+                  color: "#36393d",
+                },
+              },
+            };
+            Plotly.newPlot('results_biosensor4', data, layout, {
+              displayModeBar: false
+            });
+          </script>
+          <p class="subapart2">Characterization of the Improved fatty acid acyl-CoA biosensor (pAR)</p>
+
+          <div id="results_biosensor5" style="width:90%; height: 400px;"></div>
           <script>
             var pFadBA = {
               x: ['LB', 'LB 0.4 mM PA', 'LB 1 mM PA'],
@@ -829,14 +937,14 @@
               displayModeBar: false
             });
           </script>
-        <a name="Integration">
-          <p class="subapart1">Integration Results</p>
-        </a>
-        <a name="Conclusions">
-          <p class="subapart1">Conclusions</p>
-        </a>
+          <a name="Integration">
+            <p class="subapart1">Integration Results</p>
+          </a>
+          <a name="Conclusions">
+            <p class="subapart1">Conclusions</p>
+          </a>
 
-      </div>
+          </div>
 
 
     </section>
